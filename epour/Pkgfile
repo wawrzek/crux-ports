@@ -1,0 +1,19 @@
+# Description: torrent client
+# URL: http://www.enlightenment.org/
+# Maintainer: Wawrzek Niewodniczanski main at wawrzek dot name
+# Depends on: python-efl
+
+name=epour
+version=0.6.0
+release=1
+source=(http://download.enlightenment.org/rel/apps/$name/$name-$version.tar.gz)
+
+build()
+{
+    cd $name-$version
+    ./configure --prefix=/usr \
+                --mandir=/usr/man \
+		--disable-nls
+    make
+    make DESTDIR=$PKG install
+}

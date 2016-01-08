@@ -1,0 +1,18 @@
+# Description: LuaJIT (Just-in-Time Compiler) for Lua
+# URL: http://luajit.org
+# Maintainer: Wawrzek Niewodniczanski main at wawrzek dot name
+# Packager: Wawrzek Niewodniczanski main at wawrzek dot name
+# Depends on: lua51
+
+name=luajit
+official=LuaJIT
+version=2.0.4
+release=1
+source=(http://luajit.org/download/$official-$version.tar.gz)
+
+build()
+{
+    cd $official-$version 
+    make 
+    make install PREFIX=$PKG/usr
+}

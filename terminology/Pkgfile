@@ -1,0 +1,20 @@
+# Description: terminal emulator
+# URL: http://www.enlightenment.org/
+# Maintainer: Wawrzek Niewodniczanski main at wawrzek dot name
+# Packager: Victor Martinez, pitillo at ono dot com
+# Depends on: elementary
+
+name=terminology
+version=0.9.1
+release=1
+source=(http://download.enlightenment.org/rel/apps/$name/$name-$version.tar.gz)
+
+build()
+{
+    cd $name-$version
+    ./configure --prefix=/usr \
+                --mandir=/usr/man \
+		--disable-nls
+    make
+    make DESTDIR=$PKG install
+}

@@ -1,0 +1,7 @@
+Optional dependencies:
+poppler - for PDF files
+libspectre - for PS files
+libraw  - for RAW files
+librsvg - for SVG files
+gstreamer - for multimedia
+libreoffice - for PPT(X)/DOC(X)/XLS(X) using PDF loader

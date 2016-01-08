@@ -1,0 +1,21 @@
+# Description: Enlightenment DR19 window manager.
+# URL: http://www.enlightenment.org/
+# Maintainer: Wawrzek Niewodniczanski, main at wawrzek dot name
+# Packager: Victor Martinez, pitillo at ono dot com
+# Depends on: elementary xorg-xcb-util-keysyms
+
+name=e19
+version=0.19.13
+release=1
+source=(http://download.enlightenment.org/rel/apps/enlightenment/enlightenment-$version.tar.gz)
+
+build()
+{
+    cd enlightenment-$version
+    ./configure --prefix=/usr \
+                --disable-nls \
+                --disable-mount-udisks
+    make
+    make install DESTDIR=$PKG
+    rm -r $PKG/usr/share/enlightenment/{AUTHORS,COPYING,doc/}
+}

@@ -1,0 +1,26 @@
+#!/bin/sh
+#
+# /etc/rc.d/wifi: start/stop services nedded for wifi
+# wpa_supplicant, connmand
+#
+
+
+case $1 in
+start)
+	/etc/rc.d/wpa_supplicant start
+	/etc/rc.d/connmand start
+	;;
+stop)
+	/etc/rc.d/connmand stop
+	/etc/rc.d/wpa_supplicant stop
+	;;
+restart)
+	$0 stop
+	$0 start
+	;;
+*)
+	echo "usage: $0 [start|stop|restart]"
+	;;
+esac
+
+# End of file

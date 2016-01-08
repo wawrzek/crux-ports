@@ -1,0 +1,27 @@
+# Description: efl libraries (for DR19)
+# URL: http://www.enlightenment.org/
+# Maintainer: Wawrzek Niewodniczanski, main at wawrzek dot name
+# Packager: Victor Martinez, pitillo at ono dot com
+# Depends on: luajit dbus libsndfile xorg-libxp xorg-libxscrnsaver gst-plugins-base giflib libtiff gstreamer pulseaudio bullet harfbuzz fribidi 
+
+name=efl
+version=1.16.0
+release=1
+source=(http://download.enlightenment.org/rel/libs/$name/$name-$version.tar.gz)
+
+build()
+{
+    cd $name-$version 
+    export CPPFLAGS=-I/usr/include/lua5.1
+    ./configure --prefix=/usr \
+                --disable-nls \
+		--disable-gstreamer\
+		--enable-gstreamer1\
+		--enable-multisense\
+                --enable-harfbuzz \
+                --with-tests=none \
+    		--with-opengl=full\
+                --disable-doc
+    make
+    make -j1 DESTDIR=$PKG install
+}

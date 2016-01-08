@@ -1,0 +1,19 @@
+# Description: Adwaita Icon Theme
+# URL:         https://git.gnome.org/browse/adwaita-icon-theme/
+# Maintainer: Wawrzek Niewodniczanski, main at wawrzek dot name
+# Packager:  Svyatoslav Mishyn, juef at openmailbox dot org
+
+name=adwaita-icon-theme
+version=3.18.0
+release=1
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version:0:4}/$name-$version.tar.xz)
+
+build() {
+	cd $name-$version
+
+	./configure	--prefix=/usr \
+			--disable-nls
+
+	make
+	make install DESTDIR=$PKG
+}
