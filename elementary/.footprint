@@ -814,30 +814,30 @@ drwxr-xr-x	root/root	usr/lib/edje/modules/elm/v-1.16/
 drwxr-xr-x	root/root	usr/lib/elementary/
 drwxr-xr-x	root/root	usr/lib/elementary/modules/
 drwxr-xr-x	root/root	usr/lib/elementary/modules/access_output/
-drwxr-xr-x	root/root	usr/lib/elementary/modules/access_output/v-1.16.0/
--rwxr-xr-x	root/root	usr/lib/elementary/modules/access_output/v-1.16.0/module.la
--rwxr-xr-x	root/root	usr/lib/elementary/modules/access_output/v-1.16.0/module.so
+drwxr-xr-x	root/root	usr/lib/elementary/modules/access_output/v-1.16.1/
+-rwxr-xr-x	root/root	usr/lib/elementary/modules/access_output/v-1.16.1/module.la
+-rwxr-xr-x	root/root	usr/lib/elementary/modules/access_output/v-1.16.1/module.so
 drwxr-xr-x	root/root	usr/lib/elementary/modules/datetime_input_ctxpopup/
-drwxr-xr-x	root/root	usr/lib/elementary/modules/datetime_input_ctxpopup/v-1.16.0/
--rwxr-xr-x	root/root	usr/lib/elementary/modules/datetime_input_ctxpopup/v-1.16.0/module.la
--rwxr-xr-x	root/root	usr/lib/elementary/modules/datetime_input_ctxpopup/v-1.16.0/module.so
+drwxr-xr-x	root/root	usr/lib/elementary/modules/datetime_input_ctxpopup/v-1.16.1/
+-rwxr-xr-x	root/root	usr/lib/elementary/modules/datetime_input_ctxpopup/v-1.16.1/module.la
+-rwxr-xr-x	root/root	usr/lib/elementary/modules/datetime_input_ctxpopup/v-1.16.1/module.so
 drwxr-xr-x	root/root	usr/lib/elementary/modules/prefs/
-drwxr-xr-x	root/root	usr/lib/elementary/modules/prefs/v-1.16.0/
--rw-r--r--	root/root	usr/lib/elementary/modules/prefs/v-1.16.0/elm_prefs_swallow.edj
--rwxr-xr-x	root/root	usr/lib/elementary/modules/prefs/v-1.16.0/module.la
--rwxr-xr-x	root/root	usr/lib/elementary/modules/prefs/v-1.16.0/module.so
+drwxr-xr-x	root/root	usr/lib/elementary/modules/prefs/v-1.16.1/
+-rw-r--r--	root/root	usr/lib/elementary/modules/prefs/v-1.16.1/elm_prefs_swallow.edj
+-rwxr-xr-x	root/root	usr/lib/elementary/modules/prefs/v-1.16.1/module.la
+-rwxr-xr-x	root/root	usr/lib/elementary/modules/prefs/v-1.16.1/module.so
 drwxr-xr-x	root/root	usr/lib/elementary/modules/test_entry/
-drwxr-xr-x	root/root	usr/lib/elementary/modules/test_entry/v-1.16.0/
--rwxr-xr-x	root/root	usr/lib/elementary/modules/test_entry/v-1.16.0/module.la
--rwxr-xr-x	root/root	usr/lib/elementary/modules/test_entry/v-1.16.0/module.so
+drwxr-xr-x	root/root	usr/lib/elementary/modules/test_entry/v-1.16.1/
+-rwxr-xr-x	root/root	usr/lib/elementary/modules/test_entry/v-1.16.1/module.la
+-rwxr-xr-x	root/root	usr/lib/elementary/modules/test_entry/v-1.16.1/module.so
 drwxr-xr-x	root/root	usr/lib/elementary/modules/test_map/
-drwxr-xr-x	root/root	usr/lib/elementary/modules/test_map/v-1.16.0/
--rwxr-xr-x	root/root	usr/lib/elementary/modules/test_map/v-1.16.0/module.la
--rwxr-xr-x	root/root	usr/lib/elementary/modules/test_map/v-1.16.0/module.so
+drwxr-xr-x	root/root	usr/lib/elementary/modules/test_map/v-1.16.1/
+-rwxr-xr-x	root/root	usr/lib/elementary/modules/test_map/v-1.16.1/module.la
+-rwxr-xr-x	root/root	usr/lib/elementary/modules/test_map/v-1.16.1/module.so
 -rwxr-xr-x	root/root	usr/lib/libelementary.la
-lrwxrwxrwx	root/root	usr/lib/libelementary.so -> libelementary.so.1.16.0
-lrwxrwxrwx	root/root	usr/lib/libelementary.so.1 -> libelementary.so.1.16.0
--rwxr-xr-x	root/root	usr/lib/libelementary.so.1.16.0
+lrwxrwxrwx	root/root	usr/lib/libelementary.so -> libelementary.so.1.16.1
+lrwxrwxrwx	root/root	usr/lib/libelementary.so.1 -> libelementary.so.1.16.1
+-rwxr-xr-x	root/root	usr/lib/libelementary.so.1.16.1
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/elementary-cxx.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/elementary.pc

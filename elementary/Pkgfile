@@ -5,13 +5,13 @@
 # Depends on: evas_generic_loaders
 
 name=elementary
-version=1.16.0
+version=1.16.1
 release=1
 source=(http://download.enlightenment.org/rel/libs/$name/$name-$version.tar.gz)
 
 build()
 {
-    cd $name-$version 
+    cd $name-$version
     ./configure --prefix=/usr \
                 --disable-nls
     make
