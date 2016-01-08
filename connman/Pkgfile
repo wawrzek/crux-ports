@@ -5,7 +5,7 @@
 # Depends on: dbus gnutls wpa_supplicant
 
 name=connman
-version=1.30
+version=1.31
 release=1
 source=(https://www.kernel.org/pub/linux/network/connman/$name-$version.tar.gz
         connmand
