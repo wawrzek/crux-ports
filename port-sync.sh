@@ -3,19 +3,19 @@
 cd $(dirname $0)
 echo $(dirname $0)
 pwd
-f=`find . -mindepth 3`
-d=`find . -mindepth 2 -type d`
-
+f=`find * -mindepth 2`
+d=`find * -mindepth 1 -type d`
+echo $f
 if [ -n "$d" ] || [ -n "$f" ]; then
     echo "invalid files:"
-    echo "$f"
+#    echo "$f"
     echo "dirs:"
-    echo "$d"
+#    echo "$d"
     exit -1
 fi
 
 httpup-repgen .
-portspage --title="Wawrzek Niewodniczanski's E19 (Enligthenment) CRUX Collections" --header="description.html" . > index.html
+portspage --title="Wawrzek Niewodniczanski's E20/E19 (Enligthenment) CRUX Collections" --header="description.html" . > index.html
 
 export RSYNC_RSH=ssh
 rsync -avz --delete --delete-excluded \
