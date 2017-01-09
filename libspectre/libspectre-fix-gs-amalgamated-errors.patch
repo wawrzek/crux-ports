@@ -1,0 +1,11 @@
+diff -Naur a/config.h.in b/config.h.in
+--- a/config.h.in	2010-03-28 07:19:22.000000000 -0400
++++ b/config.h.in	2015-11-19 00:40:53.355646170 -0500
+@@ -93,3 +93,7 @@
+ #  undef WORDS_BIGENDIAN
+ # endif
+ #endif
++
++#define e_ExecStackUnderflow gs_error_ExecStackUnderflow
++#define e_Fatal gs_error_Fatal
++#define e_NeedInput gs_error_NeedInput

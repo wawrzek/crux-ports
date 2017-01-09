@@ -5,7 +5,7 @@
 # Depends on: python, elementary
 
 name=python-efl
-version=1.16.0
+version=1.18.0
 release=1
 source=(http://download.enlightenment.org/rel/bindings/python/$name-$version.tar.gz)
 
@@ -14,6 +14,5 @@ build()
     export DISABLE_CYTHON=1
     cd $name-$version
     python setup.py build
-    python setup.py install
-    python setup.py install --root=${PKG}
+    python setup.py install --prefix=/usr --root=${PKG}
 }

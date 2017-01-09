@@ -1,12 +1,12 @@
-# Description: audio/video player
+# Description: Comprehensive image/photo viewer using EFL
 # URL: http://www.enlightenment.org/
 # Maintainer: Wawrzek Niewodniczanski main at wawrzek dot name
-# Depends on: elementary
+# Depends on: efl
 
-name=rage
-version=0.2.1
+name=ephoto
+version=1.0-beta2
 release=1
-source=(http://download.enlightenment.org/rel/apps/$name/$name-$version.tar.gz)
+source=(http://www.smhouston.us/stuff/$name-$version.tar.gz)
 
 build()
 {

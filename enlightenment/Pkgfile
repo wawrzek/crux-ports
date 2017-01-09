@@ -1,11 +1,11 @@
-# Description: Enlightenment DR19 window manager.
+# Description: Enlightenment DR21 window manager.
 # URL: http://www.enlightenment.org/
 # Maintainer: Wawrzek Niewodniczanski, main at wawrzek dot name
 # Packager: Victor Martinez, pitillo at ono dot com
 # Depends on: elementary xorg-xcb-util-keysyms
 
-name=e19
-version=0.19.13
+name=enlightenment
+version=0.21.5
 release=1
 source=(http://download.enlightenment.org/rel/apps/enlightenment/enlightenment-$version.tar.gz)
 
