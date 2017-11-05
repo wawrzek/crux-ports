@@ -7,7 +7,7 @@
 name=wpa_supplicant
 version=2.6
 release=1
-source=(http://hostap.epitest.fi/releases/$name-$version.tar.gz
+source=(http://https://w1.fi/releases/$name-$version.tar.gz
 	      wpa_supplicant)
 
 build () {
