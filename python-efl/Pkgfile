@@ -2,7 +2,7 @@
 # URL: http://www.enlightenment.org/
 # Maintainer: Wawrzek Niewodniczanski, main at wawrzek dot name
 # Packager: Victor Martinez, pitillo at ono dot com
-# Depends on: python, elementary
+# Depends on: python, efl
 
 name=python-efl
 version=1.18.0

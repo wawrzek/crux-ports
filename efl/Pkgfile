@@ -5,23 +5,24 @@
 # Depends on: luajit dbus libsndfile xorg-libxp xorg-libxscrnsaver gst-plugins-base giflib libtiff gstreamer pulseaudio bullet harfbuzz fribidi libspectre poppler libraw librsvg
 
 name=efl
-version=1.18.4
+version=1.20.5
 release=1
-source=(http://download.enlightenment.org/rel/libs/$name/$name-$version.tar.gz)
+source=(http://download.enlightenment.org/rel/libs/$name/$name-$version.tar.xz)
 
 build()
 {
-    cd $name-$version
-    export CPPFLAGS=-I/usr/include/lua5.1
-    ./configure --prefix=/usr \
-                --disable-nls \
+	cd $name-$version
+	export CPPFLAGS=-I/usr/include/lua5.1
+	./configure --prefix=/usr \
+		--disable-systemd\
+		--disable-nls\
 		--disable-gstreamer\
 		--enable-gstreamer1\
 		--enable-multisense\
-                --enable-harfbuzz \
-                --with-tests=none \
-    		--with-opengl=full\
-                --disable-doc
-    make
-    make -j1 DESTDIR=$PKG install
+		--enable-harfbuzz\
+		--with-tests=none\
+		--with-opengl=full\
+		--disable-doc
+	make
+	make -j1 DESTDIR=$PKG install
 }
