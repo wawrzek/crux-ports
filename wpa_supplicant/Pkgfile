@@ -7,8 +7,7 @@
 name=wpa_supplicant
 version=2.6
 release=4
-source=(http://https://w1.fi/releases/$name-$version.tar.gz
-        wpa_supplicant
+source=(http://hostap.epitest.fi/releases/$name-$version.tar.gz
         rebased-v2.6-0001-hostapd-Avoid-key-reinstallation-in-FT-handshake.patch
         rebased-v2.6-0002-Prevent-reinstallation-of-an-already-in-use-group-ke.patch
         rebased-v2.6-0003-Extend-protection-of-GTK-IGTK-reinstallation-of-WNM-.patch
@@ -17,7 +16,7 @@ source=(http://https://w1.fi/releases/$name-$version.tar.gz
         rebased-v2.6-0006-TDLS-Reject-TPK-TK-reconfiguration.patch
         rebased-v2.6-0007-WNM-Ignore-WNM-Sleep-Mode-Response-without-pending-r.patch
         rebased-v2.6-0008-FT-Do-not-allow-multiple-Reassociation-Response-fram.patch
-        wlan)
+        wpa_supplicant)
 
 build () {
     cd $name-$version/$name

@@ -29,4 +29,4 @@ rsync -avz --delete --delete-excluded \
 			--exclude "*git*" \
 			--exclude ".*~" \
 			--exclude "*~" \
-        . wawrzek.name:crux/wawrzek
+        . wawrzek@wawrzek.name:crux/wawrzek
