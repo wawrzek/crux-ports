@@ -20,6 +20,7 @@ portspage --title="Wawrzek Niewodniczanski's Enligthenment (E22) CRUX Collection
 export RSYNC_RSH=ssh
 rsync -avz --delete --delete-excluded \
       --exclude "*tar.gz"   \
+      --exclude "*tar.xz"  \
       --exclude "*tar.bz2"  \
       --exclude "*.gem"  \
       --exclude "*tgz"  \
