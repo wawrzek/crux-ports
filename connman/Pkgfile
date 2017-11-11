@@ -18,7 +18,7 @@ build()
     make
     make install DESTDIR=$PKG
     # update dbus roles
-    sed -i 'e/user="root"/group="wheel"' $PKG/usr/etc/dbus-1/system.d/connman.conf
+    sed -i 's/user="root"/group="wheel"/' $PKG/usr/etc/dbus-1/system.d/connman.conf
 
     # rc script
     install -D -m 0755 $SRC/connmand $PKG/etc/rc.d/connmand

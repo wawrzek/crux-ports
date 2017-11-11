@@ -21,8 +21,8 @@ f:b5c162782efeef421a1f514153cb34da:bullet/Pkgfile
 f:aaefe7d6627a7d897a39c245cca84810:connman/.md5sum
 f:5bea3983ce3806deade0d7727e8544e2:connman/connmand
 f:a98780891fbae9fe0f30dd23d62c408f:connman/wifi
-f:0a70cc656e079ae8e135316471919088:connman/Pkgfile
 f:d5b57f0f30680fc71d88955263de2fe0:connman/.footprint
+f:57c075bc530c03de613f677bf3826457:connman/Pkgfile
 f:a7d0a5967edb2c19e04f9283a888eeb2:description.html
 f:de70773042dc5c2c0969beef6a6c0b8a:econnman/.footprint
 f:c661353baaaadda50726f42188b6c00d:econnman/.md5sum
@@ -57,8 +57,8 @@ f:7edbc3c5ce96a3e4ec3435d490fbcbf4:rage/.footprint
 f:1be12f332f5518ba1866651121aeca2a:rage/.md5sum
 f:3f3c1eb9a478968e21b040a939c7d5aa:rage/Pkgfile
 f:e846084102b8d31abaf3ffa05e9e6b69:terminology/.footprint
-f:97c05e67f0f9eb564a39b801b1a4d753:terminology/.md5sum
-f:b1b6ef4c462039de6c5aebbef4403107:terminology/Pkgfile
+f:e5109e3208c878272fca3162f1432bcb:terminology/.md5sum
+f:04163dddd7ccee90a84808edd98005e3:terminology/Pkgfile
 f:4f9a46a124d72cbcfee75c29f553fa4b:wpa_supplicant/.footprint
 f:92a4809d0233afb2838467799caaf1f8:wpa_supplicant/.md5sum
 f:c63fef3252b454a441291a1894749c25:wpa_supplicant/README
