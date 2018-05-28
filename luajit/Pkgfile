@@ -6,13 +6,13 @@
 
 name=luajit
 official=LuaJIT
-version=2.0.4
+version=2.0.5
 release=1
 source=(http://luajit.org/download/$official-$version.tar.gz)
 
 build()
 {
-    cd $official-$version 
-    make 
+    cd $official-$version
+    make
     make install PREFIX=$PKG/usr
 }

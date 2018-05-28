@@ -5,13 +5,19 @@
 # Depends on:	jasper
 
 name=libraw
-version=0.18.0
+version=0.18.11
+demosaicversion=0.18.8
 release=1
-source=(http://www.libraw.org/data/LibRaw-$version.tar.gz)
+source=(http://www.libraw.org/data/LibRaw-$version.tar.gz \
+http://www.libraw.org/data/LibRaw-demosaic-pack-GPL2-$demosaicversion.tar.gz \
+http://www.libraw.org/data/LibRaw-demosaic-pack-GPL3-$demosaicversion.tar.gz
+)
 
 build() {
 	cd LibRaw-$version
-	./configure --prefix=/usr
+	./configure \
+		--prefix=/usr \
+		--enable-lcms
 	make
 	make DESTDIR=$PKG install
 }

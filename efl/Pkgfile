@@ -2,10 +2,10 @@
 # URL: http://www.enlightenment.org/
 # Maintainer: Wawrzek Niewodniczanski, main at wawrzek dot name
 # Packager: Victor Martinez, pitillo at ono dot com
-# Depends on: luajit dbus libsndfile xorg-libxp xorg-libxscrnsaver gst-plugins-base giflib libtiff gstreamer pulseaudio bullet harfbuzz fribidi libspectre poppler libraw librsvg
+# Depends on: dbus xorg-libxp xorg-libxscrnsaver gstreamer gst-plugins-base giflib libtiff libsndfile pulseaudio harfbuzz fribidi poppler librsvg bullet libraw libspectre luajit 
 
 name=efl
-version=1.20.5
+version=1.20.7
 release=1
 source=(http://download.enlightenment.org/rel/libs/$name/$name-$version.tar.xz)
 

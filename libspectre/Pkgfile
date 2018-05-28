@@ -4,14 +4,12 @@
 # Depends on:	ghostscript cairo
 
 name=libspectre
-version=0.2.7
-release=2
-source=(http://$name.freedesktop.org/releases/$name-$version.tar.gz
-        libspectre-fix-gs-amalgamated-errors.patch)
+version=0.2.8
+release=1
+source=(http://$name.freedesktop.org/releases/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
-	patch -p1 -i $SRC/libspectre-fix-gs-amalgamated-errors.patch
 	./configure \
 		--prefix=/usr
 	make

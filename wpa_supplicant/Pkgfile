@@ -6,7 +6,7 @@
 
 name=wpa_supplicant
 version=2.6
-release=4
+release=5
 source=(http://hostap.epitest.fi/releases/$name-$version.tar.gz
         rebased-v2.6-0001-hostapd-Avoid-key-reinstallation-in-FT-handshake.patch
         rebased-v2.6-0002-Prevent-reinstallation-of-an-already-in-use-group-ke.patch
@@ -42,10 +42,10 @@ build () {
 
     make BINDIR=/usr/sbin LIBDIR=/usr/lib
 
-    install -d $PKG/{usr/sbin,usr/man/man{8,5},etc}
+    install -d $PKG/{usr/sbin,usr/share/man/man{8,5},etc}
     install -m 0755 wpa_{cli,passphrase,supplicant} $PKG/usr/sbin
-    install -m 0644 doc/docbook/wpa_{background,cli,passphrase,supplicant}.8 $PKG/usr/man/man8
-    install -m 0644 doc/docbook/wpa_supplicant.conf.5 $PKG/usr/man/man5
+    install -m 0644 doc/docbook/wpa_{background,cli,passphrase,supplicant}.8 $PKG/usr/share/man/man8
+    install -m 0644 doc/docbook/wpa_supplicant.conf.5 $PKG/usr/share/man/man5
 
     # config
     echo -e "ctrl_interface=/var/run/wpa_supplicant\n" > $PKG/etc/wpa_supplicant.conf
