@@ -379,7 +379,7 @@ drwxr-xr-x	root/root	usr/lib/enlightenment/modules/msgbus/linux-gnu-x86_64-0.22/
 -rwxr-xr-x	root/root	usr/lib/enlightenment/modules/msgbus/linux-gnu-x86_64-0.22/module.so
 -rw-r--r--	root/root	usr/lib/enlightenment/modules/msgbus/module.desktop
 drwxr-xr-x	root/root	usr/lib/enlightenment/modules/music-control/
--rw-r--r--	root/root	usr/lib/enlightenment/modules/music-control/e-module-music_control.edj
+-rw-r--r--	root/root	usr/lib/enlightenment/modules/music-control/e-module-music-control.edj
 drwxr-xr-x	root/root	usr/lib/enlightenment/modules/music-control/linux-gnu-x86_64-0.22/
 -rwxr-xr-x	root/root	usr/lib/enlightenment/modules/music-control/linux-gnu-x86_64-0.22/module.la
 -rwxr-xr-x	root/root	usr/lib/enlightenment/modules/music-control/linux-gnu-x86_64-0.22/module.so
@@ -547,6 +547,7 @@ drwxr-xr-x	root/root	usr/lib/enlightenment/modules/xkbswitch/linux-gnu-x86_64-0.
 drwxr-xr-x	root/root	usr/lib/enlightenment/utils/
 -rwxr-xr-x	root/root	usr/lib/enlightenment/utils/enlightenment_alert
 -r-sr-xr-x	root/root	usr/lib/enlightenment/utils/enlightenment_backlight
+-r-sr-xr-x	root/root	usr/lib/enlightenment/utils/enlightenment_ckpasswd
 -rwxr-xr-x	root/root	usr/lib/enlightenment/utils/enlightenment_elm_cfgtool
 -rwxr-xr-x	root/root	usr/lib/enlightenment/utils/enlightenment_fm
 -rwxr-xr-x	root/root	usr/lib/enlightenment/utils/enlightenment_fm_op
