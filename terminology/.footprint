@@ -7,6 +7,7 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/tyls
 -rwxr-xr-x	root/root	usr/bin/typop
 -rwxr-xr-x	root/root	usr/bin/tyq
+-rwxr-xr-x	root/root	usr/bin/tysend
 drwxr-xr-x	root/root	usr/man/
 drwxr-xr-x	root/root	usr/man/man1/
 -rw-r--r--	root/root	usr/man/man1/terminology.1.gz
@@ -33,6 +34,8 @@ drwxr-xr-x	root/root	usr/share/terminology/fonts/
 -rw-r--r--	root/root	usr/share/terminology/fonts/8x13.pcf
 -rw-r--r--	root/root	usr/share/terminology/fonts/9x15.pcf
 -rw-r--r--	root/root	usr/share/terminology/fonts/9x18.pcf
+-rw-r--r--	root/root	usr/share/terminology/fonts/TERMINUS.txt
+-rw-r--r--	root/root	usr/share/terminology/fonts/XFONT.txt
 -rw-r--r--	root/root	usr/share/terminology/fonts/nexus.pcf
 -rw-r--r--	root/root	usr/share/terminology/fonts/terminus-12.pcf
 -rw-r--r--	root/root	usr/share/terminology/fonts/terminus-14-bold.pcf
@@ -51,6 +54,7 @@ drwxr-xr-x	root/root	usr/share/terminology/themes/
 -rw-r--r--	root/root	usr/share/terminology/themes/default.edj
 -rw-r--r--	root/root	usr/share/terminology/themes/mild.edj
 -rw-r--r--	root/root	usr/share/terminology/themes/mustang.edj
+-rw-r--r--	root/root	usr/share/terminology/themes/nord.edj
 -rw-r--r--	root/root	usr/share/terminology/themes/nyanology.edj
 -rw-r--r--	root/root	usr/share/terminology/themes/smyck.edj
 -rw-r--r--	root/root	usr/share/terminology/themes/solarized.edj

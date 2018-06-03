@@ -23,10 +23,8 @@ f:5bea3983ce3806deade0d7727e8544e2:connman/connmand
 f:de70773042dc5c2c0969beef6a6c0b8a:econnman/.footprint
 f:453110da2d446a41b093c7c4335abcbd:econnman/.md5sum
 f:6b5cbdb9452cff8d83c30bf0057ceb59:econnman/Pkgfile
-f:9cc318e26fcb11b66d8ac46ffe64af0a:econnman/econnman-1.1.tar.xz
 f:3326b4129a61d549f0ac536ae7712a13:efl/.footprint
 f:be6a212eda29b3144a767e451f89d6c5:efl/.md5sum
-f:3f0294cdfc805b931b94223c37a1015b:efl/efl-1.20.7.tar.xz
 f:d7899d2a37d1b8a3fbe4c31658073540:efl/Pkgfile
 f:ab9ec86ae9405d306ac24c55086e7fc2:epour/.md5sum
 f:d7aadfe79bffd71e1250f558ad832300:epour/Pkgfile
@@ -39,10 +37,9 @@ f:dd55827a2ab36f081be2488bc19bad41:python-efl/Pkgfile
 f:7edbc3c5ce96a3e4ec3435d490fbcbf4:rage/.footprint
 f:1be12f332f5518ba1866651121aeca2a:rage/.md5sum
 f:3f3c1eb9a478968e21b040a939c7d5aa:rage/Pkgfile
-f:e846084102b8d31abaf3ffa05e9e6b69:terminology/.footprint
+f:a849aee9e3e2a99cbba617f2327467ee:terminology/.footprint
 f:6706649e8a6d5646c81af5a730989c4f:terminology/.md5sum
-f:4e2b2ca7320607109ff3aa08ba99fb19:terminology/Pkgfile
-f:fd3970b3f5383ac34f7f7105d92e74ea:terminology/terminology-1.2.1.tar.xz
+f:01ff4ba784e25e13d8e726946cb645b0:terminology/Pkgfile
 f:c63fef3252b454a441291a1894749c25:wpa_supplicant/README
 f:11af0381db4b0f0e4512a3f14203c418:wpa_supplicant/wpa_supplicant
 f:981a36073ac2b4c63db01528fb27e16b:wpa_supplicant/.footprint
@@ -66,10 +63,9 @@ f:78110d0a61b96c58ad4939e41aa43370:.httpup-urlinfo
 f:fcd4b7fc898d312d4c44ecf2691035a7:libspectre/.footprint
 f:980be2cb63550ee0cbf5556ce57ec8fe:libspectre/.md5sum
 f:71d0c11419bb0fde84241dccaf74cdd2:libspectre/Pkgfile
-f:d53b02d542af45307c30423a0ac8e156:enlightenment/.footprint
+f:f332b23d4b155eeacd8ea0e8f554fcd3:enlightenment/.footprint
 f:7862a58c51cf54eb13455fc21b198e02:enlightenment/.md5sum
 f:43806560f33014a29f97b3f2a8c30d39:enlightenment/Pkgfile
-f:b46f7cc76bb7113df704a2b8b464402e:enlightenment/enlightenment-0.22.3.tar.xz
 f:7092ee017b8bfcb603d1d1f16ab199f4:ephoto/.md5sum
 f:37a253356203649ebfe5fd239e642ff8:ephoto/.footprint
 f:5f0d269327efe954bdd3fbfb117d2084:ephoto/Pkgfile
