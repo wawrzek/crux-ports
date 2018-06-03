@@ -15,7 +15,7 @@ if [ -n "$d" ] || [ -n "$f" ]; then
 fi
 
 httpup-repgen .
-portspage --title="Wawrzek Niewodniczanski's Enligthenment (E22) CRUX Collections" --header="description.html" . > index.html
+portspage --title="Wawrzek Niewodniczanski's Enligthenment CRUX Collections" --header="description.html" . > index.html
 
 export RSYNC_RSH=ssh
 rsync -avz --delete --delete-excluded \

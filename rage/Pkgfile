@@ -1,12 +1,12 @@
 # Description: audio/video player
 # URL: http://www.enlightenment.org/
 # Maintainer: Wawrzek Niewodniczanski main at wawrzek dot name
-# Depends on: elementary
+# Depends on: efl
 
 name=rage
-version=0.2.1
+version=0.3.0
 release=1
-source=(http://download.enlightenment.org/rel/apps/$name/$name-$version.tar.gz)
+source=(http://download.enlightenment.org/rel/apps/$name/$name-$version.tar.xz)
 
 build()
 {

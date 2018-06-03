@@ -4,9 +4,9 @@
 # Depends on: efl
 
 name=ephoto
-version=1.0-beta2
+version=1.5
 release=1
-source=(http://www.smhouston.us/stuff/$name-$version.tar.gz)
+source=(http://www.smhouston.us/stuff/$name-$version.tar.xz)
 
 build()
 {
