@@ -1,0 +1,27 @@
+# Description: open source photography workflow application and raw developer
+# URL: http://www.darktable.org
+# Maintainer: Wawrzek Niewodniczanski, main at wawrzek dot name
+# Packager: #teatime (irc.kyber.io), teatime at kyber dot io
+# Depends on: gtk3 gphoto2 dbus-glib json-glib exiv2 openexr libwebp libsoup fop lensfun pugixml
+
+name=darktable
+version=2.4.3
+release=1
+source=(https://github.com/darktable-org/$name/releases/download/release-$version/$name-$version.tar.xz)
+
+build() {
+    cd $name-$version
+
+    mkdir cmake_build && cd cmake_build
+
+    cmake -DCMAKE_INSTALL_PREFIX=/usr \
+          -DCMAKE_BUILD_TYPE=Release \
+          -DMAN_INSTALL_DIR=./man/man1 \
+          -DUSE_NLS=OFF \
+          -DUSE_LUA=ON \
+          ..
+    make
+    make DESTDIR=$PKG install
+
+    rm -rf $PKG/usr/share/doc
+}

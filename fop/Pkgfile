@@ -1,0 +1,37 @@
+# Description: Formatting Objects Processor
+# URL:         https://xmlgraphics.apache.org/fop/
+# Maintainer: Wawrzek Niewodniczanski, main at wawrzek dot name
+# Packager:  John Vogel, jvogel4 at stny dot rr dot com
+# Depends on:  openjdk8 ant
+
+name=fop
+version=2.3
+release=1
+source=(https://apache.osuosl.org/xmlgraphics/$name/source/$name-$version-src.tar.gz)
+
+build() {
+	# for explanation, see https://issues.apache.org/jira/browse/FOP-2493
+	localedef -i en_US -f UTF-8 $SRC/en_US.UTF-8
+
+	cd $name-$version/$name
+
+	# thanks to BLFS for this sed patch
+	sed -i '\@</javad@i\
+<arg value="-Xdoclint:none"/>\
+<arg value="--allow-script-in-comments"/>' build.xml
+
+	LOCPATH=$SRC \
+	LC_ALL=en_US.UTF-8 \
+	JAVA_HOME=/usr/lib/java/openjdk8 \
+	PATH=$JAVA_HOME/bin:$PATH \
+	ant clean compile jar-main
+
+	install -D -m 755 $name $PKG/usr/bin/$name
+	install -D -m 644 conf/$name.xconf $PKG/usr/etc/$name.conf
+
+	find build lib -name '*.jar' |\
+	while read jar
+	do
+		install -D -m 644 $jar $PKG/usr/share/java/$name/${jar##*/}
+	done
+}
