@@ -1,9 +1,10 @@
 \.svn$
 \.git
-\.tar\.gz$
 \.tgz$
-\.partial$
+\.tar\.gz$
+\.tar\.xz$
 \.tar\.bz2$
+\.partial$
 \.zip$
 (^|/)CVS(/|$)
 .*~$

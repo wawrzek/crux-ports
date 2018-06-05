@@ -31,14 +31,12 @@ f:d7aadfe79bffd71e1250f558ad832300:epour/Pkgfile
 f:54a19c2571205661bdee2fa552ce2fbe:luajit/.footprint
 f:5d611b547965213ea71dd5600d19ba75:luajit/.md5sum
 f:b2d851672cf23395b989e7ab7998f118:luajit/Pkgfile
-f:f090f8277666ae2e8c03f2f2b3f53248:python-efl/.footprint
+f:c945bbbc19ab269e4295415cfe1bc0bc:python-efl/.footprint
 f:fb230f3c87b891c7ac2f953316fb605b:python-efl/.md5sum
-f:32564b72597aad8683a0d8d8f06749cc:python-efl/python-efl-1.20.0.tar.xz
 f:5243cfcd4e0a6e7e54b017e555202e8f:python-efl/Pkgfile
-f:7edbc3c5ce96a3e4ec3435d490fbcbf4:rage/.footprint
+f:086cfd51a39304104df8298f19c3b853:rage/.footprint
 f:eee09f659f92456457170490ce89627b:rage/.md5sum
-f:e7d23bb0261f0e7b0d6beda3e13701e0:rage/Pkgfile
-f:76c54cce2df8e8d96291a5cf28c817f8:rage/rage-0.3.0.tar.xz
+f:d782c79dc074156aab24abd788518dfe:rage/Pkgfile
 f:a849aee9e3e2a99cbba617f2327467ee:terminology/.footprint
 f:6706649e8a6d5646c81af5a730989c4f:terminology/.md5sum
 f:01ff4ba784e25e13d8e726946cb645b0:terminology/Pkgfile
@@ -69,6 +67,5 @@ f:f332b23d4b155eeacd8ea0e8f554fcd3:enlightenment/.footprint
 f:7862a58c51cf54eb13455fc21b198e02:enlightenment/.md5sum
 f:60a010cced18e23f8fd83783e72ddd3a:enlightenment/Pkgfile
 f:3371217c443e2e17e69b6f19872ea286:ephoto/.md5sum
-f:37a253356203649ebfe5fd239e642ff8:ephoto/.footprint
+f:28f0d4462a985b3c78ac0dbea9d8b5ba:ephoto/.footprint
 f:97d6ff80239d15678458378e5a5b33bf:ephoto/Pkgfile
-f:f5db6c04da11dd823fedc5a9a02bf26b:ephoto/ephoto-1.5.tar.xz
