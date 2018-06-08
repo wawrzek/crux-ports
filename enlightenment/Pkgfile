@@ -2,7 +2,7 @@
 # URL: http://www.enlightenment.org/
 # Maintainer: Wawrzek Niewodniczanski, main at wawrzek dot name
 # Packager: Victor Martinez, pitillo at ono dot com
-# Depends on: elementary xorg-xcb-util-keysyms
+# Depends on: efl xorg-xcb-util-keysyms
 
 name=enlightenment
 version=0.22.3
