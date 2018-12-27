@@ -8,8 +8,8 @@ name=connman
 version=1.36
 release=1
 source=(https://www.kernel.org/pub/linux/network/connman/$name-$version.tar.gz
-        connmand
-				wifi)
+    connmand
+    wifi)
 
 build()
 {
@@ -18,8 +18,9 @@ build()
     make
     make install DESTDIR=$PKG
     # update dbus roles
-    sed -i 's/user="root"/group="wheel"/' $PKG/usr/etc/dbus-1/system.d/connman.conf
+    sed -i 's/user="root"/group="wheel"/' $PKG/usr/share/dbus-1/system.d/connman.conf
 
+    mkdir -p $PKG/usr/var/run/$name
     # rc script
     install -D -m 0755 $SRC/connmand $PKG/etc/rc.d/connmand
     install -D -m 0755 $SRC/wifi $PKG/etc/rc.d/wifi
