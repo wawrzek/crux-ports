@@ -1,4 +1,4 @@
-untrusted comment: verify with ../../wawrzek.pub
+untrusted comment: verify with /etc/ports/wawrzek.pub
 RWQXc2agtIcYBcQmRpfOmkVGGmZfYUUG94AWCEkbaB5dw00n+hrDHs2PRInS42Z4RpAh13sQ3rbIbWdxf8p00OMumRv1D6Ao3gY=
 SHA256 (Pkgfile) = 7e914a8489d3f26e169a51d471abb67ec2147e4910933484de5ca703c4e1b4ee
 SHA256 (.footprint) = 5716675cbeaba79014b5a26622c55896105f096fb09778bea8a395ef579b6936
