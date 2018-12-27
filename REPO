@@ -20,11 +20,11 @@ f:882b77e429a639e7e0214a7318248479:bullet/.md5sum
 f:85ec55dd8b5e2278e34fb0d887beb056:bullet/Pkgfile
 f:9b4d354f9c087688283d33307864f054:bullet/.signature
 f:a98780891fbae9fe0f30dd23d62c408f:connman/wifi
-f:d5b57f0f30680fc71d88955263de2fe0:connman/.footprint
-f:aaefe7d6627a7d897a39c245cca84810:connman/.md5sum
+f:3ad1894a99b4c4fb346c8917ac07fe3f:connman/.footprint
+f:c79f2f4d0624fb30330610b259726f3f:connman/.md5sum
 f:5bea3983ce3806deade0d7727e8544e2:connman/connmand
-f:be88af172633f9940bc8d9c1571d28a0:connman/.signature
-f:d4359cfb9746c75c209985539568e148:connman/Pkgfile
+f:cdc1568d24dba15fb6520ed0c33f4b34:connman/.signature
+f:dc27a655aba655938aa054d54638a48b:connman/Pkgfile
 f:de70773042dc5c2c0969beef6a6c0b8a:econnman/.footprint
 f:453110da2d446a41b093c7c4335abcbd:econnman/.md5sum
 f:6b5cbdb9452cff8d83c30bf0057ceb59:econnman/Pkgfile
