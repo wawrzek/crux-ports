@@ -5,7 +5,7 @@
 # Depends on: dbus xorg-libxp xorg-libxscrnsaver gstreamer gst-plugins-base giflib libtiff libsndfile pulseaudio harfbuzz fribidi poppler librsvg bullet libraw libspectre luajit
 
 name=efl
-version=1.20.7
+version=1.21.0
 release=1
 source=(http://download.enlightenment.org/rel/libs/$name/$name-$version.tar.xz)
 
@@ -16,8 +16,6 @@ build()
 	./configure --prefix=/usr \
 		--disable-systemd\
 		--disable-nls\
-		--disable-gstreamer\
-		--enable-gstreamer1\
 		--enable-multisense\
 		--enable-harfbuzz\
 		--with-tests=none\
