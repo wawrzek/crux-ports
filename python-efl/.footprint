@@ -132,8 +132,6 @@ drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/efl/elementary/
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/efl/elementary/slideshow.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/efl/elementary/spinner.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/efl/elementary/spinner.pyc
--rw-r--r--	root/root	usr/lib/python2.7/site-packages/efl/elementary/systray.py
--rw-r--r--	root/root	usr/lib/python2.7/site-packages/efl/elementary/systray.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/efl/elementary/table.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/efl/elementary/table.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/efl/elementary/theme.py
@@ -163,4 +161,4 @@ drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/efl/utils/
 -rwxr-xr-x	root/root	usr/lib/python2.7/site-packages/efl/utils/logger.so
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/efl/utils/setup.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/efl/utils/setup.pyc
--rw-r--r--	root/root	usr/lib/python2.7/site-packages/python_efl-1.20.0-py2.7.egg-info
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/python_efl-1.21.0-py2.7.egg-info
