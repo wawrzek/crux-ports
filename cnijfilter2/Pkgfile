@@ -1,0 +1,43 @@
+# Description: Drivers for Canon printers
+# URL: https://www.canon-europe.com/support/consumer_products/operating_system_information/#linux
+# Maintainer: Wawrzek Niewodniczanski <main at wawrzek dot name>
+# Depends on: cups
+
+name=cnijfilter2
+version=5.70-1
+release=1
+source=( http://wawrzek.name/crux/sources/$name-source-$version.tar.gz)
+dirs="cmdtocanonij2 cmdtocanonij3 cnijbe2 lgmon3 rastertocanonij tocanonij tocnpwg"
+build() {
+	cd $name-source-$version
+	export LDFLAGS="-L../../com/libs_bin64"
+	for dir in $dirs
+	do
+		cd $dir
+		./autogen.sh --prefix=/usr
+		make
+		make DESTDIR=$PKG install
+		cd ../
+	done
+	rm -rf $PKG/usr/share/locale
+	cd com/libs_bin64/
+	rm lib*.so
+	install -c lib*.so* $PKG/usr/lib
+	declare -a libs
+	libs=$(ls -1 lib*.so.*)
+	for baselib in $libs
+	do
+    shortlib=$baselib
+    while extn=$(echo $shortlib | sed -n '/\.[0-9][0-9]*$/s/.*\(\.[0-9][0-9]*\)$/\1/p')
+    [ -n "$extn" ]
+    do
+        shortlib=$(basename $shortlib $extn)
+        ln -s $baselib $PKG/usr/lib/$shortlib
+		done
+	done
+	cd -
+	mkdir -p $PKG/usr/lib/bjlib2
+	install -c -m 644 com/ini/cnnet.ini $PKG/usr/lib/bjlib2
+	mkdir -p $PKG/usr/share/ppd/$name
+	install -c -m 644 ppd/*.ppd $PKG/usr/share/ppd/$name
+}

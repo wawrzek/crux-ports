@@ -14,6 +14,7 @@ d:ephoto
 d:lensfun
 d:darktable
 d:fop
+d:cnijfilter2
 f:992926518c1005f85d8daddc7fb8110a:bullet/.footprint
 f:85ec55dd8b5e2278e34fb0d887beb056:bullet/Pkgfile
 f:9b4d354f9c087688283d33307864f054:bullet/.signature
@@ -74,3 +75,7 @@ f:b0c787fac90f802aa81033608e6246df:fop/.footprint
 f:a7342a44a63002fdd148fcc2e34d9b68:fop/Pkgfile
 f:ba7ee0a12e6e69e142653584d156832e:fop/.signature
 f:c59fcf51a3d23eac115bd717ed1cbacd:wawrzek.pub
+f:efb5d03122266abce52a6d211835dde3:cnijfilter2/.md5sum
+f:a06b5adebf067b70494fdd7600202d28:cnijfilter2/.footprint
+f:bf45c71b414edf27dc55a5604dc49d14:cnijfilter2/Pkgfile
+f:f4eff24eb1e2c98c4c71c8f1bfd28e98:cnijfilter2/.signature
