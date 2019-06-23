@@ -1,111 +1,111 @@
-drwxr-xr-x	niewod/users	usr/
-drwxr-xr-x	niewod/users	usr/bin/
--rwxr-xr-x	niewod/users	usr/bin/cnijlgmon3
--rwxr-xr-x	niewod/users	usr/bin/tocanonij
--rwxr-xr-x	niewod/users	usr/bin/tocnpwg
-drwxr-xr-x	niewod/users	usr/lib/
-drwxr-xr-x	niewod/users	usr/lib/bjlib2/
--rw-r--r--	niewod/users	usr/lib/bjlib2/cnnet.ini
-drwxr-xr-x	niewod/users	usr/lib/cups/
-drwxr-xr-x	niewod/users	usr/lib/cups/backend/
--rwxr-xr-x	niewod/users	usr/lib/cups/backend/cnijbe2
-drwxr-xr-x	niewod/users	usr/lib/cups/filter/
--rwxr-xr-x	niewod/users	usr/lib/cups/filter/cmdtocanonij2
--rwxr-xr-x	niewod/users	usr/lib/cups/filter/cmdtocanonij3
--rwxr-xr-x	niewod/users	usr/lib/cups/filter/rastertocanonij
-lrwxrwxrwx	niewod/users	usr/lib/libcnbpcnclapicom2.so -> libcnbpcnclapicom2.so.5.0.0
-lrwxrwxrwx	niewod/users	usr/lib/libcnbpcnclapicom2.so.5 -> libcnbpcnclapicom2.so.5.0.0
-lrwxrwxrwx	niewod/users	usr/lib/libcnbpcnclapicom2.so.5.0 -> libcnbpcnclapicom2.so.5.0.0
--rwxr-xr-x	niewod/users	usr/lib/libcnbpcnclapicom2.so.5.0.0
-lrwxrwxrwx	niewod/users	usr/lib/libcnbpnet20.so -> libcnbpnet20.so.1.0.0
-lrwxrwxrwx	niewod/users	usr/lib/libcnbpnet20.so.1 -> libcnbpnet20.so.1.0.0
-lrwxrwxrwx	niewod/users	usr/lib/libcnbpnet20.so.1.0 -> libcnbpnet20.so.1.0.0
--rwxr-xr-x	niewod/users	usr/lib/libcnbpnet20.so.1.0.0
-lrwxrwxrwx	niewod/users	usr/lib/libcnbpnet30.so -> libcnbpnet30.so.1.0.0
-lrwxrwxrwx	niewod/users	usr/lib/libcnbpnet30.so.1 -> libcnbpnet30.so.1.0.0
-lrwxrwxrwx	niewod/users	usr/lib/libcnbpnet30.so.1.0 -> libcnbpnet30.so.1.0.0
--rwxr-xr-x	niewod/users	usr/lib/libcnbpnet30.so.1.0.0
-lrwxrwxrwx	niewod/users	usr/lib/libcnnet2.so -> libcnnet2.so.1.2.4
-lrwxrwxrwx	niewod/users	usr/lib/libcnnet2.so.1 -> libcnnet2.so.1.2.4
-lrwxrwxrwx	niewod/users	usr/lib/libcnnet2.so.1.2 -> libcnnet2.so.1.2.4
--rwxr-xr-x	niewod/users	usr/lib/libcnnet2.so.1.2.4
-drwxr-xr-x	niewod/users	usr/share/
-drwxr-xr-x	niewod/users	usr/share/cmdtocanonij2/
--rw-r--r--	niewod/users	usr/share/cmdtocanonij2/autoalign.utl
--rw-r--r--	niewod/users	usr/share/cmdtocanonij2/cleaning.utl
--rw-r--r--	niewod/users	usr/share/cmdtocanonij2/nozzlecheck.utl
-drwxr-xr-x	niewod/users	usr/share/cmdtocanonij3/
--rw-r--r--	niewod/users	usr/share/cmdtocanonij3/autoalign.utl
--rw-r--r--	niewod/users	usr/share/cmdtocanonij3/cleaning.utl
--rw-r--r--	niewod/users	usr/share/cmdtocanonij3/nozzlecheck.utl
-drwxr-xr-x	niewod/users	usr/share/cnijlgmon3/
--rw-r--r--	niewod/users	usr/share/cnijlgmon3/cnb_cnijlgmon2.res
-drwxr-xr-x	niewod/users	usr/share/ppd/
-drwxr-xr-x	niewod/users	usr/share/ppd/cnijfilter2/
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canone200.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canone300.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canone3100.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canone4200.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canone460.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canone470.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canone480.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canong3000.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canong3010.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canong4000.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canong4010.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canonib4000.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canonib4100.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canonip110.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canonmb2000.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canonmb2100.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canonmb2300.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canonmb2700.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canonmb5000.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canonmb5100.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canonmb5300.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canonmb5400.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canonmg2900.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canonmg3000.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canonmg3600.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canonmg5600.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canonmg5700.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canonmg6600.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canonmg6800.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canonmg6900.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canonmg7500.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canonmg7700.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canonmx490.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canontr4500.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canontr7500.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canontr7530.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canontr8500.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canontr8530.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canontr8580.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canontr9530.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canonts200.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canonts300.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canonts3100.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canonts5000.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canonts5100.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canonts6000.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canonts6100.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canonts6130.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canonts6180.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canonts6200.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canonts6230.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canonts6280.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canonts8000.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canonts8100.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canonts8130.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canonts8180.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canonts8200.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canonts8230.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canonts8280.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canonts9000.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canonts9100.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canonts9180.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canonts9500.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canonts9580.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canonxk50.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canonxk70.ppd
--rw-r--r--	niewod/users	usr/share/ppd/cnijfilter2/canonxk80.ppd
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/cnijlgmon3
+-rwxr-xr-x	root/root	usr/bin/tocanonij
+-rwxr-xr-x	root/root	usr/bin/tocnpwg
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/bjlib2/
+-rw-r--r--	root/root	usr/lib/bjlib2/cnnet.ini
+drwxr-xr-x	root/root	usr/lib/cups/
+drwxr-xr-x	root/root	usr/lib/cups/backend/
+-rwxr-xr-x	root/root	usr/lib/cups/backend/cnijbe2
+drwxr-xr-x	root/root	usr/lib/cups/filter/
+-rwxr-xr-x	root/root	usr/lib/cups/filter/cmdtocanonij2
+-rwxr-xr-x	root/root	usr/lib/cups/filter/cmdtocanonij3
+-rwxr-xr-x	root/root	usr/lib/cups/filter/rastertocanonij
+lrwxrwxrwx	root/root	usr/lib/libcnbpcnclapicom2.so -> libcnbpcnclapicom2.so.5.0.0
+lrwxrwxrwx	root/root	usr/lib/libcnbpcnclapicom2.so.5 -> libcnbpcnclapicom2.so.5.0.0
+lrwxrwxrwx	root/root	usr/lib/libcnbpcnclapicom2.so.5.0 -> libcnbpcnclapicom2.so.5.0.0
+-rwxr-xr-x	root/root	usr/lib/libcnbpcnclapicom2.so.5.0.0
+lrwxrwxrwx	root/root	usr/lib/libcnbpnet20.so -> libcnbpnet20.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/libcnbpnet20.so.1 -> libcnbpnet20.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/libcnbpnet20.so.1.0 -> libcnbpnet20.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/libcnbpnet20.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/libcnbpnet30.so -> libcnbpnet30.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/libcnbpnet30.so.1 -> libcnbpnet30.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/libcnbpnet30.so.1.0 -> libcnbpnet30.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/libcnbpnet30.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/libcnnet2.so -> libcnnet2.so.1.2.4
+lrwxrwxrwx	root/root	usr/lib/libcnnet2.so.1 -> libcnnet2.so.1.2.4
+lrwxrwxrwx	root/root	usr/lib/libcnnet2.so.1.2 -> libcnnet2.so.1.2.4
+-rwxr-xr-x	root/root	usr/lib/libcnnet2.so.1.2.4
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/cmdtocanonij2/
+-rw-r--r--	root/root	usr/share/cmdtocanonij2/autoalign.utl
+-rw-r--r--	root/root	usr/share/cmdtocanonij2/cleaning.utl
+-rw-r--r--	root/root	usr/share/cmdtocanonij2/nozzlecheck.utl
+drwxr-xr-x	root/root	usr/share/cmdtocanonij3/
+-rw-r--r--	root/root	usr/share/cmdtocanonij3/autoalign.utl
+-rw-r--r--	root/root	usr/share/cmdtocanonij3/cleaning.utl
+-rw-r--r--	root/root	usr/share/cmdtocanonij3/nozzlecheck.utl
+drwxr-xr-x	root/root	usr/share/cnijlgmon3/
+-rw-r--r--	root/root	usr/share/cnijlgmon3/cnb_cnijlgmon2.res
+drwxr-xr-x	root/root	usr/share/ppd/
+drwxr-xr-x	root/root	usr/share/ppd/cnijfilter2/
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canone200.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canone300.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canone3100.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canone4200.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canone460.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canone470.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canone480.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canong3000.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canong3010.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canong4000.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canong4010.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canonib4000.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canonib4100.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canonip110.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canonmb2000.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canonmb2100.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canonmb2300.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canonmb2700.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canonmb5000.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canonmb5100.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canonmb5300.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canonmb5400.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canonmg2900.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canonmg3000.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canonmg3600.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canonmg5600.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canonmg5700.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canonmg6600.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canonmg6800.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canonmg6900.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canonmg7500.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canonmg7700.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canonmx490.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canontr4500.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canontr7500.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canontr7530.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canontr8500.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canontr8530.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canontr8580.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canontr9530.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canonts200.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canonts300.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canonts3100.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canonts5000.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canonts5100.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canonts6000.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canonts6100.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canonts6130.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canonts6180.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canonts6200.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canonts6230.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canonts6280.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canonts8000.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canonts8100.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canonts8130.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canonts8180.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canonts8200.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canonts8230.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canonts8280.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canonts9000.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canonts9100.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canonts9180.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canonts9500.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canonts9580.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canonxk50.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canonxk70.ppd
+-rw-r--r--	root/root	usr/share/ppd/cnijfilter2/canonxk80.ppd
