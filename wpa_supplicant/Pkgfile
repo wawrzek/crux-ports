@@ -5,8 +5,8 @@
 # Depends on:  openssl ncurses readline libnl dbus
 
 name=wpa_supplicant
-version=2.7
-release=2
+version=2.8
+release=4
 source=(http://hostap.epitest.fi/releases/$name-$version.tar.gz
     $name)
 
@@ -38,7 +38,7 @@ build () {
     install -D -m 0755 $SRC/wpa_supplicant $PKG/etc/rc.d/wpa_supplicant
 
     # dbus
-    install -d $PKG/usr/{share/dbus-1/system-services,etc/dbus-1/system.d}
+    install -d $PKG/{usr/share/dbus-1/system-services,etc/dbus-1/system.d}
     install -m 0644 dbus/fi.w1.wpa_supplicant1.service $PKG/usr/share/dbus-1/system-services/
-    install -m 0644 dbus/dbus-wpa_supplicant.conf $PKG/usr/etc/dbus-1/system.d/wpa_supplicant.conf
+    install -m 0644 dbus/dbus-wpa_supplicant.conf $PKG/etc/dbus-1/system.d/wpa_supplicant.conf
 }

@@ -1,7 +1,7 @@
 untrusted comment: verify with /etc/ports/wawrzek.pub
-RWQXc2agtIcYBVZhjHwWqhVtcUit1SWC2rOpNWXMCqktITjxM41cqmY1Nmzkcqpv/amW4cgDk7vromQtBMYdLs8U0kecg5GV4Q0=
-SHA256 (Pkgfile) = 3524f357fe40de49affed3cf6a216aadcf12b2993cb613a11338ef2975b76a37
-SHA256 (.footprint) = 01b52dee0b1c0d061c335bf39e941e772851fcd2b547b87369aea191cf5bea0e
+RWQXc2agtIcYBTZaVBkF1PNktnGUAxNGZzHz7jYivnZutd/Tff+yOn+U9+0pSBg9kTGzkXF+w9bEiARkwP9L31ls5hrIZoWSOg8=
+SHA256 (Pkgfile) = 84c891f194891e3228da28774aed900d930baf44f97748cf247b598e23d46dcf
+SHA256 (.footprint) = 2ee6046a75dfb807cd7d49b607c70132d42222da568952953357a4ae4c131a42
 SHA256 (connman-1.36.tar.gz) = fb5dd3b05f4927ecfa19983442a751095e86b0a92a3ec89e480e603a777acc0a
 SHA256 (connmand) = 473712b1d50df582fc2c6682f45411c2bd7757b4fa43f7b3a9d0a0efe142b203
 SHA256 (wifi) = 343f1a9536084a0e7125898fec6c92aa8fbd5e887b7e285bf77c1b2437dd2a0c
