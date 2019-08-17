@@ -1,5 +1,5 @@
-untrusted comment: verify with ../../wawrzek.pub
-RWQXc2agtIcYBZPRjz+ZBY9ZOd6f0n9CdYwsD8l5Kt2NG4gd0keteoOPAQm8DhSnnpUTgBH01+aiB8fMYv789BafKOXWR3baagc=
-SHA256 (Pkgfile) = e895ff2ca5fd830d4b53ec0196a8b55130c7fcd4a41bf0e3c3d0f8348d3aaef7
+untrusted comment: verify with /etc/ports/wawrzek.pub
+RWQXc2agtIcYBb1JVzjW9faszNAaQZswaXhhKs0Qw5vdWyQHX2MWCCFQx9IUYGya6kUmhqSyffYLaFP79iYXWRvHeSaSQ8aDGgU=
+SHA256 (Pkgfile) = b235de0e2ff186639a18f3ccdfe6f843f34e2a111d54c738e00c12c643fe56fd
 SHA256 (.footprint) = 3a63b1a439ac08a0ec2b5e5965181a0bac8064780c3e18ea5d4c02f93b06e9d8
-SHA256 (ephoto-1.5.tar.xz) = ffd5e42a309bb3bbb70010938a7065ed553901937784078cd1c66ba707897412
+SHA256 (ephoto-1.5.tar.xz) = fed33ae0ff594596d3925687d988e8ea7b629852f81ed611d059a62b974afbe0

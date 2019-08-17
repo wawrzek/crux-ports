@@ -6,7 +6,7 @@
 name=ephoto
 version=1.5
 release=1
-source=(http://www.smhouston.us/stuff/$name-$version.tar.xz)
+source=(https://download.enlightenment.org/rel/apps/$name/$name-$version.tar.xz)
 
 build()
 {
