@@ -2507,149 +2507,149 @@ lrwxrwxrwx	root/root	usr/lib/evas/utils/evas_image_loader.xcf.gz -> evas_image_l
 lrwxrwxrwx	root/root	usr/lib/evas/utils/evas_image_loader.xls -> evas_image_loader.pdf
 lrwxrwxrwx	root/root	usr/lib/evas/utils/evas_image_loader.xlsx -> evas_image_loader.pdf
 -rw-r--r--	root/root	usr/lib/libecore.la
-lrwxrwxrwx	root/root	usr/lib/libecore.so -> libecore.so.1.22.2
-lrwxrwxrwx	root/root	usr/lib/libecore.so.1 -> libecore.so.1.22.2
--rwxr-xr-x	root/root	usr/lib/libecore.so.1.22.2
+lrwxrwxrwx	root/root	usr/lib/libecore.so -> libecore.so.1.22.3
+lrwxrwxrwx	root/root	usr/lib/libecore.so.1 -> libecore.so.1.22.3
+-rwxr-xr-x	root/root	usr/lib/libecore.so.1.22.3
 -rw-r--r--	root/root	usr/lib/libecore_audio.la
-lrwxrwxrwx	root/root	usr/lib/libecore_audio.so -> libecore_audio.so.1.22.2
-lrwxrwxrwx	root/root	usr/lib/libecore_audio.so.1 -> libecore_audio.so.1.22.2
--rwxr-xr-x	root/root	usr/lib/libecore_audio.so.1.22.2
+lrwxrwxrwx	root/root	usr/lib/libecore_audio.so -> libecore_audio.so.1.22.3
+lrwxrwxrwx	root/root	usr/lib/libecore_audio.so.1 -> libecore_audio.so.1.22.3
+-rwxr-xr-x	root/root	usr/lib/libecore_audio.so.1.22.3
 -rw-r--r--	root/root	usr/lib/libecore_avahi.la
-lrwxrwxrwx	root/root	usr/lib/libecore_avahi.so -> libecore_avahi.so.1.22.2
-lrwxrwxrwx	root/root	usr/lib/libecore_avahi.so.1 -> libecore_avahi.so.1.22.2
--rwxr-xr-x	root/root	usr/lib/libecore_avahi.so.1.22.2
+lrwxrwxrwx	root/root	usr/lib/libecore_avahi.so -> libecore_avahi.so.1.22.3
+lrwxrwxrwx	root/root	usr/lib/libecore_avahi.so.1 -> libecore_avahi.so.1.22.3
+-rwxr-xr-x	root/root	usr/lib/libecore_avahi.so.1.22.3
 -rw-r--r--	root/root	usr/lib/libecore_con.la
-lrwxrwxrwx	root/root	usr/lib/libecore_con.so -> libecore_con.so.1.22.2
-lrwxrwxrwx	root/root	usr/lib/libecore_con.so.1 -> libecore_con.so.1.22.2
--rwxr-xr-x	root/root	usr/lib/libecore_con.so.1.22.2
+lrwxrwxrwx	root/root	usr/lib/libecore_con.so -> libecore_con.so.1.22.3
+lrwxrwxrwx	root/root	usr/lib/libecore_con.so.1 -> libecore_con.so.1.22.3
+-rwxr-xr-x	root/root	usr/lib/libecore_con.so.1.22.3
 -rw-r--r--	root/root	usr/lib/libecore_evas.la
-lrwxrwxrwx	root/root	usr/lib/libecore_evas.so -> libecore_evas.so.1.22.2
-lrwxrwxrwx	root/root	usr/lib/libecore_evas.so.1 -> libecore_evas.so.1.22.2
--rwxr-xr-x	root/root	usr/lib/libecore_evas.so.1.22.2
+lrwxrwxrwx	root/root	usr/lib/libecore_evas.so -> libecore_evas.so.1.22.3
+lrwxrwxrwx	root/root	usr/lib/libecore_evas.so.1 -> libecore_evas.so.1.22.3
+-rwxr-xr-x	root/root	usr/lib/libecore_evas.so.1.22.3
 -rw-r--r--	root/root	usr/lib/libecore_file.la
-lrwxrwxrwx	root/root	usr/lib/libecore_file.so -> libecore_file.so.1.22.2
-lrwxrwxrwx	root/root	usr/lib/libecore_file.so.1 -> libecore_file.so.1.22.2
--rwxr-xr-x	root/root	usr/lib/libecore_file.so.1.22.2
+lrwxrwxrwx	root/root	usr/lib/libecore_file.so -> libecore_file.so.1.22.3
+lrwxrwxrwx	root/root	usr/lib/libecore_file.so.1 -> libecore_file.so.1.22.3
+-rwxr-xr-x	root/root	usr/lib/libecore_file.so.1.22.3
 -rw-r--r--	root/root	usr/lib/libecore_imf.la
-lrwxrwxrwx	root/root	usr/lib/libecore_imf.so -> libecore_imf.so.1.22.2
-lrwxrwxrwx	root/root	usr/lib/libecore_imf.so.1 -> libecore_imf.so.1.22.2
--rwxr-xr-x	root/root	usr/lib/libecore_imf.so.1.22.2
+lrwxrwxrwx	root/root	usr/lib/libecore_imf.so -> libecore_imf.so.1.22.3
+lrwxrwxrwx	root/root	usr/lib/libecore_imf.so.1 -> libecore_imf.so.1.22.3
+-rwxr-xr-x	root/root	usr/lib/libecore_imf.so.1.22.3
 -rw-r--r--	root/root	usr/lib/libecore_imf_evas.la
-lrwxrwxrwx	root/root	usr/lib/libecore_imf_evas.so -> libecore_imf_evas.so.1.22.2
-lrwxrwxrwx	root/root	usr/lib/libecore_imf_evas.so.1 -> libecore_imf_evas.so.1.22.2
--rwxr-xr-x	root/root	usr/lib/libecore_imf_evas.so.1.22.2
+lrwxrwxrwx	root/root	usr/lib/libecore_imf_evas.so -> libecore_imf_evas.so.1.22.3
+lrwxrwxrwx	root/root	usr/lib/libecore_imf_evas.so.1 -> libecore_imf_evas.so.1.22.3
+-rwxr-xr-x	root/root	usr/lib/libecore_imf_evas.so.1.22.3
 -rw-r--r--	root/root	usr/lib/libecore_input.la
-lrwxrwxrwx	root/root	usr/lib/libecore_input.so -> libecore_input.so.1.22.2
-lrwxrwxrwx	root/root	usr/lib/libecore_input.so.1 -> libecore_input.so.1.22.2
--rwxr-xr-x	root/root	usr/lib/libecore_input.so.1.22.2
+lrwxrwxrwx	root/root	usr/lib/libecore_input.so -> libecore_input.so.1.22.3
+lrwxrwxrwx	root/root	usr/lib/libecore_input.so.1 -> libecore_input.so.1.22.3
+-rwxr-xr-x	root/root	usr/lib/libecore_input.so.1.22.3
 -rw-r--r--	root/root	usr/lib/libecore_input_evas.la
-lrwxrwxrwx	root/root	usr/lib/libecore_input_evas.so -> libecore_input_evas.so.1.22.2
-lrwxrwxrwx	root/root	usr/lib/libecore_input_evas.so.1 -> libecore_input_evas.so.1.22.2
--rwxr-xr-x	root/root	usr/lib/libecore_input_evas.so.1.22.2
+lrwxrwxrwx	root/root	usr/lib/libecore_input_evas.so -> libecore_input_evas.so.1.22.3
+lrwxrwxrwx	root/root	usr/lib/libecore_input_evas.so.1 -> libecore_input_evas.so.1.22.3
+-rwxr-xr-x	root/root	usr/lib/libecore_input_evas.so.1.22.3
 -rw-r--r--	root/root	usr/lib/libecore_ipc.la
-lrwxrwxrwx	root/root	usr/lib/libecore_ipc.so -> libecore_ipc.so.1.22.2
-lrwxrwxrwx	root/root	usr/lib/libecore_ipc.so.1 -> libecore_ipc.so.1.22.2
--rwxr-xr-x	root/root	usr/lib/libecore_ipc.so.1.22.2
+lrwxrwxrwx	root/root	usr/lib/libecore_ipc.so -> libecore_ipc.so.1.22.3
+lrwxrwxrwx	root/root	usr/lib/libecore_ipc.so.1 -> libecore_ipc.so.1.22.3
+-rwxr-xr-x	root/root	usr/lib/libecore_ipc.so.1.22.3
 -rw-r--r--	root/root	usr/lib/libecore_x.la
-lrwxrwxrwx	root/root	usr/lib/libecore_x.so -> libecore_x.so.1.22.2
-lrwxrwxrwx	root/root	usr/lib/libecore_x.so.1 -> libecore_x.so.1.22.2
--rwxr-xr-x	root/root	usr/lib/libecore_x.so.1.22.2
+lrwxrwxrwx	root/root	usr/lib/libecore_x.so -> libecore_x.so.1.22.3
+lrwxrwxrwx	root/root	usr/lib/libecore_x.so.1 -> libecore_x.so.1.22.3
+-rwxr-xr-x	root/root	usr/lib/libecore_x.so.1.22.3
 -rw-r--r--	root/root	usr/lib/libector.la
-lrwxrwxrwx	root/root	usr/lib/libector.so -> libector.so.1.22.2
-lrwxrwxrwx	root/root	usr/lib/libector.so.1 -> libector.so.1.22.2
--rwxr-xr-x	root/root	usr/lib/libector.so.1.22.2
+lrwxrwxrwx	root/root	usr/lib/libector.so -> libector.so.1.22.3
+lrwxrwxrwx	root/root	usr/lib/libector.so.1 -> libector.so.1.22.3
+-rwxr-xr-x	root/root	usr/lib/libector.so.1.22.3
 -rw-r--r--	root/root	usr/lib/libedje.la
-lrwxrwxrwx	root/root	usr/lib/libedje.so -> libedje.so.1.22.2
-lrwxrwxrwx	root/root	usr/lib/libedje.so.1 -> libedje.so.1.22.2
--rwxr-xr-x	root/root	usr/lib/libedje.so.1.22.2
+lrwxrwxrwx	root/root	usr/lib/libedje.so -> libedje.so.1.22.3
+lrwxrwxrwx	root/root	usr/lib/libedje.so.1 -> libedje.so.1.22.3
+-rwxr-xr-x	root/root	usr/lib/libedje.so.1.22.3
 -rw-r--r--	root/root	usr/lib/libeet.la
-lrwxrwxrwx	root/root	usr/lib/libeet.so -> libeet.so.1.22.2
-lrwxrwxrwx	root/root	usr/lib/libeet.so.1 -> libeet.so.1.22.2
--rwxr-xr-x	root/root	usr/lib/libeet.so.1.22.2
+lrwxrwxrwx	root/root	usr/lib/libeet.so -> libeet.so.1.22.3
+lrwxrwxrwx	root/root	usr/lib/libeet.so.1 -> libeet.so.1.22.3
+-rwxr-xr-x	root/root	usr/lib/libeet.so.1.22.3
 -rw-r--r--	root/root	usr/lib/libeeze.la
-lrwxrwxrwx	root/root	usr/lib/libeeze.so -> libeeze.so.1.22.2
-lrwxrwxrwx	root/root	usr/lib/libeeze.so.1 -> libeeze.so.1.22.2
--rwxr-xr-x	root/root	usr/lib/libeeze.so.1.22.2
+lrwxrwxrwx	root/root	usr/lib/libeeze.so -> libeeze.so.1.22.3
+lrwxrwxrwx	root/root	usr/lib/libeeze.so.1 -> libeeze.so.1.22.3
+-rwxr-xr-x	root/root	usr/lib/libeeze.so.1.22.3
 -rw-r--r--	root/root	usr/lib/libefl.la
-lrwxrwxrwx	root/root	usr/lib/libefl.so -> libefl.so.1.22.2
-lrwxrwxrwx	root/root	usr/lib/libefl.so.1 -> libefl.so.1.22.2
--rwxr-xr-x	root/root	usr/lib/libefl.so.1.22.2
+lrwxrwxrwx	root/root	usr/lib/libefl.so -> libefl.so.1.22.3
+lrwxrwxrwx	root/root	usr/lib/libefl.so.1 -> libefl.so.1.22.3
+-rwxr-xr-x	root/root	usr/lib/libefl.so.1.22.3
 -rw-r--r--	root/root	usr/lib/libefreet.la
-lrwxrwxrwx	root/root	usr/lib/libefreet.so -> libefreet.so.1.22.2
-lrwxrwxrwx	root/root	usr/lib/libefreet.so.1 -> libefreet.so.1.22.2
--rwxr-xr-x	root/root	usr/lib/libefreet.so.1.22.2
+lrwxrwxrwx	root/root	usr/lib/libefreet.so -> libefreet.so.1.22.3
+lrwxrwxrwx	root/root	usr/lib/libefreet.so.1 -> libefreet.so.1.22.3
+-rwxr-xr-x	root/root	usr/lib/libefreet.so.1.22.3
 -rw-r--r--	root/root	usr/lib/libefreet_mime.la
-lrwxrwxrwx	root/root	usr/lib/libefreet_mime.so -> libefreet_mime.so.1.22.2
-lrwxrwxrwx	root/root	usr/lib/libefreet_mime.so.1 -> libefreet_mime.so.1.22.2
--rwxr-xr-x	root/root	usr/lib/libefreet_mime.so.1.22.2
+lrwxrwxrwx	root/root	usr/lib/libefreet_mime.so -> libefreet_mime.so.1.22.3
+lrwxrwxrwx	root/root	usr/lib/libefreet_mime.so.1 -> libefreet_mime.so.1.22.3
+-rwxr-xr-x	root/root	usr/lib/libefreet_mime.so.1.22.3
 -rw-r--r--	root/root	usr/lib/libefreet_trash.la
-lrwxrwxrwx	root/root	usr/lib/libefreet_trash.so -> libefreet_trash.so.1.22.2
-lrwxrwxrwx	root/root	usr/lib/libefreet_trash.so.1 -> libefreet_trash.so.1.22.2
--rwxr-xr-x	root/root	usr/lib/libefreet_trash.so.1.22.2
+lrwxrwxrwx	root/root	usr/lib/libefreet_trash.so -> libefreet_trash.so.1.22.3
+lrwxrwxrwx	root/root	usr/lib/libefreet_trash.so.1 -> libefreet_trash.so.1.22.3
+-rwxr-xr-x	root/root	usr/lib/libefreet_trash.so.1.22.3
 -rw-r--r--	root/root	usr/lib/libeina.la
-lrwxrwxrwx	root/root	usr/lib/libeina.so -> libeina.so.1.22.2
-lrwxrwxrwx	root/root	usr/lib/libeina.so.1 -> libeina.so.1.22.2
--rwxr-xr-x	root/root	usr/lib/libeina.so.1.22.2
+lrwxrwxrwx	root/root	usr/lib/libeina.so -> libeina.so.1.22.3
+lrwxrwxrwx	root/root	usr/lib/libeina.so.1 -> libeina.so.1.22.3
+-rwxr-xr-x	root/root	usr/lib/libeina.so.1.22.3
 -rw-r--r--	root/root	usr/lib/libeio.la
-lrwxrwxrwx	root/root	usr/lib/libeio.so -> libeio.so.1.22.2
-lrwxrwxrwx	root/root	usr/lib/libeio.so.1 -> libeio.so.1.22.2
--rwxr-xr-x	root/root	usr/lib/libeio.so.1.22.2
+lrwxrwxrwx	root/root	usr/lib/libeio.so -> libeio.so.1.22.3
+lrwxrwxrwx	root/root	usr/lib/libeio.so.1 -> libeio.so.1.22.3
+-rwxr-xr-x	root/root	usr/lib/libeio.so.1.22.3
 -rw-r--r--	root/root	usr/lib/libeldbus.la
-lrwxrwxrwx	root/root	usr/lib/libeldbus.so -> libeldbus.so.1.22.2
-lrwxrwxrwx	root/root	usr/lib/libeldbus.so.1 -> libeldbus.so.1.22.2
--rwxr-xr-x	root/root	usr/lib/libeldbus.so.1.22.2
+lrwxrwxrwx	root/root	usr/lib/libeldbus.so -> libeldbus.so.1.22.3
+lrwxrwxrwx	root/root	usr/lib/libeldbus.so.1 -> libeldbus.so.1.22.3
+-rwxr-xr-x	root/root	usr/lib/libeldbus.so.1.22.3
 -rw-r--r--	root/root	usr/lib/libelementary.la
-lrwxrwxrwx	root/root	usr/lib/libelementary.so -> libelementary.so.1.22.2
-lrwxrwxrwx	root/root	usr/lib/libelementary.so.1 -> libelementary.so.1.22.2
--rwxr-xr-x	root/root	usr/lib/libelementary.so.1.22.2
+lrwxrwxrwx	root/root	usr/lib/libelementary.so -> libelementary.so.1.22.3
+lrwxrwxrwx	root/root	usr/lib/libelementary.so.1 -> libelementary.so.1.22.3
+-rwxr-xr-x	root/root	usr/lib/libelementary.so.1.22.3
 -rw-r--r--	root/root	usr/lib/libelocation.la
-lrwxrwxrwx	root/root	usr/lib/libelocation.so -> libelocation.so.1.22.2
-lrwxrwxrwx	root/root	usr/lib/libelocation.so.1 -> libelocation.so.1.22.2
--rwxr-xr-x	root/root	usr/lib/libelocation.so.1.22.2
+lrwxrwxrwx	root/root	usr/lib/libelocation.so -> libelocation.so.1.22.3
+lrwxrwxrwx	root/root	usr/lib/libelocation.so.1 -> libelocation.so.1.22.3
+-rwxr-xr-x	root/root	usr/lib/libelocation.so.1.22.3
 -rw-r--r--	root/root	usr/lib/libelua.la
-lrwxrwxrwx	root/root	usr/lib/libelua.so -> libelua.so.1.22.2
-lrwxrwxrwx	root/root	usr/lib/libelua.so.1 -> libelua.so.1.22.2
--rwxr-xr-x	root/root	usr/lib/libelua.so.1.22.2
+lrwxrwxrwx	root/root	usr/lib/libelua.so -> libelua.so.1.22.3
+lrwxrwxrwx	root/root	usr/lib/libelua.so.1 -> libelua.so.1.22.3
+-rwxr-xr-x	root/root	usr/lib/libelua.so.1.22.3
 -rw-r--r--	root/root	usr/lib/libembryo.la
-lrwxrwxrwx	root/root	usr/lib/libembryo.so -> libembryo.so.1.22.2
-lrwxrwxrwx	root/root	usr/lib/libembryo.so.1 -> libembryo.so.1.22.2
--rwxr-xr-x	root/root	usr/lib/libembryo.so.1.22.2
+lrwxrwxrwx	root/root	usr/lib/libembryo.so -> libembryo.so.1.22.3
+lrwxrwxrwx	root/root	usr/lib/libembryo.so.1 -> libembryo.so.1.22.3
+-rwxr-xr-x	root/root	usr/lib/libembryo.so.1.22.3
 -rw-r--r--	root/root	usr/lib/libemile.la
-lrwxrwxrwx	root/root	usr/lib/libemile.so -> libemile.so.1.22.2
-lrwxrwxrwx	root/root	usr/lib/libemile.so.1 -> libemile.so.1.22.2
--rwxr-xr-x	root/root	usr/lib/libemile.so.1.22.2
+lrwxrwxrwx	root/root	usr/lib/libemile.so -> libemile.so.1.22.3
+lrwxrwxrwx	root/root	usr/lib/libemile.so.1 -> libemile.so.1.22.3
+-rwxr-xr-x	root/root	usr/lib/libemile.so.1.22.3
 -rw-r--r--	root/root	usr/lib/libemotion.la
-lrwxrwxrwx	root/root	usr/lib/libemotion.so -> libemotion.so.1.22.2
-lrwxrwxrwx	root/root	usr/lib/libemotion.so.1 -> libemotion.so.1.22.2
--rwxr-xr-x	root/root	usr/lib/libemotion.so.1.22.2
+lrwxrwxrwx	root/root	usr/lib/libemotion.so -> libemotion.so.1.22.3
+lrwxrwxrwx	root/root	usr/lib/libemotion.so.1 -> libemotion.so.1.22.3
+-rwxr-xr-x	root/root	usr/lib/libemotion.so.1.22.3
 -rw-r--r--	root/root	usr/lib/libeo.la
-lrwxrwxrwx	root/root	usr/lib/libeo.so -> libeo.so.1.22.2
-lrwxrwxrwx	root/root	usr/lib/libeo.so.1 -> libeo.so.1.22.2
--rwxr-xr-x	root/root	usr/lib/libeo.so.1.22.2
+lrwxrwxrwx	root/root	usr/lib/libeo.so -> libeo.so.1.22.3
+lrwxrwxrwx	root/root	usr/lib/libeo.so.1 -> libeo.so.1.22.3
+-rwxr-xr-x	root/root	usr/lib/libeo.so.1.22.3
 -rw-r--r--	root/root	usr/lib/libeo_dbg.la
-lrwxrwxrwx	root/root	usr/lib/libeo_dbg.so -> libeo_dbg.so.1.22.2
-lrwxrwxrwx	root/root	usr/lib/libeo_dbg.so.1 -> libeo_dbg.so.1.22.2
--rwxr-xr-x	root/root	usr/lib/libeo_dbg.so.1.22.2
+lrwxrwxrwx	root/root	usr/lib/libeo_dbg.so -> libeo_dbg.so.1.22.3
+lrwxrwxrwx	root/root	usr/lib/libeo_dbg.so.1 -> libeo_dbg.so.1.22.3
+-rwxr-xr-x	root/root	usr/lib/libeo_dbg.so.1.22.3
 -rw-r--r--	root/root	usr/lib/libeolian.la
-lrwxrwxrwx	root/root	usr/lib/libeolian.so -> libeolian.so.1.22.2
-lrwxrwxrwx	root/root	usr/lib/libeolian.so.1 -> libeolian.so.1.22.2
--rwxr-xr-x	root/root	usr/lib/libeolian.so.1.22.2
+lrwxrwxrwx	root/root	usr/lib/libeolian.so -> libeolian.so.1.22.3
+lrwxrwxrwx	root/root	usr/lib/libeolian.so.1 -> libeolian.so.1.22.3
+-rwxr-xr-x	root/root	usr/lib/libeolian.so.1.22.3
 -rw-r--r--	root/root	usr/lib/libephysics.la
-lrwxrwxrwx	root/root	usr/lib/libephysics.so -> libephysics.so.1.22.2
-lrwxrwxrwx	root/root	usr/lib/libephysics.so.1 -> libephysics.so.1.22.2
--rwxr-xr-x	root/root	usr/lib/libephysics.so.1.22.2
+lrwxrwxrwx	root/root	usr/lib/libephysics.so -> libephysics.so.1.22.3
+lrwxrwxrwx	root/root	usr/lib/libephysics.so.1 -> libephysics.so.1.22.3
+-rwxr-xr-x	root/root	usr/lib/libephysics.so.1.22.3
 -rw-r--r--	root/root	usr/lib/libethumb.la
-lrwxrwxrwx	root/root	usr/lib/libethumb.so -> libethumb.so.1.22.2
-lrwxrwxrwx	root/root	usr/lib/libethumb.so.1 -> libethumb.so.1.22.2
--rwxr-xr-x	root/root	usr/lib/libethumb.so.1.22.2
+lrwxrwxrwx	root/root	usr/lib/libethumb.so -> libethumb.so.1.22.3
+lrwxrwxrwx	root/root	usr/lib/libethumb.so.1 -> libethumb.so.1.22.3
+-rwxr-xr-x	root/root	usr/lib/libethumb.so.1.22.3
 -rw-r--r--	root/root	usr/lib/libethumb_client.la
-lrwxrwxrwx	root/root	usr/lib/libethumb_client.so -> libethumb_client.so.1.22.2
-lrwxrwxrwx	root/root	usr/lib/libethumb_client.so.1 -> libethumb_client.so.1.22.2
--rwxr-xr-x	root/root	usr/lib/libethumb_client.so.1.22.2
+lrwxrwxrwx	root/root	usr/lib/libethumb_client.so -> libethumb_client.so.1.22.3
+lrwxrwxrwx	root/root	usr/lib/libethumb_client.so.1 -> libethumb_client.so.1.22.3
+-rwxr-xr-x	root/root	usr/lib/libethumb_client.so.1.22.3
 -rw-r--r--	root/root	usr/lib/libevas.la
-lrwxrwxrwx	root/root	usr/lib/libevas.so -> libevas.so.1.22.2
-lrwxrwxrwx	root/root	usr/lib/libevas.so.1 -> libevas.so.1.22.2
--rwxr-xr-x	root/root	usr/lib/libevas.so.1.22.2
+lrwxrwxrwx	root/root	usr/lib/libevas.so -> libevas.so.1.22.3
+lrwxrwxrwx	root/root	usr/lib/libevas.so.1 -> libevas.so.1.22.3
+-rwxr-xr-x	root/root	usr/lib/libevas.so.1.22.3
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/ecore-audio-cxx.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/ecore-audio.pc
@@ -2857,15 +2857,6 @@ drwxr-xr-x	root/root	usr/share/elementary/themes/
 -rw-r--r--	root/root	usr/share/elementary/themes/default.edj
 drwxr-xr-x	root/root	usr/share/elua/
 drwxr-xr-x	root/root	usr/share/elua/apps/
--rw-r--r--	root/root	usr/share/elua/apps/README-docgen.md
-drwxr-xr-x	root/root	usr/share/elua/apps/docgen/
--rw-r--r--	root/root	usr/share/elua/apps/docgen/doctree.lua
--rw-r--r--	root/root	usr/share/elua/apps/docgen/keyref.lua
--rw-r--r--	root/root	usr/share/elua/apps/docgen/stats.lua
--rw-r--r--	root/root	usr/share/elua/apps/docgen/util.lua
--rw-r--r--	root/root	usr/share/elua/apps/docgen/writer.lua
--rw-r--r--	root/root	usr/share/elua/apps/gendoc.lua
--rw-r--r--	root/root	usr/share/elua/apps/gendoc.sh
 -rw-r--r--	root/root	usr/share/elua/apps/lualian.lua
 -rw-r--r--	root/root	usr/share/elua/checkme
 drwxr-xr-x	root/root	usr/share/elua/core/
@@ -2913,7 +2904,7 @@ drwxr-xr-x	root/root	usr/share/gdb/
 drwxr-xr-x	root/root	usr/share/gdb/auto-load/
 drwxr-xr-x	root/root	usr/share/gdb/auto-load/usr/
 drwxr-xr-x	root/root	usr/share/gdb/auto-load/usr/lib/
--rw-r--r--	root/root	usr/share/gdb/auto-load/usr/lib/libeo.so.1.22.2-gdb.py
+-rw-r--r--	root/root	usr/share/gdb/auto-load/usr/lib/libeo.so.1.22.3-gdb.py
 drwxr-xr-x	root/root	usr/share/icons/
 drwxr-xr-x	root/root	usr/share/icons/Enlightenment-X/
 -rw-r--r--	root/root	usr/share/icons/Enlightenment-X/README
