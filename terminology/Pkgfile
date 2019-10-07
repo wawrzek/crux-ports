@@ -14,7 +14,8 @@ build()
     cd $name-$version
     meson --prefix=/usr \
           --mandir=/usr/man \
-					-Dnls=false . build
+					-Dnls=false \
+					. build
     ninja -C build
     DESTDIR=$PKG ninja -C build install
 }

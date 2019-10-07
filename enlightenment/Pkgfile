@@ -5,17 +5,20 @@
 # Depends on: efl xorg-xcb-util-keysyms
 
 name=enlightenment
-version=0.22.4
+version=0.23.1
 release=1
 source=(http://download.enlightenment.org/rel/apps/enlightenment/enlightenment-$version.tar.xz)
 
 build()
 {
-    cd enlightenment-$version
-    ./configure --prefix=/usr \
-                --disable-nls \
-                --disable-mount-udisks
-    make
-    make install DESTDIR=$PKG
+    cd $name-$version
+    meson --prefix=/usr \
+		      --mandir=/usr/man \
+          -Dsystemd=false \
+					-Dnls=false \
+          -Dmount-udisks=false \
+					. build
+		ninja -C build
+    DESTDIR=$PKG ninja -C build install
     rm -r $PKG/usr/share/enlightenment/{AUTHORS,COPYING,doc/}
 }
