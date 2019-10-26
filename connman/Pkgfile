@@ -5,8 +5,8 @@
 # Depends on: dbus gnutls wpa_supplicant
 
 name=connman
-version=1.36
-release=2
+version=1.37
+release=1
 source=(https://www.kernel.org/pub/linux/network/connman/$name-$version.tar.gz
     connmand
     wifi)
@@ -14,7 +14,8 @@ source=(https://www.kernel.org/pub/linux/network/connman/$name-$version.tar.gz
 build()
 {
     cd $name-$version
-    ./configure --prefix=/usr
+    ./configure --prefix=/usr \
+		--enable-iwd
     make
     make install DESTDIR=$PKG
     # update dbus roles

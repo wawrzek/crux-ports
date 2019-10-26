@@ -21,9 +21,9 @@ f:9b4d354f9c087688283d33307864f054:bullet/.signature
 f:a98780891fbae9fe0f30dd23d62c408f:connman/wifi
 f:8a1f2ce62d1eb7e55db401e8d9818aaf:connman/.footprint
 f:5bea3983ce3806deade0d7727e8544e2:connman/connmand
-f:1552fa5cde9b7923e5c1dbc2d32b2c73:connman/.signature
-f:c79f2f4d0624fb30330610b259726f3f:connman/.md5sum
-f:590a35b939691ee9eac97dec30bd95ac:connman/Pkgfile
+f:5dc1745297b39bf6b6774429aaa255a6:connman/.signature
+f:909fa97fd21dfcafe17de6d4cc3b2413:connman/.md5sum
+f:4babf87c43f80229b62de8fa9611cb7b:connman/Pkgfile
 f:de70773042dc5c2c0969beef6a6c0b8a:econnman/.footprint
 f:6b5cbdb9452cff8d83c30bf0057ceb59:econnman/Pkgfile
 f:95b065cdfe750d52a86a8c2e6a9512b1:econnman/.signature
