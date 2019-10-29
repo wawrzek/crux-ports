@@ -2,25 +2,24 @@
 # URL: http://www.enlightenment.org/
 # Maintainer: Wawrzek Niewodniczanski, main at wawrzek dot name
 # Packager: Victor Martinez, pitillo at ono dot com
-# Depends on: dbus xorg-libxp xorg-libxscrnsaver gstreamer gst-plugins-base giflib libtiff libsndfile pulseaudio harfbuzz fribidi poppler librsvg bullet libraw libspectre luajit
+# Depends on: dbus xorg-libxp xorg-libxscrnsaver gstreamer gst-plugins-base giflib libtiff libsndfile pulseaudio harfbuzz fribidi poppler librsvg bullet libraw libspectre luajit check
 
 name=efl
-version=1.22.3
+version=1.23.1
 release=1
 source=(http://download.enlightenment.org/rel/libs/$name/$name-$version.tar.xz)
 
 build()
 {
 	cd $name-$version
-	export CPPFLAGS=-I/usr/include/lua5.1
-	./configure --prefix=/usr \
-		--disable-systemd\
-		--disable-nls\
-		--enable-multisense\
-		--enable-harfbuzz\
-		--with-tests=none\
-		--with-opengl=full\
-		--disable-doc
-	make
-	make -j1 DESTDIR=$PKG install
+    meson --prefix=/usr \
+          --mandir=/usr/man \
+					-Dnls=false \
+					-Dsystemd=false \
+					-Dnetwork-backend=connman \
+					-Decore-imf-loaders-disabler=ibus,scim \
+					-Dinclude-directories=/usr/include/luajit-2.0 \
+					. build
+    ninja -C build
+    DESTDIR=$PKG ninja -C build install
 }

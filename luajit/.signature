@@ -1,5 +1,5 @@
-untrusted comment: verify with ../../wawrzek.pub
-RWQXc2agtIcYBRRoPwDb2qPqQ7jbAEan0ji4gOM9FrW0VieOBOxhMGVq9h0HeBcMBuIRZYk0mbCm7y9oFlOxvd1HMHVkljP55gM=
-SHA256 (Pkgfile) = e62986c68b317be8b6a673d06690d9f05a28a6dfbc13016ef1f00b9ed0742dd1
+untrusted comment: verify with /etc/ports/wawrzek.pub
+RWQXc2agtIcYBXGgpNwxrX7Y6ZepspZjzwRYLy0wgjFsv/uR2Vc0NJVUnfjcy3qwULVv1bkFzGLv2s1y8ckuEVCsmC5oc6dezA8=
+SHA256 (Pkgfile) = e6ec56a3c6a7354441bc3ff209641f7da870eacd5da69778f4183935d1a06caa
 SHA256 (.footprint) = 592c5b8b70d33e3e2bee4155ad084f0f826e51083f084831fea6d931386a21db
 SHA256 (LuaJIT-2.0.5.tar.gz) = 874b1f8297c697821f561f9b73b57ffd419ed8f4278c82e05b48806d30c1e979

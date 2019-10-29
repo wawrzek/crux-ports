@@ -5,7 +5,7 @@
 # Depends on: dbus-python, efl
 
 name=python-efl
-version=1.22.0
+version=1.23.0
 release=1
 source=(http://download.enlightenment.org/rel/bindings/python/$name-$version.tar.xz)
 

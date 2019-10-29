@@ -15,4 +15,5 @@ build()
     cd $official-$version
     make
     make install PREFIX=$PKG/usr
+    sed -i "s|$PKG||g" $PKG/usr/lib/pkgconfig/luajit.pc
 }
