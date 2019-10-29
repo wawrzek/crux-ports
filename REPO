@@ -36,8 +36,8 @@ f:54a19c2571205661bdee2fa552ce2fbe:luajit/.footprint
 f:fd698ad73ca86787dff1df2928b05df3:luajit/.signature
 f:1268f33d559e2270195ecf9dbf73c33a:luajit/Pkgfile
 f:5d611b547965213ea71dd5600d19ba75:luajit/.md5sum
-f:2fb2e4f7fe1da74a8f4313eac7f2c0d8:python-efl/.footprint
-f:059de8882a591b8d305db04a22575401:python-efl/.signature
+f:62b18fcda25ff5a13906890ceaec5147:python-efl/.footprint
+f:53e19e53f8aed5960227e35936235ba4:python-efl/.signature
 f:86ccdd2f3f0a933b53fff9ada4c63ed3:python-efl/.md5sum
 f:a905abf68ecde3625480b48ecd881005:python-efl/Pkgfile
 f:086cfd51a39304104df8298f19c3b853:rage/.footprint
