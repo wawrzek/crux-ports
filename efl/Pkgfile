@@ -2,10 +2,10 @@
 # URL: http://www.enlightenment.org/
 # Maintainer: Wawrzek Niewodniczanski, main at wawrzek dot name
 # Packager: Victor Martinez, pitillo at ono dot com
-# Depends on: dbus xorg-libxp xorg-libxscrnsaver gstreamer gst-plugins-base giflib libtiff libsndfile pulseaudio harfbuzz fribidi poppler librsvg bullet libraw libspectre luajit check
+# Depends on: dbus xorg-libxp xorg-libxscrnsaver gstreamer gst-plugins-base giflib libtiff libsndfile pulseaudio harfbuzz fribidi poppler librsvg bullet libraw libspectre luajit check openjpeg2
 
 name=efl
-version=1.23.1
+version=1.24.1
 release=1
 source=(http://download.enlightenment.org/rel/libs/$name/$name-$version.tar.xz)
 

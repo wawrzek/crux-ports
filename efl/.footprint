@@ -41,6 +41,11 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/ethumb
 -rwxr-xr-x	root/root	usr/bin/ethumbd
 -rwxr-xr-x	root/root	usr/bin/ethumbd_client
+-rwxr-xr-x	root/root	usr/bin/exactness
+-rwxr-xr-x	root/root	usr/bin/exactness_inject
+-rwxr-xr-x	root/root	usr/bin/exactness_inspect
+-rwxr-xr-x	root/root	usr/bin/exactness_play
+-rwxr-xr-x	root/root	usr/bin/exactness_record
 -rwxr-xr-x	root/root	usr/bin/vieet
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/ecore-1/
@@ -118,8 +123,6 @@ drwxr-xr-x	root/root	usr/include/ecore-audio-1/
 -rw-r--r--	root/root	usr/include/ecore-audio-1/ecore_audio_out_sndfile.eo.h
 -rw-r--r--	root/root	usr/include/ecore-audio-1/ecore_audio_out_wasapi.eo.h
 -rw-r--r--	root/root	usr/include/ecore-audio-1/ecore_audio_protected.h
-drwxr-xr-x	root/root	usr/include/ecore-avahi-1/
--rw-r--r--	root/root	usr/include/ecore-avahi-1/Ecore_Avahi.h
 drwxr-xr-x	root/root	usr/include/ecore-con-1/
 -rw-r--r--	root/root	usr/include/ecore-con-1/Ecore_Con.h
 -rw-r--r--	root/root	usr/include/ecore-con-1/Ecore_Con_Eet.h
@@ -292,6 +295,7 @@ drwxr-xr-x	root/root	usr/include/edje-1/
 -rw-r--r--	root/root	usr/include/edje-1/efl_canvas_layout_part_swallow.eo.h
 -rw-r--r--	root/root	usr/include/edje-1/efl_canvas_layout_part_table.eo.h
 -rw-r--r--	root/root	usr/include/edje-1/efl_canvas_layout_part_text.eo.h
+-rw-r--r--	root/root	usr/include/edje-1/efl_canvas_layout_part_type_provider.eo.h
 -rw-r--r--	root/root	usr/include/edje-1/efl_canvas_layout_types.eot.h
 -rw-r--r--	root/root	usr/include/edje-1/efl_layout_calc.eo.h
 -rw-r--r--	root/root	usr/include/edje-1/efl_layout_group.eo.h
@@ -316,6 +320,8 @@ drwxr-xr-x	root/root	usr/include/edje-cxx-1/
 -rw-r--r--	root/root	usr/include/edje-cxx-1/efl_canvas_layout_part_table.eo.impl.hh
 -rw-r--r--	root/root	usr/include/edje-cxx-1/efl_canvas_layout_part_text.eo.hh
 -rw-r--r--	root/root	usr/include/edje-cxx-1/efl_canvas_layout_part_text.eo.impl.hh
+-rw-r--r--	root/root	usr/include/edje-cxx-1/efl_canvas_layout_part_type_provider.eo.hh
+-rw-r--r--	root/root	usr/include/edje-cxx-1/efl_canvas_layout_part_type_provider.eo.impl.hh
 -rw-r--r--	root/root	usr/include/edje-cxx-1/efl_canvas_layout_types.eot.hh (EMPTY)
 -rw-r--r--	root/root	usr/include/edje-cxx-1/efl_layout_calc.eo.hh
 -rw-r--r--	root/root	usr/include/edje-cxx-1/efl_layout_calc.eo.impl.hh
@@ -343,8 +349,6 @@ drwxr-xr-x	root/root	usr/include/efl-1/
 drwxr-xr-x	root/root	usr/include/efl-1/interfaces/
 -rw-r--r--	root/root	usr/include/efl-1/interfaces/efl_audio_control.eo.h
 -rw-r--r--	root/root	usr/include/efl-1/interfaces/efl_cached_item.eo.h
--rw-r--r--	root/root	usr/include/efl-1/interfaces/efl_canvas_pointer.eo.h
--rw-r--r--	root/root	usr/include/efl-1/interfaces/efl_canvas_scene.eo.h
 -rw-r--r--	root/root	usr/include/efl-1/interfaces/efl_config.eo.h
 -rw-r--r--	root/root	usr/include/efl-1/interfaces/efl_container.eo.h
 -rw-r--r--	root/root	usr/include/efl-1/interfaces/efl_content.eo.h
@@ -376,8 +380,7 @@ drwxr-xr-x	root/root	usr/include/efl-1/interfaces/
 -rw-r--r--	root/root	usr/include/efl-1/interfaces/efl_gfx_text_class.eo.h
 -rw-r--r--	root/root	usr/include/efl-1/interfaces/efl_gfx_types.eot.h
 -rw-r--r--	root/root	usr/include/efl-1/interfaces/efl_gfx_view.eo.h
--rw-r--r--	root/root	usr/include/efl-1/interfaces/efl_input_device.eo.h
--rw-r--r--	root/root	usr/include/efl-1/interfaces/efl_input_types.eot.h
+-rw-r--r--	root/root	usr/include/efl-1/interfaces/efl_input_text_entity.eo.h
 -rw-r--r--	root/root	usr/include/efl-1/interfaces/efl_interpolator.eo.h
 -rw-r--r--	root/root	usr/include/efl-1/interfaces/efl_io_buffer.eo.h
 -rw-r--r--	root/root	usr/include/efl-1/interfaces/efl_io_closer.eo.h
@@ -399,12 +402,9 @@ drwxr-xr-x	root/root	usr/include/efl-1/interfaces/
 -rw-r--r--	root/root	usr/include/efl-1/interfaces/efl_player.eo.h
 -rw-r--r--	root/root	usr/include/efl-1/interfaces/efl_screen.eo.h
 -rw-r--r--	root/root	usr/include/efl-1/interfaces/efl_text.eo.h
--rw-r--r--	root/root	usr/include/efl-1/interfaces/efl_text_annotate.eo.h
--rw-r--r--	root/root	usr/include/efl-1/interfaces/efl_text_cursor.eo.h
--rw-r--r--	root/root	usr/include/efl-1/interfaces/efl_text_font.eo.h
+-rw-r--r--	root/root	usr/include/efl-1/interfaces/efl_text_font_properties.eo.h
 -rw-r--r--	root/root	usr/include/efl-1/interfaces/efl_text_format.eo.h
 -rw-r--r--	root/root	usr/include/efl-1/interfaces/efl_text_markup.eo.h
--rw-r--r--	root/root	usr/include/efl-1/interfaces/efl_text_markup_interactive.eo.h
 -rw-r--r--	root/root	usr/include/efl-1/interfaces/efl_text_markup_util.eo.h
 -rw-r--r--	root/root	usr/include/efl-1/interfaces/efl_text_style.eo.h
 -rw-r--r--	root/root	usr/include/efl-1/interfaces/efl_text_types.eot.h
@@ -412,6 +412,7 @@ drwxr-xr-x	root/root	usr/include/efl-1/interfaces/
 -rw-r--r--	root/root	usr/include/efl-1/interfaces/efl_ui_autorepeat.eo.h
 -rw-r--r--	root/root	usr/include/efl-1/interfaces/efl_ui_container_selectable.eo.h
 -rw-r--r--	root/root	usr/include/efl-1/interfaces/efl_ui_drag.eo.h
+-rw-r--r--	root/root	usr/include/efl-1/interfaces/efl_ui_drag_types.eot.h
 -rw-r--r--	root/root	usr/include/efl-1/interfaces/efl_ui_draggable.eo.h
 -rw-r--r--	root/root	usr/include/efl-1/interfaces/efl_ui_factory.eo.h
 -rw-r--r--	root/root	usr/include/efl-1/interfaces/efl_ui_factory_bind.eo.h
@@ -423,8 +424,6 @@ drwxr-xr-x	root/root	usr/include/efl-1/interfaces/
 -rw-r--r--	root/root	usr/include/efl-1/interfaces/efl_ui_range_interactive.eo.h
 -rw-r--r--	root/root	usr/include/efl-1/interfaces/efl_ui_scrollable.eo.h
 -rw-r--r--	root/root	usr/include/efl-1/interfaces/efl_ui_scrollbar.eo.h
--rw-r--r--	root/root	usr/include/efl-1/interfaces/efl_ui_text_selectable.eo.h
--rw-r--r--	root/root	usr/include/efl-1/interfaces/efl_ui_types.eot.h
 -rw-r--r--	root/root	usr/include/efl-1/interfaces/efl_ui_view.eo.h
 -rw-r--r--	root/root	usr/include/efl-1/interfaces/efl_ui_view_factory.eo.h
 -rw-r--r--	root/root	usr/include/efl-1/interfaces/efl_ui_zoom.eo.h
@@ -438,10 +437,6 @@ drwxr-xr-x	root/root	usr/include/efl-cxx-1/interfaces/
 -rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_audio_control.eo.impl.hh
 -rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_cached_item.eo.hh
 -rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_cached_item.eo.impl.hh
--rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_canvas_pointer.eo.hh
--rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_canvas_pointer.eo.impl.hh
--rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_canvas_scene.eo.hh
--rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_canvas_scene.eo.impl.hh
 -rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_config.eo.hh
 -rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_config.eo.impl.hh
 -rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_container.eo.hh
@@ -501,9 +496,8 @@ drwxr-xr-x	root/root	usr/include/efl-cxx-1/interfaces/
 -rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_gfx_types.eot.hh (EMPTY)
 -rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_gfx_view.eo.hh
 -rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_gfx_view.eo.impl.hh
--rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_input_device.eo.hh
--rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_input_device.eo.impl.hh
--rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_input_types.eot.hh (EMPTY)
+-rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_input_text_entity.eo.hh
+-rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_input_text_entity.eo.impl.hh
 -rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_interpolator.eo.hh
 -rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_interpolator.eo.impl.hh
 -rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_io_buffer.eo.hh
@@ -546,18 +540,12 @@ drwxr-xr-x	root/root	usr/include/efl-cxx-1/interfaces/
 -rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_screen.eo.impl.hh
 -rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_text.eo.hh
 -rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_text.eo.impl.hh
--rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_text_annotate.eo.hh
--rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_text_annotate.eo.impl.hh
--rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_text_cursor.eo.hh
--rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_text_cursor.eo.impl.hh
--rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_text_font.eo.hh
--rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_text_font.eo.impl.hh
+-rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_text_font_properties.eo.hh
+-rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_text_font_properties.eo.impl.hh
 -rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_text_format.eo.hh
 -rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_text_format.eo.impl.hh
 -rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_text_markup.eo.hh
 -rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_text_markup.eo.impl.hh
--rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_text_markup_interactive.eo.hh
--rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_text_markup_interactive.eo.impl.hh
 -rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_text_markup_util.eo.hh
 -rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_text_markup_util.eo.impl.hh
 -rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_text_style.eo.hh
@@ -570,6 +558,7 @@ drwxr-xr-x	root/root	usr/include/efl-cxx-1/interfaces/
 -rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_ui_container_selectable.eo.impl.hh
 -rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_ui_drag.eo.hh
 -rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_ui_drag.eo.impl.hh
+-rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_ui_drag_types.eot.hh (EMPTY)
 -rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_ui_draggable.eo.hh
 -rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_ui_draggable.eo.impl.hh
 -rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_ui_factory.eo.hh
@@ -592,9 +581,6 @@ drwxr-xr-x	root/root	usr/include/efl-cxx-1/interfaces/
 -rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_ui_scrollable.eo.impl.hh
 -rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_ui_scrollbar.eo.hh
 -rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_ui_scrollbar.eo.impl.hh
--rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_ui_text_selectable.eo.hh
--rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_ui_text_selectable.eo.impl.hh
--rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_ui_types.eot.hh (EMPTY)
 -rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_ui_view.eo.hh
 -rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_ui_view.eo.impl.hh
 -rw-r--r--	root/root	usr/include/efl-cxx-1/interfaces/efl_ui_view_factory.eo.hh
@@ -615,6 +601,7 @@ drwxr-xr-x	root/root	usr/include/efreet-1/
 drwxr-xr-x	root/root	usr/include/eina-1/
 -rw-r--r--	root/root	usr/include/eina-1/Eina.h
 drwxr-xr-x	root/root	usr/include/eina-1/eina/
+-rw-r--r--	root/root	usr/include/eina-1/eina/eina_abstract_content.h
 -rw-r--r--	root/root	usr/include/eina-1/eina/eina_accessor.h
 -rw-r--r--	root/root	usr/include/eina-1/eina/eina_alloca.h
 -rw-r--r--	root/root	usr/include/eina-1/eina/eina_array.h
@@ -655,6 +642,7 @@ drwxr-xr-x	root/root	usr/include/eina-1/eina/
 -rw-r--r--	root/root	usr/include/eina-1/eina/eina_inline_log.x
 -rw-r--r--	root/root	usr/include/eina-1/eina/eina_inline_mempool.x
 -rw-r--r--	root/root	usr/include/eina-1/eina/eina_inline_modinfo.x
+-rw-r--r--	root/root	usr/include/eina-1/eina/eina_inline_range.x
 -rw-r--r--	root/root	usr/include/eina-1/eina/eina_inline_rbtree.x
 -rw-r--r--	root/root	usr/include/eina-1/eina/eina_inline_rectangle.x
 -rw-r--r--	root/root	usr/include/eina-1/eina/eina_inline_safepointer.x
@@ -687,6 +675,7 @@ drwxr-xr-x	root/root	usr/include/eina-1/eina/
 -rw-r--r--	root/root	usr/include/eina-1/eina/eina_quad.h
 -rw-r--r--	root/root	usr/include/eina-1/eina/eina_quadtree.h
 -rw-r--r--	root/root	usr/include/eina-1/eina/eina_quaternion.h
+-rw-r--r--	root/root	usr/include/eina-1/eina/eina_range.h
 -rw-r--r--	root/root	usr/include/eina-1/eina/eina_rbtree.h
 -rw-r--r--	root/root	usr/include/eina-1/eina/eina_rectangle.h
 -rw-r--r--	root/root	usr/include/eina-1/eina/eina_refcount.h
@@ -845,13 +834,8 @@ drwxr-xr-x	root/root	usr/include/elementary-1/
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui.eot.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_action_connector.eo.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_alert_popup.eo.h
--rw-r--r--	root/root	usr/include/elementary-1/efl_ui_alert_popup_part.eo.h
+-rw-r--r--	root/root	usr/include/elementary-1/efl_ui_alert_popup_part_title.eo.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_alert_popup_private.h
--rw-r--r--	root/root	usr/include/elementary-1/efl_ui_animation_view.eo.h
--rw-r--r--	root/root	usr/include/elementary-1/efl_ui_animation_view.h
--rw-r--r--	root/root	usr/include/elementary-1/efl_ui_animation_view_eo.legacy.h
--rw-r--r--	root/root	usr/include/elementary-1/efl_ui_animation_view_legacy.h
--rw-r--r--	root/root	usr/include/elementary-1/efl_ui_animation_view_private.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_bg.eo.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_bg_eo.legacy.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_bg_legacy_eo.legacy.h
@@ -885,8 +869,6 @@ drwxr-xr-x	root/root	usr/include/elementary-1/
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_datepicker_private.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_default_item.eo.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_dnd.eo.h
--rw-r--r--	root/root	usr/include/elementary-1/efl_ui_dnd_container.eo.h
--rw-r--r--	root/root	usr/include/elementary-1/efl_ui_dnd_types.eot.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_flip.eo.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_flip_eo.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_flip_eo.legacy.h
@@ -942,13 +924,15 @@ drwxr-xr-x	root/root	usr/include/elementary-1/
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_list_placeholder_item.eo.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_list_view.eo.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_multi_selectable.eo.h
--rw-r--r--	root/root	usr/include/elementary-1/efl_ui_multi_selectable_async.eo.h
+-rw-r--r--	root/root	usr/include/elementary-1/efl_ui_multi_selectable_index_range.eo.h
+-rw-r--r--	root/root	usr/include/elementary-1/efl_ui_multi_selectable_object_range.eo.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_navigation_bar.eo.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_navigation_bar_part.eo.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_navigation_bar_part_back_button.eo.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_navigation_bar_private.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_navigation_layout.eo.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_navigation_layout_private.h
+-rw-r--r--	root/root	usr/include/elementary-1/efl_ui_pager.eo.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_pan.eo.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_panel.eo.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_panel_private.h
@@ -981,14 +965,14 @@ drwxr-xr-x	root/root	usr/include/elementary-1/
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_radio_legacy_eo.legacy.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_radio_legacy_part.eo.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_radio_private.h
--rw-r--r--	root/root	usr/include/elementary-1/efl_ui_relative_layout.eo.h
--rw-r--r--	root/root	usr/include/elementary-1/efl_ui_relative_layout_private.h
+-rw-r--r--	root/root	usr/include/elementary-1/efl_ui_relative_container.eo.h
+-rw-r--r--	root/root	usr/include/elementary-1/efl_ui_relative_container_private.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_scroll_manager.eo.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_scroller.eo.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_select_model.eo.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_selectable.eo.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_selection.eo.h
--rw-r--r--	root/root	usr/include/elementary-1/efl_ui_selection_types.eot.h
+-rw-r--r--	root/root	usr/include/elementary-1/efl_ui_separator.eo.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_single_selectable.eo.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_slider.eo.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_slider_interval.eo.h
@@ -998,13 +982,15 @@ drwxr-xr-x	root/root	usr/include/elementary-1/
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_spin_button.eo.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_spin_button_private.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_spin_private.h
+-rw-r--r--	root/root	usr/include/elementary-1/efl_ui_spotlight_animation_manager.eo.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_spotlight_container.eo.h
+-rw-r--r--	root/root	usr/include/elementary-1/efl_ui_spotlight_fade_manager.eo.h
+-rw-r--r--	root/root	usr/include/elementary-1/efl_ui_spotlight_icon_indicator.eo.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_spotlight_indicator.eo.h
--rw-r--r--	root/root	usr/include/elementary-1/efl_ui_spotlight_indicator_icon.eo.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_spotlight_manager.eo.h
--rw-r--r--	root/root	usr/include/elementary-1/efl_ui_spotlight_manager_scroll.eo.h
--rw-r--r--	root/root	usr/include/elementary-1/efl_ui_spotlight_manager_stack.eo.h
+-rw-r--r--	root/root	usr/include/elementary-1/efl_ui_spotlight_scroll_manager.eo.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_spotlight_util.eo.h
+-rw-r--r--	root/root	usr/include/elementary-1/efl_ui_stack.eo.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_tab_bar.eo.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_tab_bar_default_item.eo.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_tab_bar_private.h
@@ -1016,13 +1002,12 @@ drwxr-xr-x	root/root	usr/include/elementary-1/
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_table_static.eo.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_tags.eo.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_tags_private.h
--rw-r--r--	root/root	usr/include/elementary-1/efl_ui_text.eo.h
--rw-r--r--	root/root	usr/include/elementary-1/efl_ui_text_async.eo.h
--rw-r--r--	root/root	usr/include/elementary-1/efl_ui_text_editable.eo.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_text_factory_emoticons.eo.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_text_factory_fallback.eo.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_text_factory_images.eo.h
--rw-r--r--	root/root	usr/include/elementary-1/efl_ui_text_part.eo.h
+-rw-r--r--	root/root	usr/include/elementary-1/efl_ui_textbox.eo.h
+-rw-r--r--	root/root	usr/include/elementary-1/efl_ui_textbox_async.eo.h
+-rw-r--r--	root/root	usr/include/elementary-1/efl_ui_textbox_part.eo.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_textpath.eo.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_textpath_eo.legacy.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_textpath_legacy_eo.legacy.h
@@ -1030,6 +1015,11 @@ drwxr-xr-x	root/root	usr/include/elementary-1/
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_theme.eo.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_timepicker.eo.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_timepicker_private.h
+-rw-r--r--	root/root	usr/include/elementary-1/efl_ui_vg_animation.eo.h
+-rw-r--r--	root/root	usr/include/elementary-1/efl_ui_vg_animation.h
+-rw-r--r--	root/root	usr/include/elementary-1/efl_ui_vg_animation_eo.legacy.h
+-rw-r--r--	root/root	usr/include/elementary-1/efl_ui_vg_animation_legacy.h
+-rw-r--r--	root/root	usr/include/elementary-1/efl_ui_vg_animation_private.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_video.eo.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_video.h
 -rw-r--r--	root/root	usr/include/elementary-1/efl_ui_video_eo.h
@@ -1326,7 +1316,6 @@ drwxr-xr-x	root/root	usr/include/elementary-1/
 -rw-r--r--	root/root	usr/include/elementary-1/elm_separator_legacy.h
 -rw-r--r--	root/root	usr/include/elementary-1/elm_slider.h
 -rw-r--r--	root/root	usr/include/elementary-1/elm_slider_common.h
--rw-r--r--	root/root	usr/include/elementary-1/elm_slider_eo.legacy.h
 -rw-r--r--	root/root	usr/include/elementary-1/elm_slider_legacy.h
 -rw-r--r--	root/root	usr/include/elementary-1/elm_slider_part_indicator_eo.legacy.h
 -rw-r--r--	root/root	usr/include/elementary-1/elm_slideshow.h
@@ -1465,10 +1454,8 @@ drwxr-xr-x	root/root	usr/include/elementary-cxx-1/
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_action_connector.eo.impl.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_alert_popup.eo.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_alert_popup.eo.impl.hh
--rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_alert_popup_part.eo.hh
--rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_alert_popup_part.eo.impl.hh
--rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_animation_view.eo.hh
--rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_animation_view.eo.impl.hh
+-rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_alert_popup_part_title.eo.hh
+-rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_alert_popup_part_title.eo.impl.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_bg.eo.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_bg.eo.impl.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_box.eo.hh
@@ -1505,9 +1492,6 @@ drwxr-xr-x	root/root	usr/include/elementary-cxx-1/
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_default_item.eo.impl.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_dnd.eo.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_dnd.eo.impl.hh
--rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_dnd_container.eo.hh
--rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_dnd_container.eo.impl.hh
--rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_dnd_types.eot.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_flip.eo.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_flip.eo.impl.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_flip_part.eo.hh
@@ -1588,8 +1572,10 @@ drwxr-xr-x	root/root	usr/include/elementary-cxx-1/
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_list_view.eo.impl.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_multi_selectable.eo.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_multi_selectable.eo.impl.hh
--rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_multi_selectable_async.eo.hh
--rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_multi_selectable_async.eo.impl.hh
+-rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_multi_selectable_index_range.eo.hh
+-rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_multi_selectable_index_range.eo.impl.hh
+-rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_multi_selectable_object_range.eo.hh
+-rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_multi_selectable_object_range.eo.impl.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_navigation_bar.eo.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_navigation_bar.eo.impl.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_navigation_bar_part.eo.hh
@@ -1598,6 +1584,8 @@ drwxr-xr-x	root/root	usr/include/elementary-cxx-1/
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_navigation_bar_part_back_button.eo.impl.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_navigation_layout.eo.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_navigation_layout.eo.impl.hh
+-rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_pager.eo.hh
+-rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_pager.eo.impl.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_pan.eo.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_pan.eo.impl.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_panel.eo.hh
@@ -1636,8 +1624,8 @@ drwxr-xr-x	root/root	usr/include/elementary-cxx-1/
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_radio_group_impl.eo.impl.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_radio_legacy_part.eo.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_radio_legacy_part.eo.impl.hh
--rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_relative_layout.eo.hh
--rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_relative_layout.eo.impl.hh
+-rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_relative_container.eo.hh
+-rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_relative_container.eo.impl.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_scroll_manager.eo.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_scroll_manager.eo.impl.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_scroller.eo.hh
@@ -1648,7 +1636,8 @@ drwxr-xr-x	root/root	usr/include/elementary-cxx-1/
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_selectable.eo.impl.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_selection.eo.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_selection.eo.impl.hh
--rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_selection_types.eot.hh
+-rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_separator.eo.hh
+-rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_separator.eo.impl.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_single_selectable.eo.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_single_selectable.eo.impl.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_slider.eo.hh
@@ -1659,20 +1648,24 @@ drwxr-xr-x	root/root	usr/include/elementary-cxx-1/
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_spin.eo.impl.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_spin_button.eo.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_spin_button.eo.impl.hh
+-rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_spotlight_animation_manager.eo.hh
+-rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_spotlight_animation_manager.eo.impl.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_spotlight_container.eo.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_spotlight_container.eo.impl.hh
+-rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_spotlight_fade_manager.eo.hh
+-rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_spotlight_fade_manager.eo.impl.hh
+-rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_spotlight_icon_indicator.eo.hh
+-rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_spotlight_icon_indicator.eo.impl.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_spotlight_indicator.eo.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_spotlight_indicator.eo.impl.hh
--rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_spotlight_indicator_icon.eo.hh
--rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_spotlight_indicator_icon.eo.impl.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_spotlight_manager.eo.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_spotlight_manager.eo.impl.hh
--rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_spotlight_manager_scroll.eo.hh
--rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_spotlight_manager_scroll.eo.impl.hh
--rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_spotlight_manager_stack.eo.hh
--rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_spotlight_manager_stack.eo.impl.hh
+-rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_spotlight_scroll_manager.eo.hh
+-rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_spotlight_scroll_manager.eo.impl.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_spotlight_util.eo.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_spotlight_util.eo.impl.hh
+-rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_stack.eo.hh
+-rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_stack.eo.impl.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_tab_bar.eo.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_tab_bar.eo.impl.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_tab_bar_default_item.eo.hh
@@ -1687,20 +1680,18 @@ drwxr-xr-x	root/root	usr/include/elementary-cxx-1/
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_table_static.eo.impl.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_tags.eo.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_tags.eo.impl.hh
--rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_text.eo.hh
--rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_text.eo.impl.hh
--rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_text_async.eo.hh
--rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_text_async.eo.impl.hh
--rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_text_editable.eo.hh
--rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_text_editable.eo.impl.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_text_factory_emoticons.eo.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_text_factory_emoticons.eo.impl.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_text_factory_fallback.eo.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_text_factory_fallback.eo.impl.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_text_factory_images.eo.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_text_factory_images.eo.impl.hh
--rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_text_part.eo.hh
--rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_text_part.eo.impl.hh
+-rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_textbox.eo.hh
+-rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_textbox.eo.impl.hh
+-rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_textbox_async.eo.hh
+-rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_textbox_async.eo.impl.hh
+-rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_textbox_part.eo.hh
+-rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_textbox_part.eo.impl.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_textpath.eo.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_textpath.eo.impl.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_textpath_part.eo.hh
@@ -1709,6 +1700,8 @@ drwxr-xr-x	root/root	usr/include/elementary-cxx-1/
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_theme.eo.impl.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_timepicker.eo.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_timepicker.eo.impl.hh
+-rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_vg_animation.eo.hh
+-rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_vg_animation.eo.impl.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_video.eo.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_video.eo.impl.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_view_model.eo.hh
@@ -1735,15 +1728,7 @@ drwxr-xr-x	root/root	usr/include/elementary-cxx-1/
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_win_part.eo.impl.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_win_socket.eo.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_win_socket.eo.impl.hh
--rw-r--r--	root/root	usr/include/elementary-cxx-1/elm_code_widget.eo.hh
--rw-r--r--	root/root	usr/include/elementary-cxx-1/elm_code_widget.eo.impl.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/elm_general.eot.hh (EMPTY)
--rw-r--r--	root/root	usr/include/elementary-cxx-1/elm_interface_scrollable.eo.hh
--rw-r--r--	root/root	usr/include/elementary-cxx-1/elm_interface_scrollable.eo.impl.hh
--rw-r--r--	root/root	usr/include/elementary-cxx-1/elm_multibuttonentry_part.eo.hh
--rw-r--r--	root/root	usr/include/elementary-cxx-1/elm_multibuttonentry_part.eo.impl.hh
-drwxr-xr-x	root/root	usr/include/elocation-1/
--rw-r--r--	root/root	usr/include/elocation-1/Elocation.h
 drwxr-xr-x	root/root	usr/include/elua-1/
 -rw-r--r--	root/root	usr/include/elua-1/Elua.h
 drwxr-xr-x	root/root	usr/include/embryo-1/
@@ -1757,7 +1742,6 @@ drwxr-xr-x	root/root	usr/include/emile-1/
 drwxr-xr-x	root/root	usr/include/emotion-1/
 -rw-r--r--	root/root	usr/include/emotion-1/Emotion.h
 -rw-r--r--	root/root	usr/include/emotion-1/Emotion_Eo.h
--rw-r--r--	root/root	usr/include/emotion-1/Emotion_Generic_Plugin.h
 -rw-r--r--	root/root	usr/include/emotion-1/Emotion_Legacy.h
 -rw-r--r--	root/root	usr/include/emotion-1/efl_canvas_video.eo.h
 -rw-r--r--	root/root	usr/include/emotion-1/efl_canvas_video_eo.legacy.h
@@ -1766,6 +1750,7 @@ drwxr-xr-x	root/root	usr/include/eo-1/
 -rw-r--r--	root/root	usr/include/eo-1/efl_class.eo.h
 -rw-r--r--	root/root	usr/include/eo-1/efl_object.eo.h
 -rw-r--r--	root/root	usr/include/eo-1/efl_object_override.eo.h
+-rw-r--r--	root/root	usr/include/eo-1/eina_types.eot.h
 drwxr-xr-x	root/root	usr/include/eo-cxx-1/
 -rw-r--r--	root/root	usr/include/eo-cxx-1/Eo.hh
 -rw-r--r--	root/root	usr/include/eo-cxx-1/efl_class.eo.hh
@@ -1833,8 +1818,6 @@ drwxr-xr-x	root/root	usr/include/eolian-cxx-1/
 -rw-r--r--	root/root	usr/include/eolian-cxx-1/type_impl.hpp
 -rw-r--r--	root/root	usr/include/eolian-cxx-1/type_traits.hpp
 -rw-r--r--	root/root	usr/include/eolian-cxx-1/types_definition.hpp
-drwxr-xr-x	root/root	usr/include/ephysics-1/
--rw-r--r--	root/root	usr/include/ephysics-1/EPhysics.h
 drwxr-xr-x	root/root	usr/include/ethumb-1/
 -rw-r--r--	root/root	usr/include/ethumb-1/Ethumb.h
 drwxr-xr-x	root/root	usr/include/ethumb-client-1/
@@ -1849,40 +1832,42 @@ drwxr-xr-x	root/root	usr/include/evas-1/
 -rw-r--r--	root/root	usr/include/evas-1/Evas_Legacy.h
 -rw-r--r--	root/root	usr/include/evas-1/Evas_Loader.h
 drwxr-xr-x	root/root	usr/include/evas-1/canvas/
+-rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_alpha_animation.eo.h
 -rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_animation.eo.h
--rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_animation_alpha.eo.h
--rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_animation_group.eo.h
--rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_animation_group_parallel.eo.h
--rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_animation_group_sequential.eo.h
--rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_animation_player.eo.h
--rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_animation_rotate.eo.h
--rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_animation_scale.eo.h
--rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_animation_translate.eo.h
 -rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_animation_types.eot.h
 -rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_event_grabber.eo.h
 -rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_event_grabber_eo.legacy.h
 -rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_filter_internal.eo.h
 -rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_group.eo.h
+-rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_group_animation.eo.h
 -rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_group_eo.legacy.h
 -rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_image.eo.h
 -rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_image_internal.eo.h
 -rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_object.eo.h
+-rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_object_animation.eo.h
 -rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_object_eo.legacy.h
+-rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_parallel_group_animation.eo.h
+-rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_pointer.eo.h
 -rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_polygon.eo.h
 -rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_proxy.eo.h
 -rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_rectangle.eo.h
--rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_scene3d.eo.h
+-rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_rotate_animation.eo.h
+-rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_scale_animation.eo.h
+-rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_scene.eo.h
+-rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_sequential_group_animation.eo.h
 -rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_snapshot.eo.h
 -rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_surface.eo.h
 -rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_surface_tbm.eo.h
 -rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_surface_wayland.eo.h
 -rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_surface_x11.eo.h
--rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_text.eo.h
--rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_text_eo.legacy.h
--rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_text_factory.eo.h
+-rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_textblock.eo.h
+-rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_textblock_eo.legacy.h
+-rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_textblock_factory.eo.h
+-rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_translate_animation.eo.h
 -rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_vg_container.eo.h
 -rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_vg_container_eo.legacy.h
 -rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_vg_gradient.eo.h
+-rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_vg_gradient_eo.legacy.h
 -rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_vg_gradient_linear.eo.h
 -rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_vg_gradient_radial.eo.h
 -rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_vg_image.eo.h
@@ -1893,7 +1878,9 @@ drwxr-xr-x	root/root	usr/include/evas-1/canvas/
 -rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_vg_shape.eo.h
 -rw-r--r--	root/root	usr/include/evas-1/canvas/efl_canvas_vg_shape_eo.legacy.h
 -rw-r--r--	root/root	usr/include/evas-1/canvas/efl_gfx_mapping.eo.h
+-rw-r--r--	root/root	usr/include/evas-1/canvas/efl_gfx_vg_value_provider.eo.h
 -rw-r--r--	root/root	usr/include/evas-1/canvas/efl_input_clickable.eo.h
+-rw-r--r--	root/root	usr/include/evas-1/canvas/efl_input_device.eo.h
 -rw-r--r--	root/root	usr/include/evas-1/canvas/efl_input_event.eo.h
 -rw-r--r--	root/root	usr/include/evas-1/canvas/efl_input_focus.eo.h
 -rw-r--r--	root/root	usr/include/evas-1/canvas/efl_input_hold.eo.h
@@ -1901,17 +1888,10 @@ drwxr-xr-x	root/root	usr/include/evas-1/canvas/
 -rw-r--r--	root/root	usr/include/evas-1/canvas/efl_input_key.eo.h
 -rw-r--r--	root/root	usr/include/evas-1/canvas/efl_input_pointer.eo.h
 -rw-r--r--	root/root	usr/include/evas-1/canvas/efl_input_state.eo.h
+-rw-r--r--	root/root	usr/include/evas-1/canvas/efl_input_types.eot.h
+-rw-r--r--	root/root	usr/include/evas-1/canvas/efl_text_cursor_object.eo.h
+-rw-r--r--	root/root	usr/include/evas-1/canvas/efl_text_formatter.eo.h
 -rw-r--r--	root/root	usr/include/evas-1/canvas/evas_box_eo.legacy.h
--rw-r--r--	root/root	usr/include/evas-1/canvas/evas_canvas3d_camera.eo.h
--rw-r--r--	root/root	usr/include/evas-1/canvas/evas_canvas3d_light.eo.h
--rw-r--r--	root/root	usr/include/evas-1/canvas/evas_canvas3d_material.eo.h
--rw-r--r--	root/root	usr/include/evas-1/canvas/evas_canvas3d_mesh.eo.h
--rw-r--r--	root/root	usr/include/evas-1/canvas/evas_canvas3d_node.eo.h
--rw-r--r--	root/root	usr/include/evas-1/canvas/evas_canvas3d_object.eo.h
--rw-r--r--	root/root	usr/include/evas-1/canvas/evas_canvas3d_primitive.eo.h
--rw-r--r--	root/root	usr/include/evas-1/canvas/evas_canvas3d_scene.eo.h
--rw-r--r--	root/root	usr/include/evas-1/canvas/evas_canvas3d_texture.eo.h
--rw-r--r--	root/root	usr/include/evas-1/canvas/evas_canvas3d_types.eot.h
 -rw-r--r--	root/root	usr/include/evas-1/canvas/evas_canvas_eo.legacy.h
 -rw-r--r--	root/root	usr/include/evas-1/canvas/evas_grid_eo.legacy.h
 -rw-r--r--	root/root	usr/include/evas-1/canvas/evas_image_eo.legacy.h
@@ -1923,47 +1903,37 @@ drwxr-xr-x	root/root	usr/include/evas-1/canvas/
 -rw-r--r--	root/root	usr/include/evas-1/evas_ector_software_buffer.eo.h
 drwxr-xr-x	root/root	usr/include/evas-1/gesture/
 -rw-r--r--	root/root	usr/include/evas-1/gesture/efl_canvas_gesture.eo.h
+-rw-r--r--	root/root	usr/include/evas-1/gesture/efl_canvas_gesture_custom.eo.h
 -rw-r--r--	root/root	usr/include/evas-1/gesture/efl_canvas_gesture_double_tap.eo.h
+-rw-r--r--	root/root	usr/include/evas-1/gesture/efl_canvas_gesture_events.eo.h
 -rw-r--r--	root/root	usr/include/evas-1/gesture/efl_canvas_gesture_flick.eo.h
--rw-r--r--	root/root	usr/include/evas-1/gesture/efl_canvas_gesture_long_tap.eo.h
+-rw-r--r--	root/root	usr/include/evas-1/gesture/efl_canvas_gesture_long_press.eo.h
 -rw-r--r--	root/root	usr/include/evas-1/gesture/efl_canvas_gesture_manager.eo.h
 -rw-r--r--	root/root	usr/include/evas-1/gesture/efl_canvas_gesture_momentum.eo.h
 -rw-r--r--	root/root	usr/include/evas-1/gesture/efl_canvas_gesture_recognizer.eo.h
+-rw-r--r--	root/root	usr/include/evas-1/gesture/efl_canvas_gesture_recognizer_custom.eo.h
 -rw-r--r--	root/root	usr/include/evas-1/gesture/efl_canvas_gesture_recognizer_double_tap.eo.h
 -rw-r--r--	root/root	usr/include/evas-1/gesture/efl_canvas_gesture_recognizer_flick.eo.h
--rw-r--r--	root/root	usr/include/evas-1/gesture/efl_canvas_gesture_recognizer_long_tap.eo.h
+-rw-r--r--	root/root	usr/include/evas-1/gesture/efl_canvas_gesture_recognizer_long_press.eo.h
 -rw-r--r--	root/root	usr/include/evas-1/gesture/efl_canvas_gesture_recognizer_momentum.eo.h
+-rw-r--r--	root/root	usr/include/evas-1/gesture/efl_canvas_gesture_recognizer_rotate.eo.h
 -rw-r--r--	root/root	usr/include/evas-1/gesture/efl_canvas_gesture_recognizer_tap.eo.h
 -rw-r--r--	root/root	usr/include/evas-1/gesture/efl_canvas_gesture_recognizer_triple_tap.eo.h
 -rw-r--r--	root/root	usr/include/evas-1/gesture/efl_canvas_gesture_recognizer_zoom.eo.h
+-rw-r--r--	root/root	usr/include/evas-1/gesture/efl_canvas_gesture_rotate.eo.h
 -rw-r--r--	root/root	usr/include/evas-1/gesture/efl_canvas_gesture_tap.eo.h
 -rw-r--r--	root/root	usr/include/evas-1/gesture/efl_canvas_gesture_touch.eo.h
 -rw-r--r--	root/root	usr/include/evas-1/gesture/efl_canvas_gesture_triple_tap.eo.h
 -rw-r--r--	root/root	usr/include/evas-1/gesture/efl_canvas_gesture_types.eot.h
 -rw-r--r--	root/root	usr/include/evas-1/gesture/efl_canvas_gesture_zoom.eo.h
--rw-r--r--	root/root	usr/include/evas-1/gesture/efl_gesture_events.eo.h
 drwxr-xr-x	root/root	usr/include/evas-cxx-1/
 -rw-r--r--	root/root	usr/include/evas-cxx-1/Evas.eo.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/Evas.hh
 drwxr-xr-x	root/root	usr/include/evas-cxx-1/canvas/
+-rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_alpha_animation.eo.hh
+-rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_alpha_animation.eo.impl.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_animation.eo.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_animation.eo.impl.hh
--rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_animation_alpha.eo.hh
--rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_animation_alpha.eo.impl.hh
--rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_animation_group.eo.hh
--rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_animation_group.eo.impl.hh
--rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_animation_group_parallel.eo.hh
--rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_animation_group_parallel.eo.impl.hh
--rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_animation_group_sequential.eo.hh
--rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_animation_group_sequential.eo.impl.hh
--rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_animation_player.eo.hh
--rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_animation_player.eo.impl.hh
--rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_animation_rotate.eo.hh
--rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_animation_rotate.eo.impl.hh
--rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_animation_scale.eo.hh
--rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_animation_scale.eo.impl.hh
--rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_animation_translate.eo.hh
--rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_animation_translate.eo.impl.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_animation_types.eot.hh (EMPTY)
 -rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_event_grabber.eo.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_event_grabber.eo.impl.hh
@@ -1971,20 +1941,34 @@ drwxr-xr-x	root/root	usr/include/evas-cxx-1/canvas/
 -rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_filter_internal.eo.impl.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_group.eo.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_group.eo.impl.hh
+-rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_group_animation.eo.hh
+-rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_group_animation.eo.impl.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_image.eo.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_image.eo.impl.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_image_internal.eo.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_image_internal.eo.impl.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_object.eo.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_object.eo.impl.hh
+-rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_object_animation.eo.hh
+-rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_object_animation.eo.impl.hh
+-rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_parallel_group_animation.eo.hh
+-rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_parallel_group_animation.eo.impl.hh
+-rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_pointer.eo.hh
+-rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_pointer.eo.impl.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_polygon.eo.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_polygon.eo.impl.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_proxy.eo.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_proxy.eo.impl.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_rectangle.eo.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_rectangle.eo.impl.hh
--rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_scene3d.eo.hh
--rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_scene3d.eo.impl.hh
+-rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_rotate_animation.eo.hh
+-rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_rotate_animation.eo.impl.hh
+-rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_scale_animation.eo.hh
+-rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_scale_animation.eo.impl.hh
+-rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_scene.eo.hh
+-rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_scene.eo.impl.hh
+-rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_sequential_group_animation.eo.hh
+-rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_sequential_group_animation.eo.impl.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_snapshot.eo.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_snapshot.eo.impl.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_surface.eo.hh
@@ -1995,10 +1979,12 @@ drwxr-xr-x	root/root	usr/include/evas-cxx-1/canvas/
 -rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_surface_wayland.eo.impl.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_surface_x11.eo.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_surface_x11.eo.impl.hh
--rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_text.eo.hh
--rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_text.eo.impl.hh
--rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_text_factory.eo.hh
--rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_text_factory.eo.impl.hh
+-rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_textblock.eo.hh
+-rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_textblock.eo.impl.hh
+-rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_textblock_factory.eo.hh
+-rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_textblock_factory.eo.impl.hh
+-rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_translate_animation.eo.hh
+-rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_translate_animation.eo.impl.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_vg_container.eo.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_vg_container.eo.impl.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_vg_gradient.eo.hh
@@ -2017,8 +2003,12 @@ drwxr-xr-x	root/root	usr/include/evas-cxx-1/canvas/
 -rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_canvas_vg_shape.eo.impl.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_gfx_mapping.eo.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_gfx_mapping.eo.impl.hh
+-rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_gfx_vg_value_provider.eo.hh
+-rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_gfx_vg_value_provider.eo.impl.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_input_clickable.eo.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_input_clickable.eo.impl.hh
+-rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_input_device.eo.hh
+-rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_input_device.eo.impl.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_input_event.eo.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_input_event.eo.impl.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_input_focus.eo.hh
@@ -2033,54 +2023,50 @@ drwxr-xr-x	root/root	usr/include/evas-cxx-1/canvas/
 -rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_input_pointer.eo.impl.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_input_state.eo.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_input_state.eo.impl.hh
--rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/evas_canvas3d_camera.eo.hh
--rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/evas_canvas3d_camera.eo.impl.hh
--rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/evas_canvas3d_light.eo.hh
--rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/evas_canvas3d_light.eo.impl.hh
--rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/evas_canvas3d_material.eo.hh
--rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/evas_canvas3d_material.eo.impl.hh
--rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/evas_canvas3d_mesh.eo.hh
--rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/evas_canvas3d_mesh.eo.impl.hh
--rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/evas_canvas3d_node.eo.hh
--rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/evas_canvas3d_node.eo.impl.hh
--rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/evas_canvas3d_object.eo.hh
--rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/evas_canvas3d_object.eo.impl.hh
--rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/evas_canvas3d_primitive.eo.hh
--rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/evas_canvas3d_primitive.eo.impl.hh
--rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/evas_canvas3d_scene.eo.hh
--rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/evas_canvas3d_scene.eo.impl.hh
--rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/evas_canvas3d_texture.eo.hh
--rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/evas_canvas3d_texture.eo.impl.hh
--rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/evas_canvas3d_types.eot.hh (EMPTY)
+-rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_input_types.eot.hh (EMPTY)
+-rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_text_cursor_object.eo.hh
+-rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_text_cursor_object.eo.impl.hh
+-rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_text_formatter.eo.hh
+-rw-r--r--	root/root	usr/include/evas-cxx-1/canvas/efl_text_formatter.eo.impl.hh
 drwxr-xr-x	root/root	usr/include/evas-cxx-1/gesture/
 -rw-r--r--	root/root	usr/include/evas-cxx-1/gesture/efl_canvas_gesture.eo.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/gesture/efl_canvas_gesture.eo.impl.hh
+-rw-r--r--	root/root	usr/include/evas-cxx-1/gesture/efl_canvas_gesture_custom.eo.hh
+-rw-r--r--	root/root	usr/include/evas-cxx-1/gesture/efl_canvas_gesture_custom.eo.impl.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/gesture/efl_canvas_gesture_double_tap.eo.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/gesture/efl_canvas_gesture_double_tap.eo.impl.hh
+-rw-r--r--	root/root	usr/include/evas-cxx-1/gesture/efl_canvas_gesture_events.eo.hh
+-rw-r--r--	root/root	usr/include/evas-cxx-1/gesture/efl_canvas_gesture_events.eo.impl.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/gesture/efl_canvas_gesture_flick.eo.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/gesture/efl_canvas_gesture_flick.eo.impl.hh
--rw-r--r--	root/root	usr/include/evas-cxx-1/gesture/efl_canvas_gesture_long_tap.eo.hh
--rw-r--r--	root/root	usr/include/evas-cxx-1/gesture/efl_canvas_gesture_long_tap.eo.impl.hh
+-rw-r--r--	root/root	usr/include/evas-cxx-1/gesture/efl_canvas_gesture_long_press.eo.hh
+-rw-r--r--	root/root	usr/include/evas-cxx-1/gesture/efl_canvas_gesture_long_press.eo.impl.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/gesture/efl_canvas_gesture_manager.eo.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/gesture/efl_canvas_gesture_manager.eo.impl.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/gesture/efl_canvas_gesture_momentum.eo.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/gesture/efl_canvas_gesture_momentum.eo.impl.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/gesture/efl_canvas_gesture_recognizer.eo.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/gesture/efl_canvas_gesture_recognizer.eo.impl.hh
+-rw-r--r--	root/root	usr/include/evas-cxx-1/gesture/efl_canvas_gesture_recognizer_custom.eo.hh
+-rw-r--r--	root/root	usr/include/evas-cxx-1/gesture/efl_canvas_gesture_recognizer_custom.eo.impl.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/gesture/efl_canvas_gesture_recognizer_double_tap.eo.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/gesture/efl_canvas_gesture_recognizer_double_tap.eo.impl.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/gesture/efl_canvas_gesture_recognizer_flick.eo.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/gesture/efl_canvas_gesture_recognizer_flick.eo.impl.hh
--rw-r--r--	root/root	usr/include/evas-cxx-1/gesture/efl_canvas_gesture_recognizer_long_tap.eo.hh
--rw-r--r--	root/root	usr/include/evas-cxx-1/gesture/efl_canvas_gesture_recognizer_long_tap.eo.impl.hh
+-rw-r--r--	root/root	usr/include/evas-cxx-1/gesture/efl_canvas_gesture_recognizer_long_press.eo.hh
+-rw-r--r--	root/root	usr/include/evas-cxx-1/gesture/efl_canvas_gesture_recognizer_long_press.eo.impl.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/gesture/efl_canvas_gesture_recognizer_momentum.eo.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/gesture/efl_canvas_gesture_recognizer_momentum.eo.impl.hh
+-rw-r--r--	root/root	usr/include/evas-cxx-1/gesture/efl_canvas_gesture_recognizer_rotate.eo.hh
+-rw-r--r--	root/root	usr/include/evas-cxx-1/gesture/efl_canvas_gesture_recognizer_rotate.eo.impl.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/gesture/efl_canvas_gesture_recognizer_tap.eo.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/gesture/efl_canvas_gesture_recognizer_tap.eo.impl.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/gesture/efl_canvas_gesture_recognizer_triple_tap.eo.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/gesture/efl_canvas_gesture_recognizer_triple_tap.eo.impl.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/gesture/efl_canvas_gesture_recognizer_zoom.eo.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/gesture/efl_canvas_gesture_recognizer_zoom.eo.impl.hh
+-rw-r--r--	root/root	usr/include/evas-cxx-1/gesture/efl_canvas_gesture_rotate.eo.hh
+-rw-r--r--	root/root	usr/include/evas-cxx-1/gesture/efl_canvas_gesture_rotate.eo.impl.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/gesture/efl_canvas_gesture_tap.eo.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/gesture/efl_canvas_gesture_tap.eo.impl.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/gesture/efl_canvas_gesture_touch.eo.hh
@@ -2090,8 +2076,6 @@ drwxr-xr-x	root/root	usr/include/evas-cxx-1/gesture/
 -rw-r--r--	root/root	usr/include/evas-cxx-1/gesture/efl_canvas_gesture_types.eot.hh (EMPTY)
 -rw-r--r--	root/root	usr/include/evas-cxx-1/gesture/efl_canvas_gesture_zoom.eo.hh
 -rw-r--r--	root/root	usr/include/evas-cxx-1/gesture/efl_canvas_gesture_zoom.eo.impl.hh
--rw-r--r--	root/root	usr/include/evas-cxx-1/gesture/efl_gesture_events.eo.hh
--rw-r--r--	root/root	usr/include/evas-cxx-1/gesture/efl_gesture_events.eo.impl.hh
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/cmake/
 drwxr-xr-x	root/root	usr/lib/cmake/Ecore/
@@ -2170,100 +2154,147 @@ drwxr-xr-x	root/root	usr/lib/cmake/EvasCxx/
 drwxr-xr-x	root/root	usr/lib/ecore/
 drwxr-xr-x	root/root	usr/lib/ecore/system/
 drwxr-xr-x	root/root	usr/lib/ecore/system/upower/
-drwxr-xr-x	root/root	usr/lib/ecore/system/upower/v-1.23/
--rwxr-xr-x	root/root	usr/lib/ecore/system/upower/v-1.23/module.so
+drwxr-xr-x	root/root	usr/lib/ecore/system/upower/v-1.24/
+-rwxr-xr-x	root/root	usr/lib/ecore/system/upower/v-1.24/module.so
 drwxr-xr-x	root/root	usr/lib/ecore_con/
 drwxr-xr-x	root/root	usr/lib/ecore_con/utils/
-drwxr-xr-x	root/root	usr/lib/ecore_con/utils/v-1.23/
--rwxr-xr-x	root/root	usr/lib/ecore_con/utils/v-1.23/efl_net_proxy_helper
+drwxr-xr-x	root/root	usr/lib/ecore_con/utils/v-1.24/
+-rwxr-xr-x	root/root	usr/lib/ecore_con/utils/v-1.24/efl_net_proxy_helper
 drwxr-xr-x	root/root	usr/lib/ecore_evas/
 drwxr-xr-x	root/root	usr/lib/ecore_evas/engines/
 drwxr-xr-x	root/root	usr/lib/ecore_evas/engines/extn/
-drwxr-xr-x	root/root	usr/lib/ecore_evas/engines/extn/v-1.23/
--rwxr-xr-x	root/root	usr/lib/ecore_evas/engines/extn/v-1.23/module.so
+drwxr-xr-x	root/root	usr/lib/ecore_evas/engines/extn/v-1.24/
+-rwxr-xr-x	root/root	usr/lib/ecore_evas/engines/extn/v-1.24/module.so
 drwxr-xr-x	root/root	usr/lib/ecore_evas/engines/x/
-drwxr-xr-x	root/root	usr/lib/ecore_evas/engines/x/v-1.23/
--rwxr-xr-x	root/root	usr/lib/ecore_evas/engines/x/v-1.23/module.so
+drwxr-xr-x	root/root	usr/lib/ecore_evas/engines/x/v-1.24/
+-rwxr-xr-x	root/root	usr/lib/ecore_evas/engines/x/v-1.24/module.so
 drwxr-xr-x	root/root	usr/lib/ecore_imf/
 drwxr-xr-x	root/root	usr/lib/ecore_imf/modules/
 drwxr-xr-x	root/root	usr/lib/ecore_imf/modules/xim/
-drwxr-xr-x	root/root	usr/lib/ecore_imf/modules/xim/v-1.23/
--rwxr-xr-x	root/root	usr/lib/ecore_imf/modules/xim/v-1.23/module.so
+drwxr-xr-x	root/root	usr/lib/ecore_imf/modules/xim/v-1.24/
+-rwxr-xr-x	root/root	usr/lib/ecore_imf/modules/xim/v-1.24/module.so
 drwxr-xr-x	root/root	usr/lib/edje/
 drwxr-xr-x	root/root	usr/lib/edje/modules/
 drwxr-xr-x	root/root	usr/lib/edje/modules/elm/
-drwxr-xr-x	root/root	usr/lib/edje/modules/elm/v-1.23/
--rwxr-xr-x	root/root	usr/lib/edje/modules/elm/v-1.23/module.so
+drwxr-xr-x	root/root	usr/lib/edje/modules/elm/v-1.24/
+-rwxr-xr-x	root/root	usr/lib/edje/modules/elm/v-1.24/module.so
 drwxr-xr-x	root/root	usr/lib/edje/modules/emotion/
-drwxr-xr-x	root/root	usr/lib/edje/modules/emotion/v-1.23/
--rwxr-xr-x	root/root	usr/lib/edje/modules/emotion/v-1.23/module.so
+drwxr-xr-x	root/root	usr/lib/edje/modules/emotion/v-1.24/
+-rwxr-xr-x	root/root	usr/lib/edje/modules/emotion/v-1.24/module.so
 drwxr-xr-x	root/root	usr/lib/edje/utils/
-drwxr-xr-x	root/root	usr/lib/edje/utils/v-1.23/
--rwxr-xr-x	root/root	usr/lib/edje/utils/v-1.23/epp
+drwxr-xr-x	root/root	usr/lib/edje/utils/v-1.24/
+-rwxr-xr-x	root/root	usr/lib/edje/utils/v-1.24/epp
 drwxr-xr-x	root/root	usr/lib/eeze/
 drwxr-xr-x	root/root	usr/lib/eeze/modules/
 drwxr-xr-x	root/root	usr/lib/eeze/modules/sensor/
 drwxr-xr-x	root/root	usr/lib/eeze/modules/sensor/fake/
-drwxr-xr-x	root/root	usr/lib/eeze/modules/sensor/fake/v-1.23/
--rwxr-xr-x	root/root	usr/lib/eeze/modules/sensor/fake/v-1.23/module.so
+drwxr-xr-x	root/root	usr/lib/eeze/modules/sensor/fake/v-1.24/
+-rwxr-xr-x	root/root	usr/lib/eeze/modules/sensor/fake/v-1.24/module.so
 drwxr-xr-x	root/root	usr/lib/eeze/modules/sensor/udev/
-drwxr-xr-x	root/root	usr/lib/eeze/modules/sensor/udev/v-1.23/
--rwxr-xr-x	root/root	usr/lib/eeze/modules/sensor/udev/v-1.23/module.so
+drwxr-xr-x	root/root	usr/lib/eeze/modules/sensor/udev/v-1.24/
+-rwxr-xr-x	root/root	usr/lib/eeze/modules/sensor/udev/v-1.24/module.so
 drwxr-xr-x	root/root	usr/lib/efreet/
-drwxr-xr-x	root/root	usr/lib/efreet/v-1.23/
--rwxr-xr-x	root/root	usr/lib/efreet/v-1.23/efreet_desktop_cache_create
--rwxr-xr-x	root/root	usr/lib/efreet/v-1.23/efreet_icon_cache_create
--rwxr-xr-x	root/root	usr/lib/efreet/v-1.23/efreet_mime_cache_create
+drwxr-xr-x	root/root	usr/lib/efreet/v-1.24/
+-rwxr-xr-x	root/root	usr/lib/efreet/v-1.24/efreet_desktop_cache_create
+-rwxr-xr-x	root/root	usr/lib/efreet/v-1.24/efreet_icon_cache_create
+-rwxr-xr-x	root/root	usr/lib/efreet/v-1.24/efreet_mime_cache_create
 drwxr-xr-x	root/root	usr/lib/elementary/
 drwxr-xr-x	root/root	usr/lib/elementary/modules/
 drwxr-xr-x	root/root	usr/lib/elementary/modules/access_output/
-drwxr-xr-x	root/root	usr/lib/elementary/modules/access_output/v-1.23/
--rwxr-xr-x	root/root	usr/lib/elementary/modules/access_output/v-1.23/module.so
+drwxr-xr-x	root/root	usr/lib/elementary/modules/access_output/v-1.24/
+-rwxr-xr-x	root/root	usr/lib/elementary/modules/access_output/v-1.24/module.so
 drwxr-xr-x	root/root	usr/lib/elementary/modules/prefs/
-drwxr-xr-x	root/root	usr/lib/elementary/modules/prefs/v-1.23/
--rwxr-xr-x	root/root	usr/lib/elementary/modules/prefs/v-1.23/module.so
+drwxr-xr-x	root/root	usr/lib/elementary/modules/prefs/v-1.24/
+-rwxr-xr-x	root/root	usr/lib/elementary/modules/prefs/v-1.24/module.so
 drwxr-xr-x	root/root	usr/lib/elementary/modules/test_entry/
-drwxr-xr-x	root/root	usr/lib/elementary/modules/test_entry/v-1.23/
--rwxr-xr-x	root/root	usr/lib/elementary/modules/test_entry/v-1.23/module.so
+drwxr-xr-x	root/root	usr/lib/elementary/modules/test_entry/v-1.24/
+-rwxr-xr-x	root/root	usr/lib/elementary/modules/test_entry/v-1.24/module.so
 drwxr-xr-x	root/root	usr/lib/elementary/modules/test_map/
-drwxr-xr-x	root/root	usr/lib/elementary/modules/test_map/v-1.23/
--rwxr-xr-x	root/root	usr/lib/elementary/modules/test_map/v-1.23/module.so
+drwxr-xr-x	root/root	usr/lib/elementary/modules/test_map/v-1.24/
+-rwxr-xr-x	root/root	usr/lib/elementary/modules/test_map/v-1.24/module.so
 drwxr-xr-x	root/root	usr/lib/elementary/modules/web/
 drwxr-xr-x	root/root	usr/lib/elementary/modules/web/none/
-drwxr-xr-x	root/root	usr/lib/elementary/modules/web/none/v-1.23/
--rwxr-xr-x	root/root	usr/lib/elementary/modules/web/none/v-1.23/module.so
+drwxr-xr-x	root/root	usr/lib/elementary/modules/web/none/v-1.24/
+-rwxr-xr-x	root/root	usr/lib/elementary/modules/web/none/v-1.24/module.so
 drwxr-xr-x	root/root	usr/lib/emotion/
 drwxr-xr-x	root/root	usr/lib/emotion/modules/
-drwxr-xr-x	root/root	usr/lib/emotion/modules/generic/
-drwxr-xr-x	root/root	usr/lib/emotion/modules/generic/v-1.23/
--rwxr-xr-x	root/root	usr/lib/emotion/modules/generic/v-1.23/module.so
 drwxr-xr-x	root/root	usr/lib/emotion/modules/gstreamer1/
-drwxr-xr-x	root/root	usr/lib/emotion/modules/gstreamer1/v-1.23/
--rwxr-xr-x	root/root	usr/lib/emotion/modules/gstreamer1/v-1.23/module.so
+drwxr-xr-x	root/root	usr/lib/emotion/modules/gstreamer1/v-1.24/
+-rwxr-xr-x	root/root	usr/lib/emotion/modules/gstreamer1/v-1.24/module.so
 drwxr-xr-x	root/root	usr/lib/ethumb/
 drwxr-xr-x	root/root	usr/lib/ethumb/modules/
 drwxr-xr-x	root/root	usr/lib/ethumb/modules/emotion/
-drwxr-xr-x	root/root	usr/lib/ethumb/modules/emotion/v-1.23/
--rwxr-xr-x	root/root	usr/lib/ethumb/modules/emotion/v-1.23/module.so
+drwxr-xr-x	root/root	usr/lib/ethumb/modules/emotion/v-1.24/
+-rwxr-xr-x	root/root	usr/lib/ethumb/modules/emotion/v-1.24/module.so
 drwxr-xr-x	root/root	usr/lib/ethumb_client/
 drwxr-xr-x	root/root	usr/lib/ethumb_client/utils/
-drwxr-xr-x	root/root	usr/lib/ethumb_client/utils/v-1.23/
--rwxr-xr-x	root/root	usr/lib/ethumb_client/utils/v-1.23/ethumbd_slave
+drwxr-xr-x	root/root	usr/lib/ethumb_client/utils/v-1.24/
+-rwxr-xr-x	root/root	usr/lib/ethumb_client/utils/v-1.24/ethumbd_slave
 drwxr-xr-x	root/root	usr/lib/evas/
 drwxr-xr-x	root/root	usr/lib/evas/modules/
 drwxr-xr-x	root/root	usr/lib/evas/modules/engines/
 drwxr-xr-x	root/root	usr/lib/evas/modules/engines/buffer/
-drwxr-xr-x	root/root	usr/lib/evas/modules/engines/buffer/v-1.23/
--rwxr-xr-x	root/root	usr/lib/evas/modules/engines/buffer/v-1.23/module.so
+drwxr-xr-x	root/root	usr/lib/evas/modules/engines/buffer/v-1.24/
+-rwxr-xr-x	root/root	usr/lib/evas/modules/engines/buffer/v-1.24/module.so
 drwxr-xr-x	root/root	usr/lib/evas/modules/engines/gl_generic/
-drwxr-xr-x	root/root	usr/lib/evas/modules/engines/gl_generic/v-1.23/
--rwxr-xr-x	root/root	usr/lib/evas/modules/engines/gl_generic/v-1.23/module.so
+drwxr-xr-x	root/root	usr/lib/evas/modules/engines/gl_generic/v-1.24/
+-rwxr-xr-x	root/root	usr/lib/evas/modules/engines/gl_generic/v-1.24/module.so
 drwxr-xr-x	root/root	usr/lib/evas/modules/engines/gl_x11/
-drwxr-xr-x	root/root	usr/lib/evas/modules/engines/gl_x11/v-1.23/
--rwxr-xr-x	root/root	usr/lib/evas/modules/engines/gl_x11/v-1.23/module.so
+drwxr-xr-x	root/root	usr/lib/evas/modules/engines/gl_x11/v-1.24/
+-rwxr-xr-x	root/root	usr/lib/evas/modules/engines/gl_x11/v-1.24/module.so
 drwxr-xr-x	root/root	usr/lib/evas/modules/engines/software_x11/
-drwxr-xr-x	root/root	usr/lib/evas/modules/engines/software_x11/v-1.23/
--rwxr-xr-x	root/root	usr/lib/evas/modules/engines/software_x11/v-1.23/module.so
+drwxr-xr-x	root/root	usr/lib/evas/modules/engines/software_x11/v-1.24/
+-rwxr-xr-x	root/root	usr/lib/evas/modules/engines/software_x11/v-1.24/module.so
+drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/
+drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/bmp/
+drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/bmp/v-1.24/
+-rwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/bmp/v-1.24/module.so
+drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/generic/
+drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/generic/v-1.24/
+-rwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/generic/v-1.24/module.so
+drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/gif/
+drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/gif/v-1.24/
+-rwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/gif/v-1.24/module.so
+drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/ico/
+drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/ico/v-1.24/
+-rwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/ico/v-1.24/module.so
+drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/jp2k/
+drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/jp2k/v-1.24/
+-rwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/jp2k/v-1.24/module.so
+drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/pmaps/
+drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/pmaps/v-1.24/
+-rwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/pmaps/v-1.24/module.so
+drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/psd/
+drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/psd/v-1.24/
+-rwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/psd/v-1.24/module.so
+drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/tga/
+drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/tga/v-1.24/
+-rwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/tga/v-1.24/module.so
+drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/tgv/
+drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/tgv/v-1.24/
+-rwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/tgv/v-1.24/module.so
+drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/tiff/
+drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/tiff/v-1.24/
+-rwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/tiff/v-1.24/module.so
+drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/wbmp/
+drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/wbmp/v-1.24/
+-rwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/wbmp/v-1.24/module.so
+drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/webp/
+drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/webp/v-1.24/
+-rwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/webp/v-1.24/module.so
+drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/xpm/
+drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/xpm/v-1.24/
+-rwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/xpm/v-1.24/module.so
+drwxr-xr-x	root/root	usr/lib/evas/modules/image_savers/
+drwxr-xr-x	root/root	usr/lib/evas/modules/image_savers/tgv/
+drwxr-xr-x	root/root	usr/lib/evas/modules/image_savers/tgv/v-1.24/
+-rwxr-xr-x	root/root	usr/lib/evas/modules/image_savers/tgv/v-1.24/module.so
+drwxr-xr-x	root/root	usr/lib/evas/modules/image_savers/tiff/
+drwxr-xr-x	root/root	usr/lib/evas/modules/image_savers/tiff/v-1.24/
+-rwxr-xr-x	root/root	usr/lib/evas/modules/image_savers/tiff/v-1.24/module.so
+drwxr-xr-x	root/root	usr/lib/evas/modules/image_savers/webp/
+drwxr-xr-x	root/root	usr/lib/evas/modules/image_savers/webp/v-1.24/
+-rwxr-xr-x	root/root	usr/lib/evas/modules/image_savers/webp/v-1.24/module.so
 drwxr-xr-x	root/root	usr/lib/evas/utils/
 lrwxrwxrwx	root/root	usr/lib/evas/utils/evas_generic_pdf_loader.doc -> evas_generic_pdf_loader.libreoffice
 lrwxrwxrwx	root/root	usr/lib/evas/utils/evas_generic_pdf_loader.docx -> evas_generic_pdf_loader.libreoffice
@@ -2366,116 +2397,112 @@ lrwxrwxrwx	root/root	usr/lib/evas/utils/evas_image_loader.xcf.gz -> evas_image_l
 lrwxrwxrwx	root/root	usr/lib/evas/utils/evas_image_loader.xls -> evas_image_loader.pdf
 lrwxrwxrwx	root/root	usr/lib/evas/utils/evas_image_loader.xlsx -> evas_image_loader.pdf
 lrwxrwxrwx	root/root	usr/lib/libecore.so -> libecore.so.1
-lrwxrwxrwx	root/root	usr/lib/libecore.so.1 -> libecore.so.1.23.1
--rwxr-xr-x	root/root	usr/lib/libecore.so.1.23.1
+lrwxrwxrwx	root/root	usr/lib/libecore.so.1 -> libecore.so.1.24.1
+-rwxr-xr-x	root/root	usr/lib/libecore.so.1.24.1
 lrwxrwxrwx	root/root	usr/lib/libecore_audio.so -> libecore_audio.so.1
-lrwxrwxrwx	root/root	usr/lib/libecore_audio.so.1 -> libecore_audio.so.1.23.1
--rwxr-xr-x	root/root	usr/lib/libecore_audio.so.1.23.1
-lrwxrwxrwx	root/root	usr/lib/libecore_avahi.so -> libecore_avahi.so.1
-lrwxrwxrwx	root/root	usr/lib/libecore_avahi.so.1 -> libecore_avahi.so.1.23.1
--rwxr-xr-x	root/root	usr/lib/libecore_avahi.so.1.23.1
+lrwxrwxrwx	root/root	usr/lib/libecore_audio.so.1 -> libecore_audio.so.1.24.1
+-rwxr-xr-x	root/root	usr/lib/libecore_audio.so.1.24.1
 lrwxrwxrwx	root/root	usr/lib/libecore_con.so -> libecore_con.so.1
-lrwxrwxrwx	root/root	usr/lib/libecore_con.so.1 -> libecore_con.so.1.23.1
--rwxr-xr-x	root/root	usr/lib/libecore_con.so.1.23.1
+lrwxrwxrwx	root/root	usr/lib/libecore_con.so.1 -> libecore_con.so.1.24.1
+-rwxr-xr-x	root/root	usr/lib/libecore_con.so.1.24.1
 lrwxrwxrwx	root/root	usr/lib/libecore_evas.so -> libecore_evas.so.1
-lrwxrwxrwx	root/root	usr/lib/libecore_evas.so.1 -> libecore_evas.so.1.23.1
--rwxr-xr-x	root/root	usr/lib/libecore_evas.so.1.23.1
+lrwxrwxrwx	root/root	usr/lib/libecore_evas.so.1 -> libecore_evas.so.1.24.1
+-rwxr-xr-x	root/root	usr/lib/libecore_evas.so.1.24.1
 lrwxrwxrwx	root/root	usr/lib/libecore_file.so -> libecore_file.so.1
-lrwxrwxrwx	root/root	usr/lib/libecore_file.so.1 -> libecore_file.so.1.23.1
--rwxr-xr-x	root/root	usr/lib/libecore_file.so.1.23.1
+lrwxrwxrwx	root/root	usr/lib/libecore_file.so.1 -> libecore_file.so.1.24.1
+-rwxr-xr-x	root/root	usr/lib/libecore_file.so.1.24.1
 lrwxrwxrwx	root/root	usr/lib/libecore_imf.so -> libecore_imf.so.1
-lrwxrwxrwx	root/root	usr/lib/libecore_imf.so.1 -> libecore_imf.so.1.23.1
--rwxr-xr-x	root/root	usr/lib/libecore_imf.so.1.23.1
+lrwxrwxrwx	root/root	usr/lib/libecore_imf.so.1 -> libecore_imf.so.1.24.1
+-rwxr-xr-x	root/root	usr/lib/libecore_imf.so.1.24.1
 lrwxrwxrwx	root/root	usr/lib/libecore_imf_evas.so -> libecore_imf_evas.so.1
-lrwxrwxrwx	root/root	usr/lib/libecore_imf_evas.so.1 -> libecore_imf_evas.so.1.23.1
--rwxr-xr-x	root/root	usr/lib/libecore_imf_evas.so.1.23.1
+lrwxrwxrwx	root/root	usr/lib/libecore_imf_evas.so.1 -> libecore_imf_evas.so.1.24.1
+-rwxr-xr-x	root/root	usr/lib/libecore_imf_evas.so.1.24.1
 lrwxrwxrwx	root/root	usr/lib/libecore_input.so -> libecore_input.so.1
-lrwxrwxrwx	root/root	usr/lib/libecore_input.so.1 -> libecore_input.so.1.23.1
--rwxr-xr-x	root/root	usr/lib/libecore_input.so.1.23.1
+lrwxrwxrwx	root/root	usr/lib/libecore_input.so.1 -> libecore_input.so.1.24.1
+-rwxr-xr-x	root/root	usr/lib/libecore_input.so.1.24.1
 lrwxrwxrwx	root/root	usr/lib/libecore_input_evas.so -> libecore_input_evas.so.1
-lrwxrwxrwx	root/root	usr/lib/libecore_input_evas.so.1 -> libecore_input_evas.so.1.23.1
--rwxr-xr-x	root/root	usr/lib/libecore_input_evas.so.1.23.1
+lrwxrwxrwx	root/root	usr/lib/libecore_input_evas.so.1 -> libecore_input_evas.so.1.24.1
+-rwxr-xr-x	root/root	usr/lib/libecore_input_evas.so.1.24.1
 lrwxrwxrwx	root/root	usr/lib/libecore_ipc.so -> libecore_ipc.so.1
-lrwxrwxrwx	root/root	usr/lib/libecore_ipc.so.1 -> libecore_ipc.so.1.23.1
--rwxr-xr-x	root/root	usr/lib/libecore_ipc.so.1.23.1
+lrwxrwxrwx	root/root	usr/lib/libecore_ipc.so.1 -> libecore_ipc.so.1.24.1
+-rwxr-xr-x	root/root	usr/lib/libecore_ipc.so.1.24.1
 lrwxrwxrwx	root/root	usr/lib/libecore_x.so -> libecore_x.so.1
-lrwxrwxrwx	root/root	usr/lib/libecore_x.so.1 -> libecore_x.so.1.23.1
--rwxr-xr-x	root/root	usr/lib/libecore_x.so.1.23.1
+lrwxrwxrwx	root/root	usr/lib/libecore_x.so.1 -> libecore_x.so.1.24.1
+-rwxr-xr-x	root/root	usr/lib/libecore_x.so.1.24.1
 lrwxrwxrwx	root/root	usr/lib/libector.so -> libector.so.1
-lrwxrwxrwx	root/root	usr/lib/libector.so.1 -> libector.so.1.23.1
--rwxr-xr-x	root/root	usr/lib/libector.so.1.23.1
+lrwxrwxrwx	root/root	usr/lib/libector.so.1 -> libector.so.1.24.1
+-rwxr-xr-x	root/root	usr/lib/libector.so.1.24.1
 lrwxrwxrwx	root/root	usr/lib/libedje.so -> libedje.so.1
-lrwxrwxrwx	root/root	usr/lib/libedje.so.1 -> libedje.so.1.23.1
--rwxr-xr-x	root/root	usr/lib/libedje.so.1.23.1
+lrwxrwxrwx	root/root	usr/lib/libedje.so.1 -> libedje.so.1.24.1
+-rwxr-xr-x	root/root	usr/lib/libedje.so.1.24.1
 lrwxrwxrwx	root/root	usr/lib/libeet.so -> libeet.so.1
-lrwxrwxrwx	root/root	usr/lib/libeet.so.1 -> libeet.so.1.23.1
--rwxr-xr-x	root/root	usr/lib/libeet.so.1.23.1
+lrwxrwxrwx	root/root	usr/lib/libeet.so.1 -> libeet.so.1.24.1
+-rwxr-xr-x	root/root	usr/lib/libeet.so.1.24.1
 lrwxrwxrwx	root/root	usr/lib/libeeze.so -> libeeze.so.1
-lrwxrwxrwx	root/root	usr/lib/libeeze.so.1 -> libeeze.so.1.23.1
--rwxr-xr-x	root/root	usr/lib/libeeze.so.1.23.1
+lrwxrwxrwx	root/root	usr/lib/libeeze.so.1 -> libeeze.so.1.24.1
+-rwxr-xr-x	root/root	usr/lib/libeeze.so.1.24.1
 lrwxrwxrwx	root/root	usr/lib/libefl.so -> libefl.so.1
-lrwxrwxrwx	root/root	usr/lib/libefl.so.1 -> libefl.so.1.23.1
--rwxr-xr-x	root/root	usr/lib/libefl.so.1.23.1
+lrwxrwxrwx	root/root	usr/lib/libefl.so.1 -> libefl.so.1.24.1
+-rwxr-xr-x	root/root	usr/lib/libefl.so.1.24.1
 lrwxrwxrwx	root/root	usr/lib/libefreet.so -> libefreet.so.1
-lrwxrwxrwx	root/root	usr/lib/libefreet.so.1 -> libefreet.so.1.23.1
--rwxr-xr-x	root/root	usr/lib/libefreet.so.1.23.1
+lrwxrwxrwx	root/root	usr/lib/libefreet.so.1 -> libefreet.so.1.24.1
+-rwxr-xr-x	root/root	usr/lib/libefreet.so.1.24.1
 lrwxrwxrwx	root/root	usr/lib/libefreet_mime.so -> libefreet_mime.so.1
-lrwxrwxrwx	root/root	usr/lib/libefreet_mime.so.1 -> libefreet_mime.so.1.23.1
--rwxr-xr-x	root/root	usr/lib/libefreet_mime.so.1.23.1
+lrwxrwxrwx	root/root	usr/lib/libefreet_mime.so.1 -> libefreet_mime.so.1.24.1
+-rwxr-xr-x	root/root	usr/lib/libefreet_mime.so.1.24.1
 lrwxrwxrwx	root/root	usr/lib/libefreet_trash.so -> libefreet_trash.so.1
-lrwxrwxrwx	root/root	usr/lib/libefreet_trash.so.1 -> libefreet_trash.so.1.23.1
--rwxr-xr-x	root/root	usr/lib/libefreet_trash.so.1.23.1
+lrwxrwxrwx	root/root	usr/lib/libefreet_trash.so.1 -> libefreet_trash.so.1.24.1
+-rwxr-xr-x	root/root	usr/lib/libefreet_trash.so.1.24.1
 lrwxrwxrwx	root/root	usr/lib/libeina.so -> libeina.so.1
-lrwxrwxrwx	root/root	usr/lib/libeina.so.1 -> libeina.so.1.23.1
--rwxr-xr-x	root/root	usr/lib/libeina.so.1.23.1
+lrwxrwxrwx	root/root	usr/lib/libeina.so.1 -> libeina.so.1.24.1
+-rwxr-xr-x	root/root	usr/lib/libeina.so.1.24.1
 lrwxrwxrwx	root/root	usr/lib/libeio.so -> libeio.so.1
-lrwxrwxrwx	root/root	usr/lib/libeio.so.1 -> libeio.so.1.23.1
--rwxr-xr-x	root/root	usr/lib/libeio.so.1.23.1
+lrwxrwxrwx	root/root	usr/lib/libeio.so.1 -> libeio.so.1.24.1
+-rwxr-xr-x	root/root	usr/lib/libeio.so.1.24.1
 lrwxrwxrwx	root/root	usr/lib/libeldbus.so -> libeldbus.so.1
-lrwxrwxrwx	root/root	usr/lib/libeldbus.so.1 -> libeldbus.so.1.23.1
--rwxr-xr-x	root/root	usr/lib/libeldbus.so.1.23.1
+lrwxrwxrwx	root/root	usr/lib/libeldbus.so.1 -> libeldbus.so.1.24.1
+-rwxr-xr-x	root/root	usr/lib/libeldbus.so.1.24.1
 lrwxrwxrwx	root/root	usr/lib/libelementary.so -> libelementary.so.1
-lrwxrwxrwx	root/root	usr/lib/libelementary.so.1 -> libelementary.so.1.23.1
--rwxr-xr-x	root/root	usr/lib/libelementary.so.1.23.1
-lrwxrwxrwx	root/root	usr/lib/libelocation.so -> libelocation.so.1
-lrwxrwxrwx	root/root	usr/lib/libelocation.so.1 -> libelocation.so.1.23.1
--rwxr-xr-x	root/root	usr/lib/libelocation.so.1.23.1
+lrwxrwxrwx	root/root	usr/lib/libelementary.so.1 -> libelementary.so.1.24.1
+-rwxr-xr-x	root/root	usr/lib/libelementary.so.1.24.1
 lrwxrwxrwx	root/root	usr/lib/libelua.so -> libelua.so.1
-lrwxrwxrwx	root/root	usr/lib/libelua.so.1 -> libelua.so.1.23.1
--rwxr-xr-x	root/root	usr/lib/libelua.so.1.23.1
+lrwxrwxrwx	root/root	usr/lib/libelua.so.1 -> libelua.so.1.24.1
+-rwxr-xr-x	root/root	usr/lib/libelua.so.1.24.1
 lrwxrwxrwx	root/root	usr/lib/libembryo.so -> libembryo.so.1
-lrwxrwxrwx	root/root	usr/lib/libembryo.so.1 -> libembryo.so.1.23.1
--rwxr-xr-x	root/root	usr/lib/libembryo.so.1.23.1
+lrwxrwxrwx	root/root	usr/lib/libembryo.so.1 -> libembryo.so.1.24.1
+-rwxr-xr-x	root/root	usr/lib/libembryo.so.1.24.1
 lrwxrwxrwx	root/root	usr/lib/libemile.so -> libemile.so.1
-lrwxrwxrwx	root/root	usr/lib/libemile.so.1 -> libemile.so.1.23.1
--rwxr-xr-x	root/root	usr/lib/libemile.so.1.23.1
+lrwxrwxrwx	root/root	usr/lib/libemile.so.1 -> libemile.so.1.24.1
+-rwxr-xr-x	root/root	usr/lib/libemile.so.1.24.1
 lrwxrwxrwx	root/root	usr/lib/libemotion.so -> libemotion.so.1
-lrwxrwxrwx	root/root	usr/lib/libemotion.so.1 -> libemotion.so.1.23.1
--rwxr-xr-x	root/root	usr/lib/libemotion.so.1.23.1
+lrwxrwxrwx	root/root	usr/lib/libemotion.so.1 -> libemotion.so.1.24.1
+-rwxr-xr-x	root/root	usr/lib/libemotion.so.1.24.1
 lrwxrwxrwx	root/root	usr/lib/libeo.so -> libeo.so.1
-lrwxrwxrwx	root/root	usr/lib/libeo.so.1 -> libeo.so.1.23.1
--rwxr-xr-x	root/root	usr/lib/libeo.so.1.23.1
+lrwxrwxrwx	root/root	usr/lib/libeo.so.1 -> libeo.so.1.24.1
+-rwxr-xr-x	root/root	usr/lib/libeo.so.1.24.1
 lrwxrwxrwx	root/root	usr/lib/libeo_dbg.so -> libeo_dbg.so.1
-lrwxrwxrwx	root/root	usr/lib/libeo_dbg.so.1 -> libeo_dbg.so.1.23.1
--rwxr-xr-x	root/root	usr/lib/libeo_dbg.so.1.23.1
+lrwxrwxrwx	root/root	usr/lib/libeo_dbg.so.1 -> libeo_dbg.so.1.24.1
+-rwxr-xr-x	root/root	usr/lib/libeo_dbg.so.1.24.1
 lrwxrwxrwx	root/root	usr/lib/libeolian.so -> libeolian.so.1
-lrwxrwxrwx	root/root	usr/lib/libeolian.so.1 -> libeolian.so.1.23.1
--rwxr-xr-x	root/root	usr/lib/libeolian.so.1.23.1
-lrwxrwxrwx	root/root	usr/lib/libephysics.so -> libephysics.so.1
-lrwxrwxrwx	root/root	usr/lib/libephysics.so.1 -> libephysics.so.1.23.1
--rwxr-xr-x	root/root	usr/lib/libephysics.so.1.23.1
+lrwxrwxrwx	root/root	usr/lib/libeolian.so.1 -> libeolian.so.1.24.1
+-rwxr-xr-x	root/root	usr/lib/libeolian.so.1.24.1
 lrwxrwxrwx	root/root	usr/lib/libethumb.so -> libethumb.so.1
-lrwxrwxrwx	root/root	usr/lib/libethumb.so.1 -> libethumb.so.1.23.1
--rwxr-xr-x	root/root	usr/lib/libethumb.so.1.23.1
+lrwxrwxrwx	root/root	usr/lib/libethumb.so.1 -> libethumb.so.1.24.1
+-rwxr-xr-x	root/root	usr/lib/libethumb.so.1.24.1
 lrwxrwxrwx	root/root	usr/lib/libethumb_client.so -> libethumb_client.so.1
-lrwxrwxrwx	root/root	usr/lib/libethumb_client.so.1 -> libethumb_client.so.1.23.1
--rwxr-xr-x	root/root	usr/lib/libethumb_client.so.1.23.1
+lrwxrwxrwx	root/root	usr/lib/libethumb_client.so.1 -> libethumb_client.so.1.24.1
+-rwxr-xr-x	root/root	usr/lib/libethumb_client.so.1.24.1
 lrwxrwxrwx	root/root	usr/lib/libevas.so -> libevas.so.1
-lrwxrwxrwx	root/root	usr/lib/libevas.so.1 -> libevas.so.1.23.1
--rwxr-xr-x	root/root	usr/lib/libevas.so.1.23.1
+lrwxrwxrwx	root/root	usr/lib/libevas.so.1 -> libevas.so.1.24.1
+-rwxr-xr-x	root/root	usr/lib/libevas.so.1.24.1
+lrwxrwxrwx	root/root	usr/lib/libexactness_play.so -> libexactness_play.so.1
+lrwxrwxrwx	root/root	usr/lib/libexactness_play.so.1 -> libexactness_play.so.1.24.1
+-rwxr-xr-x	root/root	usr/lib/libexactness_play.so.1.24.1
+lrwxrwxrwx	root/root	usr/lib/libexactness_record.so -> libexactness_record.so.1
+lrwxrwxrwx	root/root	usr/lib/libexactness_record.so.1 -> libexactness_record.so.1.24.1
+-rwxr-xr-x	root/root	usr/lib/libexactness_record.so.1.24.1
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/ecore-audio.pc
--rw-r--r--	root/root	usr/lib/pkgconfig/ecore-avahi.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/ecore-con.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/ecore-cxx.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/ecore-evas.pc
@@ -2509,7 +2536,6 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/eldbus.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/elementary-cxx.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/elementary.pc
--rw-r--r--	root/root	usr/lib/pkgconfig/elocation.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/elua.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/embryo.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/emile.pc
@@ -2518,7 +2544,6 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/eo.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/eolian-cxx.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/eolian.pc
--rw-r--r--	root/root	usr/lib/pkgconfig/ephysics.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/ethumb-client.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/ethumb.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/ethumb_client.pc
@@ -2653,6 +2678,7 @@ drwxr-xr-x	root/root	usr/share/elementary/images/g_layer/
 -rw-r--r--	root/root	usr/share/elementary/images/sky_03.jpg
 -rw-r--r--	root/root	usr/share/elementary/images/sky_04.jpg
 -rw-r--r--	root/root	usr/share/elementary/images/space.png
+-rw-r--r--	root/root	usr/share/elementary/images/three_box.json
 -rw-r--r--	root/root	usr/share/elementary/images/tiger.svg
 -rw-r--r--	root/root	usr/share/elementary/images/twofish.jpg
 -rw-r--r--	root/root	usr/share/elementary/images/wood_01.jpg
@@ -2713,6 +2739,418 @@ drwxr-xr-x	root/root	usr/share/emotion/data/
 drwxr-xr-x	root/root	usr/share/eo/
 drwxr-xr-x	root/root	usr/share/eo/gdb/
 -rw-r--r--	root/root	usr/share/eo/gdb/eo_gdb.py
+drwxr-xr-x	root/root	usr/share/eolian/
+drwxr-xr-x	root/root	usr/share/eolian/include/
+drwxr-xr-x	root/root	usr/share/eolian/include/ecore-1/
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_accelerate_interpolator.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_app.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_appthread.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_boolean_model.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_bounce_interpolator.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_composite_model.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_container_model.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_core_command_line.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_core_env.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_core_proc_env.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_cubic_bezier_interpolator.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_decelerate_interpolator.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_divisor_interpolator.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_exe.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_filter_model.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_generic_model.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_io_buffered_stream.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_io_closer_fd.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_io_copier.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_io_file.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_io_positioner_fd.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_io_reader_fd.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_io_sizer_fd.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_io_stderr.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_io_stdin.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_io_stdout.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_io_writer_fd.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_linear_interpolator.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_loop.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_loop_consumer.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_loop_fd.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_loop_handler.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_loop_message.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_loop_message_future.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_loop_message_future_handler.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_loop_message_handler.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_loop_model.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_loop_timer.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_net_control_access_point.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_net_control_manager.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_net_control_technology.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_net_dialer.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_net_dialer_http.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_net_dialer_simple.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_net_dialer_ssl.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_net_dialer_tcp.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_net_dialer_udp.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_net_dialer_unix.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_net_dialer_websocket.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_net_http_types.eot
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_net_ip_address.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_net_server.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_net_server_fd.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_net_server_ip.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_net_server_simple.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_net_server_ssl.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_net_server_tcp.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_net_server_udp.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_net_server_udp_client.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_net_server_unix.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_net_session.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_net_socket.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_net_socket_fd.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_net_socket_simple.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_net_socket_ssl.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_net_socket_tcp.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_net_socket_udp.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_net_socket_unix.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_net_ssl_context.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_net_ssl_types.eot
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_net_types.eot
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_sinusoidal_interpolator.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_spring_interpolator.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_task.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_thread.eo
+-rw-r--r--	root/root	usr/share/eolian/include/ecore-1/efl_threadio.eo
+drwxr-xr-x	root/root	usr/share/eolian/include/edje-1/
+-rw-r--r--	root/root	usr/share/eolian/include/edje-1/efl_canvas_layout.eo
+-rw-r--r--	root/root	usr/share/eolian/include/edje-1/efl_canvas_layout_part.eo
+-rw-r--r--	root/root	usr/share/eolian/include/edje-1/efl_canvas_layout_part_box.eo
+-rw-r--r--	root/root	usr/share/eolian/include/edje-1/efl_canvas_layout_part_external.eo
+-rw-r--r--	root/root	usr/share/eolian/include/edje-1/efl_canvas_layout_part_invalid.eo
+-rw-r--r--	root/root	usr/share/eolian/include/edje-1/efl_canvas_layout_part_swallow.eo
+-rw-r--r--	root/root	usr/share/eolian/include/edje-1/efl_canvas_layout_part_table.eo
+-rw-r--r--	root/root	usr/share/eolian/include/edje-1/efl_canvas_layout_part_text.eo
+-rw-r--r--	root/root	usr/share/eolian/include/edje-1/efl_canvas_layout_part_type_provider.eo
+-rw-r--r--	root/root	usr/share/eolian/include/edje-1/efl_canvas_layout_types.eot
+-rw-r--r--	root/root	usr/share/eolian/include/edje-1/efl_layout_calc.eo
+-rw-r--r--	root/root	usr/share/eolian/include/edje-1/efl_layout_group.eo
+-rw-r--r--	root/root	usr/share/eolian/include/edje-1/efl_layout_signal.eo
+drwxr-xr-x	root/root	usr/share/eolian/include/efl-1/
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_audio_control.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_cached_item.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_config.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_container.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_content.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_control.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_duplicate.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_file.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_file_save.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_gfx_arrangement.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_gfx_blur.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_gfx_buffer.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_gfx_color.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_gfx_color_class.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_gfx_entity.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_gfx_fill.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_gfx_filter.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_gfx_frame_controller.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_gfx_gradient.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_gfx_gradient_linear.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_gfx_gradient_radial.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_gfx_hint.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_gfx_image.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_gfx_image_load_controller.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_gfx_image_orientable.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_gfx_path.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_gfx_shape.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_gfx_size_class.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_gfx_stack.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_gfx_text_class.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_gfx_types.eot
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_gfx_view.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_input_text_entity.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_interpolator.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_io_buffer.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_io_closer.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_io_positioner.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_io_queue.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_io_reader.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_io_sizer.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_io_writer.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_model.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_model_provider.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_observable.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_observer.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_pack.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_pack_layout.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_pack_linear.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_pack_table.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_part.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_playable.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_player.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_screen.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_text.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_text_font_properties.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_text_format.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_text_markup.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_text_markup_util.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_text_style.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_text_types.eot
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_types.eot
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_ui_autorepeat.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_ui_container_selectable.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_ui_drag.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_ui_drag_types.eot
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_ui_draggable.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_ui_factory.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_ui_factory_bind.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_ui_i18n.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_ui_layout_orientable.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_ui_layout_orientable_readonly.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_ui_property_bind.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_ui_range_display.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_ui_range_interactive.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_ui_scrollable.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_ui_scrollbar.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_ui_view.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_ui_view_factory.eo
+-rw-r--r--	root/root	usr/share/eolian/include/efl-1/efl_ui_zoom.eo
+drwxr-xr-x	root/root	usr/share/eolian/include/eio-1/
+-rw-r--r--	root/root	usr/share/eolian/include/eio-1/efl_io_manager.eo
+-rw-r--r--	root/root	usr/share/eolian/include/eio-1/efl_io_model.eo
+-rw-r--r--	root/root	usr/share/eolian/include/eio-1/eio_sentry.eo
+drwxr-xr-x	root/root	usr/share/eolian/include/elementary-1/
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_access_action.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_access_component.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_access_editable_text.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_access_object.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_access_selection.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_access_text.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_access_value.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_access_widget_action.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_access_window.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_config_global.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_text_interactive.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui.eot
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_action_connector.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_alert_popup.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_alert_popup_part_title.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_bg.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_box.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_box_flow.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_box_stack.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_button.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_button_legacy_part.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_caching_factory.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_calendar.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_calendar_item.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_check.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_check_legacy_part.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_clock.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_collection.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_collection_view.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_collection_view_focus_manager.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_datepicker.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_default_item.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_dnd.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_flip.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_flip_part.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_focus_composition.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_focus_layer.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_focus_manager.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_focus_manager_calc.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_focus_manager_root_focus.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_focus_manager_sub.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_focus_manager_window_root.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_focus_object.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_focus_util.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_format.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_frame.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_grid.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_grid_default_item.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_grid_view.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_group_item.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_image.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_image_factory.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_image_zoomable.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_image_zoomable_pan.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_item.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_item_clickable.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_l10n.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_layout.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_layout_base.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_layout_factory.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_layout_part.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_layout_part_bg.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_layout_part_box.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_layout_part_content.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_layout_part_legacy.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_layout_part_table.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_layout_part_text.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_legacy.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_list.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_list_default_item.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_list_placeholder_item.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_list_view.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_multi_selectable.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_multi_selectable_index_range.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_multi_selectable_object_range.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_navigation_bar.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_navigation_bar_part.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_navigation_bar_part_back_button.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_navigation_layout.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_pager.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_pan.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_panel.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_panes.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_panes_part.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_popup.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_popup_part_backwall.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_position_manager_data_access_v1.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_position_manager_entity.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_position_manager_grid.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_position_manager_list.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_progressbar.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_progressbar_legacy_part.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_progressbar_part.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_property_bind_part.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_radio.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_radio_box.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_radio_group.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_radio_group_impl.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_radio_legacy_part.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_relative_container.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_scroll_manager.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_scroller.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_select_model.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_selectable.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_selection.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_separator.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_single_selectable.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_slider.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_slider_interval.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_spin.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_spin_button.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_spotlight_animation_manager.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_spotlight_container.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_spotlight_fade_manager.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_spotlight_icon_indicator.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_spotlight_indicator.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_spotlight_manager.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_spotlight_scroll_manager.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_spotlight_util.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_stack.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_tab_bar.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_tab_bar_default_item.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_tab_page.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_tab_pager.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_table.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_table_static.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_tags.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_text_factory_emoticons.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_text_factory_fallback.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_text_factory_images.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_textbox.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_textbox_async.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_textbox_part.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_textpath.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_textpath_part.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_theme.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_timepicker.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_vg_animation.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_video.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_view_model.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_widget.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_widget_factory.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_widget_focus_manager.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_widget_part.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_widget_part_bg.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_widget_part_shadow.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_widget_scrollable_content.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_win.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_win_inlined.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_win_part.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/efl_ui_win_socket.eo
+-rw-r--r--	root/root	usr/share/eolian/include/elementary-1/elm_general.eot
+drwxr-xr-x	root/root	usr/share/eolian/include/emotion-1/
+-rw-r--r--	root/root	usr/share/eolian/include/emotion-1/efl_canvas_video.eo
+drwxr-xr-x	root/root	usr/share/eolian/include/eo-1/
+-rw-r--r--	root/root	usr/share/eolian/include/eo-1/efl_class.eo
+-rw-r--r--	root/root	usr/share/eolian/include/eo-1/efl_object.eo
+-rw-r--r--	root/root	usr/share/eolian/include/eo-1/efl_object_override.eo
+-rw-r--r--	root/root	usr/share/eolian/include/eo-1/eina_types.eot
+drwxr-xr-x	root/root	usr/share/eolian/include/evas-1/
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_alpha_animation.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_animation.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_animation_types.eot
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_event_grabber.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_filter_internal.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_gesture.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_gesture_custom.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_gesture_double_tap.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_gesture_events.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_gesture_flick.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_gesture_long_press.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_gesture_manager.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_gesture_momentum.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_gesture_recognizer.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_gesture_recognizer_custom.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_gesture_recognizer_double_tap.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_gesture_recognizer_flick.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_gesture_recognizer_long_press.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_gesture_recognizer_momentum.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_gesture_recognizer_rotate.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_gesture_recognizer_tap.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_gesture_recognizer_triple_tap.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_gesture_recognizer_zoom.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_gesture_rotate.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_gesture_tap.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_gesture_touch.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_gesture_triple_tap.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_gesture_types.eot
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_gesture_zoom.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_group.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_group_animation.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_image.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_image_internal.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_object.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_object_animation.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_parallel_group_animation.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_pointer.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_polygon.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_proxy.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_rectangle.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_rotate_animation.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_scale_animation.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_scene.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_sequential_group_animation.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_snapshot.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_surface.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_surface_tbm.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_surface_wayland.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_surface_x11.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_textblock.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_textblock_factory.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_translate_animation.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_vg_container.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_vg_gradient.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_vg_gradient_linear.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_vg_gradient_radial.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_vg_image.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_vg_node.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_vg_object.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_canvas_vg_shape.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_gfx_mapping.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_gfx_vg_value_provider.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_input_clickable.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_input_device.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_input_event.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_input_focus.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_input_hold.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_input_interface.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_input_key.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_input_pointer.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_input_state.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_input_types.eot
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_text_cursor_object.eo
+-rw-r--r--	root/root	usr/share/eolian/include/evas-1/efl_text_formatter.eo
 drwxr-xr-x	root/root	usr/share/ethumb/
 -rw-r--r--	root/root	usr/share/ethumb/checkme
 drwxr-xr-x	root/root	usr/share/ethumb/frames/
@@ -2724,11 +3162,13 @@ drwxr-xr-x	root/root	usr/share/evas/
 drwxr-xr-x	root/root	usr/share/evas/filters/
 drwxr-xr-x	root/root	usr/share/evas/filters/lua/
 -rw-r--r--	root/root	usr/share/evas/filters/lua/color.lua
+drwxr-xr-x	root/root	usr/share/exactness/
+-rw-r--r--	root/root	usr/share/exactness/player_entry.edj
 drwxr-xr-x	root/root	usr/share/gdb/
 drwxr-xr-x	root/root	usr/share/gdb/auto-load/
 drwxr-xr-x	root/root	usr/share/gdb/auto-load/usr/
 drwxr-xr-x	root/root	usr/share/gdb/auto-load/usr/lib/
--rw-r--r--	root/root	usr/share/gdb/auto-load/usr/lib/libeo.so.1.23.1-gdb.py
+-rw-r--r--	root/root	usr/share/gdb/auto-load/usr/lib/libeo.so.1.24.1-gdb.py
 drwxr-xr-x	root/root	usr/share/icons/
 drwxr-xr-x	root/root	usr/share/icons/Enlightenment-X/
 -rw-r--r--	root/root	usr/share/icons/Enlightenment-X/README

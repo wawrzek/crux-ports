@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/wawrzek.pub
-RWQXc2agtIcYBQjA3z7rpTyaYsO+uHDECKXXHgI8qhKBrNflBx+GfFBP+lk0C1oP5CAeps4uRTd0D1lfAX9I5zmJKTrIHt/7GQk=
-SHA256 (Pkgfile) = 3b973d143958ddaad6173ae0f5348254d532e95bb2d86573163e125b4ef68408
-SHA256 (.footprint) = 18319234eeae025f3c6570dcbd7c98119888b6bc2ee377dc255d28fb6dd1837a
-SHA256 (enlightenment-0.23.1.tar.xz) = e530590c09b560679621f4531d55c242cfafe8523309e0ae88fb267e00f52c34
+RWQXc2agtIcYBeoLkj56s6u0fMP69uUMOKpca6ZDJYa9ZwfHMPtMSzDvlRtLXIMC0fhnEaWpeDmyVgIxoULKybpcPzGr4irW5wg=
+SHA256 (Pkgfile) = 2e34cb6a347fe8d90644f0a1d278b80abe4495f7fe7649cfc25ade41ff7f539a
+SHA256 (.footprint) = 2f67f1e259443efe1b0a87e17664ada72c076f184b0009b0407958666612484b
+SHA256 (enlightenment-0.24.0.tar.xz) = e7bb0d6b2a9661bd0b2ca15c6bca20ec654a01aff8865f9f594efada3a1c0504
