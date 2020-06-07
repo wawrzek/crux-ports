@@ -28,10 +28,10 @@ f:de70773042dc5c2c0969beef6a6c0b8a:econnman/.footprint
 f:6b5cbdb9452cff8d83c30bf0057ceb59:econnman/Pkgfile
 f:95b065cdfe750d52a86a8c2e6a9512b1:econnman/.signature
 f:453110da2d446a41b093c7c4335abcbd:econnman/.md5sum
-f:128b70134e08c8f7fba9d7d5aadce807:efl/.footprint
-f:dd24974e30597b422e768ddcb9b330b7:efl/.signature
+f:19f56839d425b0db1b68001f183f0c04:efl/.footprint
+f:452a52b3a907555543a4577f2aebd672:efl/.signature
 f:98cf44c919464252dd97527fba6ce2ab:efl/.md5sum
-f:3f7b8b384a517fcffab01c5d806cf80e:efl/Pkgfile
+f:ef4a4143c662b3ec9b547594488bf71d:efl/Pkgfile
 f:54a19c2571205661bdee2fa552ce2fbe:luajit/.footprint
 f:96bb0e6378625bc5badfc37b5b45127e:luajit/.signature
 f:5d611b547965213ea71dd5600d19ba75:luajit/.md5sum
@@ -64,10 +64,10 @@ f:78110d0a61b96c58ad4939e41aa43370:.httpup-urlinfo
 f:fcd4b7fc898d312d4c44ecf2691035a7:libspectre/.footprint
 f:71d0c11419bb0fde84241dccaf74cdd2:libspectre/Pkgfile
 f:a3fe836816c5c9175141701f8ccc9c2b:libspectre/.signature
-f:146164204f45877437a7a9f3e359531d:enlightenment/.footprint
-f:e8786ac33ebd03446666e777b67bd7a0:enlightenment/.signature
+f:cce8f83c5439c70cccfea79357bdc831:enlightenment/.footprint
+f:075f32c7282b3c758d266c3c16a39a50:enlightenment/.signature
 f:1726e15cfe174b166514c0588b64e159:enlightenment/.md5sum
-f:8ebfb9860ff3d7fe9fd4f9b3cf5bcb8e:enlightenment/Pkgfile
+f:9e4d589e78bda6adfd68abb264729c3d:enlightenment/Pkgfile
 f:28f0d4462a985b3c78ac0dbea9d8b5ba:ephoto/.footprint
 f:914f986b11423d04f41efc9d153d5a01:ephoto/.signature
 f:0af82a098b1fc40f488056e9c04f41c1:ephoto/Pkgfile
