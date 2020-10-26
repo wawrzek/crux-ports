@@ -1,6 +1,0 @@
-untrusted comment: verify with /etc/ports/wawrzek.pub
-RWQXc2agtIcYBXtMvkbkOBRiHyTugUN+bHLi/IImQID48EFeHY2HPJY82qjgL5P3nX/2uhXnBShHnE+SGua7j6LqzKQAzZSMFQ4=
-SHA256 (Pkgfile) = 29915b286de38a730dd0ae2a239f5d874c38b5339ba2644ca1533ff4fb540807
-SHA256 (.footprint) = c138bf06e2ffbcd5cda0a470f44c9dc4024f5bccdaa22681dee93af198c610d8
-SHA256 (wpa_supplicant-2.8.tar.gz) = a689336a12a99151b9de5e25bfccadb88438f4f4438eb8db331cd94346fd3d96
-SHA256 (wpa_supplicant) = d8824cb0e06ef256bb89ef85615d142e9a1ef09ea11087d2b777d21d137e5b79
