@@ -18,10 +18,11 @@ f:992926518c1005f85d8daddc7fb8110a:bullet/.footprint
 f:85ec55dd8b5e2278e34fb0d887beb056:bullet/Pkgfile
 f:9b4d354f9c087688283d33307864f054:bullet/.signature
 f:a98780891fbae9fe0f30dd23d62c408f:connman/wifi
-f:2bcaa65d63da8d6f9c411d3a63b87cdf:connman/.footprint
+f:8224e7f4630bdcc8655c34ae88313434:connman/.footprint
 f:5bea3983ce3806deade0d7727e8544e2:connman/connmand
-f:a918519e1d118d3e527f5b8593774460:connman/.signature
-f:1f922d34cf30b8e66ad3ac23aafd756f:connman/Pkgfile
+f:91e2dea2078ba1a62019438f83048b1f:connman/.signature
+f:11af0381db4b0f0e4512a3f14203c418:connman/wpa_supplicant
+f:5a2a9e001663629f249ea53f6a5f23e5:connman/Pkgfile
 f:de70773042dc5c2c0969beef6a6c0b8a:econnman/.footprint
 f:6b5cbdb9452cff8d83c30bf0057ceb59:econnman/Pkgfile
 f:95b065cdfe750d52a86a8c2e6a9512b1:econnman/.signature

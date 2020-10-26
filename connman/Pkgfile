@@ -6,25 +6,28 @@
 
 name=connman
 version=1.38
-release=1
+release=2
 source=(https://www.kernel.org/pub/linux/network/connman/$name-$version.tar.gz
     connmand
+    wpa_supplicant
     wifi)
 
 build()
 {
     cd $name-$version
-    ./configure --prefix=/usr \
-		--enable-iwd
+    ./configure \
+      --prefix=/usr \
+      --enable-iwd
     make
     make install DESTDIR=$PKG
     # update dbus roles
-		mkdir -p $PKG/etc/dbus-1/system.d
+    mkdir -p $PKG/etc/dbus-1/system.d
     mv $PKG/usr/share/dbus-1/system.d/connman.conf $PKG/etc/dbus-1/system.d/
     sed -i 's/user="root"/group="wheel"/' $PKG/etc/dbus-1/system.d/connman.conf
 
     mkdir -p $PKG/usr/var/run/$name
     # rc script
     install -D -m 0755 $SRC/connmand $PKG/etc/rc.d/connmand
+    install -D -m 0755 $SRC/wifi $PKG/etc/rc.d/wpa_supplicant
     install -D -m 0755 $SRC/wifi $PKG/etc/rc.d/wifi
 }
