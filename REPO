@@ -14,6 +14,7 @@ d:lensfun
 d:darktable
 d:fop
 d:cnijfilter2
+d:evisum
 f:992926518c1005f85d8daddc7fb8110a:bullet/.footprint
 f:85ec55dd8b5e2278e34fb0d887beb056:bullet/Pkgfile
 f:ebbad1022b2bdff75ed6595ad88d8302:bullet/.signature
@@ -53,7 +54,7 @@ f:71d0c11419bb0fde84241dccaf74cdd2:libspectre/Pkgfile
 f:a3fe836816c5c9175141701f8ccc9c2b:libspectre/.signature
 f:cf86b7645c6266cf5c2e19f684c90059:enlightenment/.footprint
 f:8b72dd5f7a635ab1df147fa7c0f1f0c8:enlightenment/.signature
-f:1b13d95c218032f6de8e06e887ab2b7e:enlightenment/Pkgfile
+f:2bc3bd4cc1c5388f01aa9191ce32c703:enlightenment/Pkgfile
 f:28f0d4462a985b3c78ac0dbea9d8b5ba:ephoto/.footprint
 f:914f986b11423d04f41efc9d153d5a01:ephoto/.signature
 f:0af82a098b1fc40f488056e9c04f41c1:ephoto/Pkgfile
@@ -70,3 +71,6 @@ f:c59fcf51a3d23eac115bd717ed1cbacd:wawrzek.pub
 f:75904233af65b20eb77912cc4029fc40:cnijfilter2/.footprint
 f:bf45c71b414edf27dc55a5604dc49d14:cnijfilter2/Pkgfile
 f:f4eff24eb1e2c98c4c71c8f1bfd28e98:cnijfilter2/.signature
+f:86e65602ea41f8d1805113a9324326c0:evisum/.signature
+f:72b3fb634926bdb3346270fc3cb5aa52:evisum/.footprint
+f:c9d234533cd3da345f08b6503d5fa29e:evisum/Pkgfile
