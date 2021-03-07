@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/wawrzek.pub
+RWQXc2agtIcYBcoDLFEtwbVOkZFCYsrIf93rMfiAYN0v39xVa2VtLMMvArlKlTUm85xAiQMW9ODggaEHjXkpBngZrX0yGb2pwQs=
+SHA256 (Pkgfile) = 7bb015395ea83261df24bcd0d24463d175b193a758cdadad37cba230ad898c23
+SHA256 (.footprint) = 64415f66a8854c5bac55034b0bc9dce47c1af0b79999115d3f77e964e26a7f7f
+SHA256 (evisum-0.5.11.tar.xz) = 8c23989c6ffec73f6a2ba9e938f4feb70d6da7f2b441a1429ac0513bd2786e31

@@ -1,0 +1,16 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/evisum
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/applications/
+-rw-r--r--	root/root	usr/share/applications/evisum.desktop
+-rw-r--r--	root/root	usr/share/applications/evisum_cpu.desktop
+-rw-r--r--	root/root	usr/share/applications/evisum_mem.desktop
+drwxr-xr-x	root/root	usr/share/evisum/
+drwxr-xr-x	root/root	usr/share/icons/
+drwxr-xr-x	root/root	usr/share/icons/hicolor/
+drwxr-xr-x	root/root	usr/share/icons/hicolor/256x256/
+drwxr-xr-x	root/root	usr/share/icons/hicolor/256x256/apps/
+-rw-r--r--	root/root	usr/share/icons/hicolor/256x256/apps/evisum.png
+-rw-r--r--	root/root	usr/share/icons/hicolor/256x256/apps/evisum_cpu.png
+-rw-r--r--	root/root	usr/share/icons/hicolor/256x256/apps/evisum_mem.png

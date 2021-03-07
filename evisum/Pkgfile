@@ -1,11 +1,10 @@
-# Description: Enlightenment window manager.
+# Description: EFL system monitor
 # URL: http://www.enlightenment.org/
 # Maintainer: Wawrzek Niewodniczanski, main at wawrzek dot name
-# Packager: Victor Martinez, pitillo at ono dot com
-# Depends on: efl xorg-xcb-util-keysyms
+# Depends on: efl
 
-name=enlightenment
-version=0.24.2
+name=evisum
+version=0.5.11
 release=1
 source=(http://download.enlightenment.org/rel/apps/$name/$name-$version.tar.xz)
 
@@ -14,11 +13,9 @@ build()
     cd $name-$version
     meson --prefix=/usr \
 		      --mandir=/usr/man \
-          -Dsystemd=false \
-					-Dnls=false \
-          -Dmount-udisks=false \
 					. build
 		ninja -C build
     DESTDIR=$PKG ninja -C build install
-    rm -r $PKG/usr/share/$name/{AUTHORS,COPYING,doc/}
+    rm -r $PKG/usr/share/$name/images/
+		rm -r $PKG/usr/share/locale
 }
