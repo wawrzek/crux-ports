@@ -6,7 +6,7 @@
 
 name=connman
 version=1.38
-release=2
+release=3
 source=(https://www.kernel.org/pub/linux/network/connman/$name-$version.tar.gz
     connmand
     wpa_supplicant
@@ -28,6 +28,6 @@ build()
     mkdir -p $PKG/usr/var/run/$name
     # rc script
     install -D -m 0755 $SRC/connmand $PKG/etc/rc.d/connmand
-    install -D -m 0755 $SRC/wifi $PKG/etc/rc.d/wpa_supplicant
+    install -D -m 0755 $SRC/wpa_supplicant $PKG/etc/rc.d/wpa_supplicant
     install -D -m 0755 $SRC/wifi $PKG/etc/rc.d/wifi
 }
