@@ -2,7 +2,7 @@
 # URL: https://01.org/connman
 # Maintainer: Wawrzek Niewodniczanski main at wawrzek dot name
 # Packager: Wawrzek Niewodniczanski main at wawrzek dot name
-# Depends on: dbus gnutls wpa_supplicant
+# Depends on: dbus gnutls wpa_supplicant libmnl
 
 name=connman
 version=1.39

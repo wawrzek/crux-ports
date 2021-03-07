@@ -13,6 +13,6 @@ build()
 {
     export DISABLE_CYTHON=1
     cd $name-$version
-    python setup.py build
-    python setup.py install --prefix=/usr --root=${PKG}
+    python3 setup.py build
+    python3 setup.py install --prefix=/usr --root=${PKG}
 }
