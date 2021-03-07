@@ -31,6 +31,7 @@ drwxr-xr-x	root/root	usr/share/terminology/
 drwxr-xr-x	root/root	usr/share/terminology/backgrounds/
 -rw-r--r--	root/root	usr/share/terminology/backgrounds/mystic.png
 -rw-r--r--	root/root	usr/share/terminology/backgrounds/texture_background.png
+-rw-r--r--	root/root	usr/share/terminology/colorschemes.eet
 drwxr-xr-x	root/root	usr/share/terminology/fonts/
 -rw-r--r--	root/root	usr/share/terminology/fonts/10x20.pcf
 -rw-r--r--	root/root	usr/share/terminology/fonts/4x6.pcf
@@ -60,14 +61,6 @@ drwxr-xr-x	root/root	usr/share/terminology/fonts/
 drwxr-xr-x	root/root	usr/share/terminology/images/
 -rw-r--r--	root/root	usr/share/terminology/images/terminology.png
 drwxr-xr-x	root/root	usr/share/terminology/themes/
--rw-r--r--	root/root	usr/share/terminology/themes/base16_ocean_dark.edj
--rw-r--r--	root/root	usr/share/terminology/themes/black.edj
 -rw-r--r--	root/root	usr/share/terminology/themes/default.edj
 -rw-r--r--	root/root	usr/share/terminology/themes/mild.edj
--rw-r--r--	root/root	usr/share/terminology/themes/mustang.edj
--rw-r--r--	root/root	usr/share/terminology/themes/nord.edj
 -rw-r--r--	root/root	usr/share/terminology/themes/nyanology.edj
--rw-r--r--	root/root	usr/share/terminology/themes/papercolor.edj
--rw-r--r--	root/root	usr/share/terminology/themes/smyck.edj
--rw-r--r--	root/root	usr/share/terminology/themes/solarized.edj
--rw-r--r--	root/root	usr/share/terminology/themes/solarized_light.edj
