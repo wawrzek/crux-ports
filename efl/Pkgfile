@@ -5,7 +5,7 @@
 # Depends on: dbus xorg-libxp xorg-libxscrnsaver gstreamer gst-plugins-base giflib libtiff libsndfile pulseaudio harfbuzz fribidi poppler librsvg bullet libraw libspectre luajit check openjpeg2
 
 name=efl
-version=1.24.3
+version=1.25.1
 release=1
 source=(http://download.enlightenment.org/rel/libs/$name/$name-$version.tar.xz)
 
