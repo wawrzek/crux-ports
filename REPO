@@ -7,7 +7,6 @@ d:python-efl
 d:rage
 d:terminology
 d:libraw
-d:libspectre
 d:enlightenment
 d:ephoto
 d:lensfun
@@ -49,9 +48,6 @@ f:ccaf34bfb9556ccc11d06b2aeaf21da0:libraw/.signature
 f:a7d0a5967edb2c19e04f9283a888eeb2:description.html
 f:d41d8cd98f00b204e9800998ecf8427e:README.md
 f:78110d0a61b96c58ad4939e41aa43370:.httpup-urlinfo
-f:fcd4b7fc898d312d4c44ecf2691035a7:libspectre/.footprint
-f:71d0c11419bb0fde84241dccaf74cdd2:libspectre/Pkgfile
-f:a3fe836816c5c9175141701f8ccc9c2b:libspectre/.signature
 f:cf86b7645c6266cf5c2e19f684c90059:enlightenment/.footprint
 f:8b72dd5f7a635ab1df147fa7c0f1f0c8:enlightenment/.signature
 f:2bc3bd4cc1c5388f01aa9191ce32c703:enlightenment/Pkgfile
