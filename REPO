@@ -9,9 +9,6 @@ d:terminology
 d:libraw
 d:enlightenment
 d:ephoto
-d:lensfun
-d:darktable
-d:fop
 d:cnijfilter2
 d:evisum
 f:992926518c1005f85d8daddc7fb8110a:bullet/.footprint
@@ -54,15 +51,6 @@ f:2bc3bd4cc1c5388f01aa9191ce32c703:enlightenment/Pkgfile
 f:28f0d4462a985b3c78ac0dbea9d8b5ba:ephoto/.footprint
 f:914f986b11423d04f41efc9d153d5a01:ephoto/.signature
 f:0af82a098b1fc40f488056e9c04f41c1:ephoto/Pkgfile
-f:655d95beb9e5a12e82b27275e87cb6ad:lensfun/.footprint
-f:241e1062d7ea33786f5b87077f269314:lensfun/Pkgfile
-f:270fabb70ed5d41cce69973a85ac51d7:lensfun/.signature
-f:b8f02ecf408d0512effbae0f3e9868ba:darktable/.footprint
-f:02cd071f414b3f03efc8823e279ced70:darktable/Pkgfile
-f:9c29371144aa0e2b60a1df7b1d2a3d94:darktable/.signature
-f:b0c787fac90f802aa81033608e6246df:fop/.footprint
-f:a7342a44a63002fdd148fcc2e34d9b68:fop/Pkgfile
-f:ba7ee0a12e6e69e142653584d156832e:fop/.signature
 f:c59fcf51a3d23eac115bd717ed1cbacd:wawrzek.pub
 f:75904233af65b20eb77912cc4029fc40:cnijfilter2/.footprint
 f:bf45c71b414edf27dc55a5604dc49d14:cnijfilter2/Pkgfile
