@@ -1,0 +1,20 @@
+# Description: A simple font management application for GTK Desktop Environments
+# URL: https://github.com/FontManager/font-manager
+# Maintainer: Wawrzek Niewodniczanski
+# Depends on: meson, ninja, glib, vala, freetype2, gtk3, json-glib, libxml, sqlite, gobject-introspection, webkitgtk
+
+name=font-manager
+version=0.8.6
+release=1
+source=(https://github.com/FontManager/$name/archive/refs/tags/$version.tar.gz)
+
+build() {
+	cd $name-$version
+	meson --prefix=/usr \
+		-D enable-nls=false \
+		-D yelp-doc=false \
+		-D gtk-doc=false \
+		--buildtype=release build
+	ninja -C build
+	DESTDIR=$PKG ninja -C build install
+}
