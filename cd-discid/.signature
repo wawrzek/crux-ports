@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/wawrzek.pub
+RWQXc2agtIcYBc9IL9TOI5mhia1vSPVxWnDixvzkKOZlBRcaU+5eZltUr42CssBX/HNJtEAjhybByR+8J7JWHl972A2+F1088A8=
+SHA256 (Pkgfile) = 4dd68e5f92880c81fe64817f58d83a2165ba7763c48ea8b3bcedac981fe35460
+SHA256 (.footprint) = 74932d1a42a55fd127501dff9edf9e4e2628da0e6f9c4b6dc42f2d8e13205ebc
+SHA256 (cd-discid-1.4.tar.gz) = ffd68cd406309e764be6af4d5cbcc309e132c13f3597c6a4570a1f218edd2c63
+SHA256 (pr-6.patch) = e1b85d7589c604c6f626da4a05739f91751d115e07494bd5905e92d238d7b6fe

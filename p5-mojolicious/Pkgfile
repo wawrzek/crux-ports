@@ -1,0 +1,19 @@
+# Description: API to search the musicbrainz.org database
+# URL: https://metacpan.org/release/Mojolicious
+# Maintainer: Wawrzek Niewodniczański, main at wawrzek dot name
+
+name=p5-mojolicious
+version=9.17
+release=1
+source=(https://cpan.metacpan.org/authors/id/S/SR/SRI/Mojolicious-$version.tar.gz)
+
+build() {
+	cd Mojolicious-$version
+	unset PERL5LIB PERL_MM_OPT PERL_MB_OPT PERL_LOCAL_LIB_ROOT
+	export PERL_MM_USE_DEFAULT=1 PERL_AUTOINSTALL=--skipdeps
+	perl Makefile.PL
+	make
+	make install INSTALLDIRS=vendor DESTDIR=$PKG
+	find $PKG \( -name '.packlist' -o -name '*.pod' \) -delete
+  rmdir $PKG/usr/lib/perl5/5.32/linux-thread-multi/
+}

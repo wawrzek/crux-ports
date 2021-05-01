@@ -1,0 +1,18 @@
+# Description: Backend utility to get cddb information
+# URL:         http://linukz.org/cd-discid.shtml
+# Maintainer: Wawrzek Niewodniczański, main at wawrzek dot name
+#
+
+name=cd-discid
+version=1.4
+release=2
+source=(http://linukz.org/download/$name-$version.tar.gz \
+	pr-6.patch)
+
+build () {
+	cd "$name-$version"
+  patch -Np0 -i ../pr-6.patch $name.c
+	make
+	make STRIP=/bin/true DESTDIR=$PKG PREFIX=/usr install
+}
+

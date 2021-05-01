@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/wawrzek.pub
+RWQXc2agtIcYBbbEwyDaZ4Rr83gYmK+vlSOZaAehrEHN0G2W3MGzqB5ZW87mZmFBTekNVItEK0ovqbYUFLuWmSKzCSJVMzzdCwo=
+SHA256 (Pkgfile) = 7c67ee2f13157b8a046cfc638cf38b4bfe7848dd15e2581e29b35266dab4e3f6
+SHA256 (.footprint) = 79b3c452c8585819b21cc3b436b6606ee6908f68d08812d747326887c355d353
+SHA256 (WebService-MusicBrainz-1.0.5.tar.gz) = 523b839968206c5751ea9ee670c7892c8c3be0f593aa591a00c0315468d09099

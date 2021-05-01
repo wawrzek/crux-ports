@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/wawrzek.pub
+RWQXc2agtIcYBRk6cABll+Mu5fvilRQCdPGanLIHzx3h8DjG55OJFlvJTD30EWcTn4MW/U1EMko8fXu9oUO1Q5TMgYmXnTeWsQQ=
+SHA256 (Pkgfile) = e42d9591f9bbcd9a4adf63b53edad72d6cb3885802443c68f8ba13aa926d94dc
+SHA256 (.footprint) = 8d16118fa3e840819e671b4dbd67bde51d918e679ae93eb0a51c3c2f63a07c9d
+SHA256 (Mojolicious-9.17.tar.gz) = 0da6e60701bdb8ac063d69616c925ff2ecc6a31c6bf5b58a0b10b6013294bd8d
