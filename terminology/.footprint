@@ -31,7 +31,29 @@ drwxr-xr-x	root/root	usr/share/terminology/
 drwxr-xr-x	root/root	usr/share/terminology/backgrounds/
 -rw-r--r--	root/root	usr/share/terminology/backgrounds/mystic.png
 -rw-r--r--	root/root	usr/share/terminology/backgrounds/texture_background.png
--rw-r--r--	root/root	usr/share/terminology/colorschemes.eet
+drwxr-xr-x	root/root	usr/share/terminology/colorschemes/
+-rw-r--r--	root/root	usr/share/terminology/colorschemes/Belafonte Day.eet
+-rw-r--r--	root/root	usr/share/terminology/colorschemes/Belafonte Night.eet
+-rw-r--r--	root/root	usr/share/terminology/colorschemes/Black.eet
+-rw-r--r--	root/root	usr/share/terminology/colorschemes/Cobalt2.eet
+-rw-r--r--	root/root	usr/share/terminology/colorschemes/Default.eet
+-rw-r--r--	root/root	usr/share/terminology/colorschemes/Dracula.eet
+-rw-r--r--	root/root	usr/share/terminology/colorschemes/Fahrenheit.eet
+-rw-r--r--	root/root	usr/share/terminology/colorschemes/Material.eet
+-rw-r--r--	root/root	usr/share/terminology/colorschemes/Mild.eet
+-rw-r--r--	root/root	usr/share/terminology/colorschemes/Mustang.eet
+-rw-r--r--	root/root	usr/share/terminology/colorschemes/Nord.eet
+-rw-r--r--	root/root	usr/share/terminology/colorschemes/Ocean Dark.eet
+-rw-r--r--	root/root	usr/share/terminology/colorschemes/One Dark.eet
+-rw-r--r--	root/root	usr/share/terminology/colorschemes/PaleNight.eet
+-rw-r--r--	root/root	usr/share/terminology/colorschemes/PaperColor.eet
+-rw-r--r--	root/root	usr/share/terminology/colorschemes/Smyck.eet
+-rw-r--r--	root/root	usr/share/terminology/colorschemes/Soft Era.eet
+-rw-r--r--	root/root	usr/share/terminology/colorschemes/Solarized Light.eet
+-rw-r--r--	root/root	usr/share/terminology/colorschemes/Solarized.eet
+-rw-r--r--	root/root	usr/share/terminology/colorschemes/Tango Dark.eet
+-rw-r--r--	root/root	usr/share/terminology/colorschemes/Tango Light.eet
+-rw-r--r--	root/root	usr/share/terminology/colorschemes/Tomorrow Night Burns.eet
 drwxr-xr-x	root/root	usr/share/terminology/fonts/
 -rw-r--r--	root/root	usr/share/terminology/fonts/10x20.pcf
 -rw-r--r--	root/root	usr/share/terminology/fonts/4x6.pcf
@@ -62,5 +84,4 @@ drwxr-xr-x	root/root	usr/share/terminology/images/
 -rw-r--r--	root/root	usr/share/terminology/images/terminology.png
 drwxr-xr-x	root/root	usr/share/terminology/themes/
 -rw-r--r--	root/root	usr/share/terminology/themes/default.edj
--rw-r--r--	root/root	usr/share/terminology/themes/mild.edj
 -rw-r--r--	root/root	usr/share/terminology/themes/nyanology.edj

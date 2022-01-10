@@ -2,20 +2,20 @@
 # URL: http://www.enlightenment.org/
 # Maintainer: Wawrzek Niewodniczanski main at wawrzek dot name
 # Packager: Victor Martinez, pitillo at ono dot com
-# Depends on: elementary
+# Depends on: efl
 
 name=terminology
-version=1.11.0
+version=1.12.1
 release=1
 source=(http://download.enlightenment.org/rel/apps/$name/$name-$version.tar.xz)
 
 build()
 {
-    cd $name-$version
-    meson --prefix=/usr \
-          --mandir=/usr/man \
-					-Dnls=false \
-					. build
-    ninja -C build
-    DESTDIR=$PKG ninja -C build install
+	cd $name-$version
+	meson --prefix=/usr \
+		--mandir=/usr/man \
+		-Dnls=false \
+		. build
+	ninja -C build
+	DESTDIR=$PKG ninja -C build install
 }
