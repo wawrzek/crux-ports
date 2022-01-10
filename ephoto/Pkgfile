@@ -4,16 +4,17 @@
 # Depends on: efl
 
 name=ephoto
-version=1.6
+version=1.6.0
 release=1
 source=(https://download.enlightenment.org/rel/apps/$name/$name-$version.tar.xz)
 
 build()
 {
-    cd $name-$version
-    ./configure --prefix=/usr \
-                --mandir=/usr/man \
-		--disable-nls
-    make
-    make DESTDIR=$PKG install
+	cd $name-$version
+	meson --prefix=/usr \
+		--mandir=/usr/man \
+		-Dnls=false \
+		. build
+	ninja -C build
+	DESTDIR=$PKG ninja -C build install
 }
