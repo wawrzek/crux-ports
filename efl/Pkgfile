@@ -12,14 +12,14 @@ source=(http://download.enlightenment.org/rel/libs/$name/$name-$version.tar.xz)
 build()
 {
 	cd $name-$version
-    meson --prefix=/usr \
-          --mandir=/usr/man \
-					-Dnls=false \
-					-Dsystemd=false \
-					-Dnetwork-backend=connman \
-					-Decore-imf-loaders-disabler=ibus,scim \
-					-Dinclude-directories=/usr/include/luajit-2.0 \
-					. build
-    ninja -C build
-    DESTDIR=$PKG ninja -C build install
+	meson --prefix=/usr \
+		--mandir=/usr/man \
+		-Dnls=false \
+		-Dsystemd=false \
+		-Dnetwork-backend=connman \
+		-Decore-imf-loaders-disabler=ibus,scim \
+		-Dinclude-directories=/usr/include/luajit-2.0 \
+		. build
+	ninja -C build
+	DESTDIR=$PKG ninja -C build install
 }
