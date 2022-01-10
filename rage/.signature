@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/wawrzek.pub
-RWQXc2agtIcYBfmXAx2LelJ8nk/6RSz/0X2Q/YaftDWNBgTnauS66QbTOxU/lXaNPq3wO3KK1Bi44bahfTLj/Qe8jsecNTOtJw8=
-SHA256 (Pkgfile) = 78a2688e3a4903a1ab48d699ff33f9d81a7efe410d5f3c7e6cc65eccc5241d4d
+RWQXc2agtIcYBREyk/VKNfDpPkkHT2e+6xI2m/rv/cm8UGE2PY4iaTSEvl4iRswHboTLBgUITLBQ4SZ2z3xj+2wF4E7VFtPlIAU=
+SHA256 (Pkgfile) = 380a03da03a1dc91c7f8f2e9f4a12230596d9cf2f8dc34df00489d9910216976
 SHA256 (.footprint) = 811b37ab3a946926d40e7d670d97f0c2406e3208ddef6898098d25e9d1255c87
-SHA256 (rage-0.3.1.tar.xz) = e5c434ef415ec1dd268399c527f582baeef39a25dee52f828876bfb58698cd11
+SHA256 (rage-0.4.0.tar.xz) = 7ce58419aa5197aa6c33f2e3f9eb9d78ff379cae863d5fa114fd1428d5a1ca0f

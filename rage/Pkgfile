@@ -10,10 +10,10 @@ source=(http://download.enlightenment.org/rel/apps/$name/$name-$version.tar.xz)
 
 build()
 {
-    cd $name-$version
-    meson --prefix=/usr \
-          --mandir=/usr/man \
-					-Dnls=false . build
-    ninja -C build
-    DESTDIR=$PKG ninja -C build install
+	cd $name-$version
+	meson --prefix=/usr \
+		--mandir=/usr/man \
+		-Dnls=false . build
+	ninja -C build
+	DESTDIR=$PKG ninja -C build install
 }
