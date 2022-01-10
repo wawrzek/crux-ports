@@ -4,18 +4,18 @@
 # Depends on: efl
 
 name=evisum
-version=0.5.13
+version=0.6.0
 release=1
 source=(http://download.enlightenment.org/rel/apps/$name/$name-$version.tar.xz)
 
 build()
 {
-    cd $name-$version
-    meson --prefix=/usr \
-		      --mandir=/usr/man \
-					. build
-		ninja -C build
-    DESTDIR=$PKG ninja -C build install
-    rm -r $PKG/usr/share/$name/images/
-		rm -r $PKG/usr/share/locale
+	cd $name-$version
+	meson --prefix=/usr \
+		--mandir=/usr/man \
+		. build
+	ninja -C build
+	DESTDIR=$PKG ninja -C build install
+	rm -r $PKG/usr/share/$name/images/
+	rm -r $PKG/usr/share/locale
 }
