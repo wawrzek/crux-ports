@@ -128,6 +128,7 @@ drwxr-xr-x	root/root	usr/include/ecore-con-1/
 -rw-r--r--	root/root	usr/include/ecore-con-1/Ecore_Con_Eet_Eo.h
 -rw-r--r--	root/root	usr/include/ecore-con-1/Ecore_Con_Eet_Legacy.h
 -rw-r--r--	root/root	usr/include/ecore-con-1/Efl_Net.h
+-rw-r--r--	root/root	usr/include/ecore-con-1/ecore_con_api.h
 -rw-r--r--	root/root	usr/include/ecore-con-1/ecore_con_eet_base_eo.h
 -rw-r--r--	root/root	usr/include/ecore-con-1/ecore_con_eet_base_eo.legacy.h
 -rw-r--r--	root/root	usr/include/ecore-con-1/ecore_con_eet_client_obj_eo.h
@@ -619,6 +620,7 @@ drwxr-xr-x	root/root	usr/include/eina-1/eina/
 -rw-r--r--	root/root	usr/include/eina-1/eina/eina_error.h
 -rw-r--r--	root/root	usr/include/eina-1/eina/eina_evlog.h
 -rw-r--r--	root/root	usr/include/eina-1/eina/eina_file.h
+-rw-r--r--	root/root	usr/include/eina-1/eina/eina_fnmatch.h
 -rw-r--r--	root/root	usr/include/eina-1/eina/eina_fp.h
 -rw-r--r--	root/root	usr/include/eina-1/eina/eina_freeq.h
 -rw-r--r--	root/root	usr/include/eina-1/eina/eina_hamster.h
@@ -680,7 +682,6 @@ drwxr-xr-x	root/root	usr/include/eina-1/eina/
 -rw-r--r--	root/root	usr/include/eina-1/eina/eina_refcount.h
 -rw-r--r--	root/root	usr/include/eina-1/eina/eina_safepointer.h
 -rw-r--r--	root/root	usr/include/eina-1/eina/eina_safety_checks.h
--rw-r--r--	root/root	usr/include/eina-1/eina/eina_sched.h
 -rw-r--r--	root/root	usr/include/eina-1/eina/eina_simple_xml_parser.h
 -rw-r--r--	root/root	usr/include/eina-1/eina/eina_slice.h
 -rw-r--r--	root/root	usr/include/eina-1/eina/eina_slstr.h
@@ -1728,6 +1729,8 @@ drwxr-xr-x	root/root	usr/include/elementary-cxx-1/
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_win_socket.eo.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/efl_ui_win_socket.eo.impl.hh
 -rw-r--r--	root/root	usr/include/elementary-cxx-1/elm_general.eot.hh (EMPTY)
+drwxr-xr-x	root/root	usr/include/elput-1/
+-rw-r--r--	root/root	usr/include/elput-1/Elput.h
 drwxr-xr-x	root/root	usr/include/embryo-1/
 -rw-r--r--	root/root	usr/include/embryo-1/Embryo.h
 drwxr-xr-x	root/root	usr/include/emile-1/
@@ -1742,6 +1745,7 @@ drwxr-xr-x	root/root	usr/include/emotion-1/
 -rw-r--r--	root/root	usr/include/emotion-1/Emotion_Legacy.h
 -rw-r--r--	root/root	usr/include/emotion-1/efl_canvas_video.eo.h
 -rw-r--r--	root/root	usr/include/emotion-1/efl_canvas_video_eo.legacy.h
+-rw-r--r--	root/root	usr/include/emotion-1/emotion_api.h
 drwxr-xr-x	root/root	usr/include/eo-1/
 -rw-r--r--	root/root	usr/include/eo-1/Eo.h
 -rw-r--r--	root/root	usr/include/eo-1/efl_class.eo.h
@@ -1768,6 +1772,7 @@ drwxr-xr-x	root/root	usr/include/eo-cxx-1/
 drwxr-xr-x	root/root	usr/include/eolian-1/
 -rw-r--r--	root/root	usr/include/eolian-1/Eolian.h
 -rw-r--r--	root/root	usr/include/eolian-1/Eolian_Aux.h
+-rw-r--r--	root/root	usr/include/eolian-1/eolian_api.h
 drwxr-xr-x	root/root	usr/include/eolian-cxx-1/
 -rw-r--r--	root/root	usr/include/eolian-cxx-1/Eolian_Cxx.hh
 -rw-r--r--	root/root	usr/include/eolian-cxx-1/address_of.hpp
@@ -1893,6 +1898,7 @@ drwxr-xr-x	root/root	usr/include/evas-1/canvas/
 -rw-r--r--	root/root	usr/include/evas-1/canvas/evas_text_eo.legacy.h
 -rw-r--r--	root/root	usr/include/evas-1/canvas/evas_textblock_legacy.h
 -rw-r--r--	root/root	usr/include/evas-1/canvas/evas_textgrid_eo.legacy.h
+-rw-r--r--	root/root	usr/include/evas-1/evas_api.h
 -rw-r--r--	root/root	usr/include/evas-1/evas_ector_software_buffer.eo.h
 drwxr-xr-x	root/root	usr/include/evas-1/gesture/
 -rw-r--r--	root/root	usr/include/evas-1/gesture/efl_canvas_gesture.eo.h
@@ -2139,147 +2145,147 @@ drwxr-xr-x	root/root	usr/lib/cmake/EvasCxx/
 drwxr-xr-x	root/root	usr/lib/ecore/
 drwxr-xr-x	root/root	usr/lib/ecore/system/
 drwxr-xr-x	root/root	usr/lib/ecore/system/upower/
-drwxr-xr-x	root/root	usr/lib/ecore/system/upower/v-1.25/
--rwxr-xr-x	root/root	usr/lib/ecore/system/upower/v-1.25/module.so
+drwxr-xr-x	root/root	usr/lib/ecore/system/upower/v-1.26/
+-rwxr-xr-x	root/root	usr/lib/ecore/system/upower/v-1.26/module.so
 drwxr-xr-x	root/root	usr/lib/ecore_con/
 drwxr-xr-x	root/root	usr/lib/ecore_con/utils/
-drwxr-xr-x	root/root	usr/lib/ecore_con/utils/v-1.25/
--rwxr-xr-x	root/root	usr/lib/ecore_con/utils/v-1.25/efl_net_proxy_helper
+drwxr-xr-x	root/root	usr/lib/ecore_con/utils/v-1.26/
+-rwxr-xr-x	root/root	usr/lib/ecore_con/utils/v-1.26/efl_net_proxy_helper
 drwxr-xr-x	root/root	usr/lib/ecore_evas/
 drwxr-xr-x	root/root	usr/lib/ecore_evas/engines/
 drwxr-xr-x	root/root	usr/lib/ecore_evas/engines/extn/
-drwxr-xr-x	root/root	usr/lib/ecore_evas/engines/extn/v-1.25/
--rwxr-xr-x	root/root	usr/lib/ecore_evas/engines/extn/v-1.25/module.so
+drwxr-xr-x	root/root	usr/lib/ecore_evas/engines/extn/v-1.26/
+-rwxr-xr-x	root/root	usr/lib/ecore_evas/engines/extn/v-1.26/module.so
 drwxr-xr-x	root/root	usr/lib/ecore_evas/engines/x/
-drwxr-xr-x	root/root	usr/lib/ecore_evas/engines/x/v-1.25/
--rwxr-xr-x	root/root	usr/lib/ecore_evas/engines/x/v-1.25/module.so
+drwxr-xr-x	root/root	usr/lib/ecore_evas/engines/x/v-1.26/
+-rwxr-xr-x	root/root	usr/lib/ecore_evas/engines/x/v-1.26/module.so
 drwxr-xr-x	root/root	usr/lib/ecore_imf/
 drwxr-xr-x	root/root	usr/lib/ecore_imf/modules/
 drwxr-xr-x	root/root	usr/lib/ecore_imf/modules/xim/
-drwxr-xr-x	root/root	usr/lib/ecore_imf/modules/xim/v-1.25/
--rwxr-xr-x	root/root	usr/lib/ecore_imf/modules/xim/v-1.25/module.so
+drwxr-xr-x	root/root	usr/lib/ecore_imf/modules/xim/v-1.26/
+-rwxr-xr-x	root/root	usr/lib/ecore_imf/modules/xim/v-1.26/module.so
 drwxr-xr-x	root/root	usr/lib/edje/
 drwxr-xr-x	root/root	usr/lib/edje/modules/
 drwxr-xr-x	root/root	usr/lib/edje/modules/elm/
-drwxr-xr-x	root/root	usr/lib/edje/modules/elm/v-1.25/
--rwxr-xr-x	root/root	usr/lib/edje/modules/elm/v-1.25/module.so
+drwxr-xr-x	root/root	usr/lib/edje/modules/elm/v-1.26/
+-rwxr-xr-x	root/root	usr/lib/edje/modules/elm/v-1.26/module.so
 drwxr-xr-x	root/root	usr/lib/edje/modules/emotion/
-drwxr-xr-x	root/root	usr/lib/edje/modules/emotion/v-1.25/
--rwxr-xr-x	root/root	usr/lib/edje/modules/emotion/v-1.25/module.so
+drwxr-xr-x	root/root	usr/lib/edje/modules/emotion/v-1.26/
+-rwxr-xr-x	root/root	usr/lib/edje/modules/emotion/v-1.26/module.so
 drwxr-xr-x	root/root	usr/lib/edje/utils/
-drwxr-xr-x	root/root	usr/lib/edje/utils/v-1.25/
--rwxr-xr-x	root/root	usr/lib/edje/utils/v-1.25/epp
+drwxr-xr-x	root/root	usr/lib/edje/utils/v-1.26/
+-rwxr-xr-x	root/root	usr/lib/edje/utils/v-1.26/epp
 drwxr-xr-x	root/root	usr/lib/eeze/
 drwxr-xr-x	root/root	usr/lib/eeze/modules/
 drwxr-xr-x	root/root	usr/lib/eeze/modules/sensor/
 drwxr-xr-x	root/root	usr/lib/eeze/modules/sensor/fake/
-drwxr-xr-x	root/root	usr/lib/eeze/modules/sensor/fake/v-1.25/
--rwxr-xr-x	root/root	usr/lib/eeze/modules/sensor/fake/v-1.25/module.so
+drwxr-xr-x	root/root	usr/lib/eeze/modules/sensor/fake/v-1.26/
+-rwxr-xr-x	root/root	usr/lib/eeze/modules/sensor/fake/v-1.26/module.so
 drwxr-xr-x	root/root	usr/lib/eeze/modules/sensor/udev/
-drwxr-xr-x	root/root	usr/lib/eeze/modules/sensor/udev/v-1.25/
--rwxr-xr-x	root/root	usr/lib/eeze/modules/sensor/udev/v-1.25/module.so
+drwxr-xr-x	root/root	usr/lib/eeze/modules/sensor/udev/v-1.26/
+-rwxr-xr-x	root/root	usr/lib/eeze/modules/sensor/udev/v-1.26/module.so
 drwxr-xr-x	root/root	usr/lib/efreet/
-drwxr-xr-x	root/root	usr/lib/efreet/v-1.25/
--rwxr-xr-x	root/root	usr/lib/efreet/v-1.25/efreet_desktop_cache_create
--rwxr-xr-x	root/root	usr/lib/efreet/v-1.25/efreet_icon_cache_create
--rwxr-xr-x	root/root	usr/lib/efreet/v-1.25/efreet_mime_cache_create
+drwxr-xr-x	root/root	usr/lib/efreet/v-1.26/
+-rwxr-xr-x	root/root	usr/lib/efreet/v-1.26/efreet_desktop_cache_create
+-rwxr-xr-x	root/root	usr/lib/efreet/v-1.26/efreet_icon_cache_create
+-rwxr-xr-x	root/root	usr/lib/efreet/v-1.26/efreet_mime_cache_create
 drwxr-xr-x	root/root	usr/lib/elementary/
 drwxr-xr-x	root/root	usr/lib/elementary/modules/
 drwxr-xr-x	root/root	usr/lib/elementary/modules/access_output/
-drwxr-xr-x	root/root	usr/lib/elementary/modules/access_output/v-1.25/
--rwxr-xr-x	root/root	usr/lib/elementary/modules/access_output/v-1.25/module.so
+drwxr-xr-x	root/root	usr/lib/elementary/modules/access_output/v-1.26/
+-rwxr-xr-x	root/root	usr/lib/elementary/modules/access_output/v-1.26/module.so
 drwxr-xr-x	root/root	usr/lib/elementary/modules/prefs/
-drwxr-xr-x	root/root	usr/lib/elementary/modules/prefs/v-1.25/
--rwxr-xr-x	root/root	usr/lib/elementary/modules/prefs/v-1.25/module.so
+drwxr-xr-x	root/root	usr/lib/elementary/modules/prefs/v-1.26/
+-rwxr-xr-x	root/root	usr/lib/elementary/modules/prefs/v-1.26/module.so
 drwxr-xr-x	root/root	usr/lib/elementary/modules/test_entry/
-drwxr-xr-x	root/root	usr/lib/elementary/modules/test_entry/v-1.25/
--rwxr-xr-x	root/root	usr/lib/elementary/modules/test_entry/v-1.25/module.so
+drwxr-xr-x	root/root	usr/lib/elementary/modules/test_entry/v-1.26/
+-rwxr-xr-x	root/root	usr/lib/elementary/modules/test_entry/v-1.26/module.so
 drwxr-xr-x	root/root	usr/lib/elementary/modules/test_map/
-drwxr-xr-x	root/root	usr/lib/elementary/modules/test_map/v-1.25/
--rwxr-xr-x	root/root	usr/lib/elementary/modules/test_map/v-1.25/module.so
+drwxr-xr-x	root/root	usr/lib/elementary/modules/test_map/v-1.26/
+-rwxr-xr-x	root/root	usr/lib/elementary/modules/test_map/v-1.26/module.so
 drwxr-xr-x	root/root	usr/lib/elementary/modules/web/
 drwxr-xr-x	root/root	usr/lib/elementary/modules/web/none/
-drwxr-xr-x	root/root	usr/lib/elementary/modules/web/none/v-1.25/
--rwxr-xr-x	root/root	usr/lib/elementary/modules/web/none/v-1.25/module.so
+drwxr-xr-x	root/root	usr/lib/elementary/modules/web/none/v-1.26/
+-rwxr-xr-x	root/root	usr/lib/elementary/modules/web/none/v-1.26/module.so
 drwxr-xr-x	root/root	usr/lib/emotion/
 drwxr-xr-x	root/root	usr/lib/emotion/modules/
 drwxr-xr-x	root/root	usr/lib/emotion/modules/gstreamer1/
-drwxr-xr-x	root/root	usr/lib/emotion/modules/gstreamer1/v-1.25/
--rwxr-xr-x	root/root	usr/lib/emotion/modules/gstreamer1/v-1.25/module.so
+drwxr-xr-x	root/root	usr/lib/emotion/modules/gstreamer1/v-1.26/
+-rwxr-xr-x	root/root	usr/lib/emotion/modules/gstreamer1/v-1.26/module.so
 drwxr-xr-x	root/root	usr/lib/ethumb/
 drwxr-xr-x	root/root	usr/lib/ethumb/modules/
 drwxr-xr-x	root/root	usr/lib/ethumb/modules/emotion/
-drwxr-xr-x	root/root	usr/lib/ethumb/modules/emotion/v-1.25/
--rwxr-xr-x	root/root	usr/lib/ethumb/modules/emotion/v-1.25/module.so
+drwxr-xr-x	root/root	usr/lib/ethumb/modules/emotion/v-1.26/
+-rwxr-xr-x	root/root	usr/lib/ethumb/modules/emotion/v-1.26/module.so
 drwxr-xr-x	root/root	usr/lib/ethumb_client/
 drwxr-xr-x	root/root	usr/lib/ethumb_client/utils/
-drwxr-xr-x	root/root	usr/lib/ethumb_client/utils/v-1.25/
--rwxr-xr-x	root/root	usr/lib/ethumb_client/utils/v-1.25/ethumbd_slave
+drwxr-xr-x	root/root	usr/lib/ethumb_client/utils/v-1.26/
+-rwxr-xr-x	root/root	usr/lib/ethumb_client/utils/v-1.26/ethumbd_slave
 drwxr-xr-x	root/root	usr/lib/evas/
 drwxr-xr-x	root/root	usr/lib/evas/modules/
 drwxr-xr-x	root/root	usr/lib/evas/modules/engines/
 drwxr-xr-x	root/root	usr/lib/evas/modules/engines/buffer/
-drwxr-xr-x	root/root	usr/lib/evas/modules/engines/buffer/v-1.25/
--rwxr-xr-x	root/root	usr/lib/evas/modules/engines/buffer/v-1.25/module.so
+drwxr-xr-x	root/root	usr/lib/evas/modules/engines/buffer/v-1.26/
+-rwxr-xr-x	root/root	usr/lib/evas/modules/engines/buffer/v-1.26/module.so
 drwxr-xr-x	root/root	usr/lib/evas/modules/engines/gl_generic/
-drwxr-xr-x	root/root	usr/lib/evas/modules/engines/gl_generic/v-1.25/
--rwxr-xr-x	root/root	usr/lib/evas/modules/engines/gl_generic/v-1.25/module.so
+drwxr-xr-x	root/root	usr/lib/evas/modules/engines/gl_generic/v-1.26/
+-rwxr-xr-x	root/root	usr/lib/evas/modules/engines/gl_generic/v-1.26/module.so
 drwxr-xr-x	root/root	usr/lib/evas/modules/engines/gl_x11/
-drwxr-xr-x	root/root	usr/lib/evas/modules/engines/gl_x11/v-1.25/
--rwxr-xr-x	root/root	usr/lib/evas/modules/engines/gl_x11/v-1.25/module.so
+drwxr-xr-x	root/root	usr/lib/evas/modules/engines/gl_x11/v-1.26/
+-rwxr-xr-x	root/root	usr/lib/evas/modules/engines/gl_x11/v-1.26/module.so
 drwxr-xr-x	root/root	usr/lib/evas/modules/engines/software_x11/
-drwxr-xr-x	root/root	usr/lib/evas/modules/engines/software_x11/v-1.25/
--rwxr-xr-x	root/root	usr/lib/evas/modules/engines/software_x11/v-1.25/module.so
+drwxr-xr-x	root/root	usr/lib/evas/modules/engines/software_x11/v-1.26/
+-rwxr-xr-x	root/root	usr/lib/evas/modules/engines/software_x11/v-1.26/module.so
 drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/
 drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/bmp/
-drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/bmp/v-1.25/
--rwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/bmp/v-1.25/module.so
+drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/bmp/v-1.26/
+-rwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/bmp/v-1.26/module.so
 drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/generic/
-drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/generic/v-1.25/
--rwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/generic/v-1.25/module.so
+drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/generic/v-1.26/
+-rwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/generic/v-1.26/module.so
 drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/gif/
-drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/gif/v-1.25/
--rwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/gif/v-1.25/module.so
+drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/gif/v-1.26/
+-rwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/gif/v-1.26/module.so
 drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/ico/
-drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/ico/v-1.25/
--rwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/ico/v-1.25/module.so
+drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/ico/v-1.26/
+-rwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/ico/v-1.26/module.so
 drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/jp2k/
-drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/jp2k/v-1.25/
--rwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/jp2k/v-1.25/module.so
+drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/jp2k/v-1.26/
+-rwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/jp2k/v-1.26/module.so
 drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/pmaps/
-drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/pmaps/v-1.25/
--rwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/pmaps/v-1.25/module.so
+drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/pmaps/v-1.26/
+-rwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/pmaps/v-1.26/module.so
 drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/psd/
-drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/psd/v-1.25/
--rwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/psd/v-1.25/module.so
+drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/psd/v-1.26/
+-rwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/psd/v-1.26/module.so
 drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/tga/
-drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/tga/v-1.25/
--rwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/tga/v-1.25/module.so
+drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/tga/v-1.26/
+-rwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/tga/v-1.26/module.so
 drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/tgv/
-drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/tgv/v-1.25/
--rwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/tgv/v-1.25/module.so
+drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/tgv/v-1.26/
+-rwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/tgv/v-1.26/module.so
 drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/tiff/
-drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/tiff/v-1.25/
--rwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/tiff/v-1.25/module.so
+drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/tiff/v-1.26/
+-rwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/tiff/v-1.26/module.so
 drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/wbmp/
-drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/wbmp/v-1.25/
--rwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/wbmp/v-1.25/module.so
+drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/wbmp/v-1.26/
+-rwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/wbmp/v-1.26/module.so
 drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/webp/
-drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/webp/v-1.25/
--rwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/webp/v-1.25/module.so
+drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/webp/v-1.26/
+-rwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/webp/v-1.26/module.so
 drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/xpm/
-drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/xpm/v-1.25/
--rwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/xpm/v-1.25/module.so
+drwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/xpm/v-1.26/
+-rwxr-xr-x	root/root	usr/lib/evas/modules/image_loaders/xpm/v-1.26/module.so
 drwxr-xr-x	root/root	usr/lib/evas/modules/image_savers/
 drwxr-xr-x	root/root	usr/lib/evas/modules/image_savers/tgv/
-drwxr-xr-x	root/root	usr/lib/evas/modules/image_savers/tgv/v-1.25/
--rwxr-xr-x	root/root	usr/lib/evas/modules/image_savers/tgv/v-1.25/module.so
+drwxr-xr-x	root/root	usr/lib/evas/modules/image_savers/tgv/v-1.26/
+-rwxr-xr-x	root/root	usr/lib/evas/modules/image_savers/tgv/v-1.26/module.so
 drwxr-xr-x	root/root	usr/lib/evas/modules/image_savers/tiff/
-drwxr-xr-x	root/root	usr/lib/evas/modules/image_savers/tiff/v-1.25/
--rwxr-xr-x	root/root	usr/lib/evas/modules/image_savers/tiff/v-1.25/module.so
+drwxr-xr-x	root/root	usr/lib/evas/modules/image_savers/tiff/v-1.26/
+-rwxr-xr-x	root/root	usr/lib/evas/modules/image_savers/tiff/v-1.26/module.so
 drwxr-xr-x	root/root	usr/lib/evas/modules/image_savers/webp/
-drwxr-xr-x	root/root	usr/lib/evas/modules/image_savers/webp/v-1.25/
--rwxr-xr-x	root/root	usr/lib/evas/modules/image_savers/webp/v-1.25/module.so
+drwxr-xr-x	root/root	usr/lib/evas/modules/image_savers/webp/v-1.26/
+-rwxr-xr-x	root/root	usr/lib/evas/modules/image_savers/webp/v-1.26/module.so
 drwxr-xr-x	root/root	usr/lib/evas/utils/
 lrwxrwxrwx	root/root	usr/lib/evas/utils/evas_generic_pdf_loader.doc -> evas_generic_pdf_loader.libreoffice
 lrwxrwxrwx	root/root	usr/lib/evas/utils/evas_generic_pdf_loader.docx -> evas_generic_pdf_loader.libreoffice
@@ -2382,107 +2388,110 @@ lrwxrwxrwx	root/root	usr/lib/evas/utils/evas_image_loader.xcf.gz -> evas_image_l
 lrwxrwxrwx	root/root	usr/lib/evas/utils/evas_image_loader.xls -> evas_image_loader.pdf
 lrwxrwxrwx	root/root	usr/lib/evas/utils/evas_image_loader.xlsx -> evas_image_loader.pdf
 lrwxrwxrwx	root/root	usr/lib/libecore.so -> libecore.so.1
-lrwxrwxrwx	root/root	usr/lib/libecore.so.1 -> libecore.so.1.25.1
--rwxr-xr-x	root/root	usr/lib/libecore.so.1.25.1
+lrwxrwxrwx	root/root	usr/lib/libecore.so.1 -> libecore.so.1.26.0
+-rwxr-xr-x	root/root	usr/lib/libecore.so.1.26.0
 lrwxrwxrwx	root/root	usr/lib/libecore_audio.so -> libecore_audio.so.1
-lrwxrwxrwx	root/root	usr/lib/libecore_audio.so.1 -> libecore_audio.so.1.25.1
--rwxr-xr-x	root/root	usr/lib/libecore_audio.so.1.25.1
+lrwxrwxrwx	root/root	usr/lib/libecore_audio.so.1 -> libecore_audio.so.1.26.0
+-rwxr-xr-x	root/root	usr/lib/libecore_audio.so.1.26.0
 lrwxrwxrwx	root/root	usr/lib/libecore_con.so -> libecore_con.so.1
-lrwxrwxrwx	root/root	usr/lib/libecore_con.so.1 -> libecore_con.so.1.25.1
--rwxr-xr-x	root/root	usr/lib/libecore_con.so.1.25.1
+lrwxrwxrwx	root/root	usr/lib/libecore_con.so.1 -> libecore_con.so.1.26.0
+-rwxr-xr-x	root/root	usr/lib/libecore_con.so.1.26.0
 lrwxrwxrwx	root/root	usr/lib/libecore_evas.so -> libecore_evas.so.1
-lrwxrwxrwx	root/root	usr/lib/libecore_evas.so.1 -> libecore_evas.so.1.25.1
--rwxr-xr-x	root/root	usr/lib/libecore_evas.so.1.25.1
+lrwxrwxrwx	root/root	usr/lib/libecore_evas.so.1 -> libecore_evas.so.1.26.0
+-rwxr-xr-x	root/root	usr/lib/libecore_evas.so.1.26.0
 lrwxrwxrwx	root/root	usr/lib/libecore_file.so -> libecore_file.so.1
-lrwxrwxrwx	root/root	usr/lib/libecore_file.so.1 -> libecore_file.so.1.25.1
--rwxr-xr-x	root/root	usr/lib/libecore_file.so.1.25.1
+lrwxrwxrwx	root/root	usr/lib/libecore_file.so.1 -> libecore_file.so.1.26.0
+-rwxr-xr-x	root/root	usr/lib/libecore_file.so.1.26.0
 lrwxrwxrwx	root/root	usr/lib/libecore_imf.so -> libecore_imf.so.1
-lrwxrwxrwx	root/root	usr/lib/libecore_imf.so.1 -> libecore_imf.so.1.25.1
--rwxr-xr-x	root/root	usr/lib/libecore_imf.so.1.25.1
+lrwxrwxrwx	root/root	usr/lib/libecore_imf.so.1 -> libecore_imf.so.1.26.0
+-rwxr-xr-x	root/root	usr/lib/libecore_imf.so.1.26.0
 lrwxrwxrwx	root/root	usr/lib/libecore_imf_evas.so -> libecore_imf_evas.so.1
-lrwxrwxrwx	root/root	usr/lib/libecore_imf_evas.so.1 -> libecore_imf_evas.so.1.25.1
--rwxr-xr-x	root/root	usr/lib/libecore_imf_evas.so.1.25.1
+lrwxrwxrwx	root/root	usr/lib/libecore_imf_evas.so.1 -> libecore_imf_evas.so.1.26.0
+-rwxr-xr-x	root/root	usr/lib/libecore_imf_evas.so.1.26.0
 lrwxrwxrwx	root/root	usr/lib/libecore_input.so -> libecore_input.so.1
-lrwxrwxrwx	root/root	usr/lib/libecore_input.so.1 -> libecore_input.so.1.25.1
--rwxr-xr-x	root/root	usr/lib/libecore_input.so.1.25.1
+lrwxrwxrwx	root/root	usr/lib/libecore_input.so.1 -> libecore_input.so.1.26.0
+-rwxr-xr-x	root/root	usr/lib/libecore_input.so.1.26.0
 lrwxrwxrwx	root/root	usr/lib/libecore_input_evas.so -> libecore_input_evas.so.1
-lrwxrwxrwx	root/root	usr/lib/libecore_input_evas.so.1 -> libecore_input_evas.so.1.25.1
--rwxr-xr-x	root/root	usr/lib/libecore_input_evas.so.1.25.1
+lrwxrwxrwx	root/root	usr/lib/libecore_input_evas.so.1 -> libecore_input_evas.so.1.26.0
+-rwxr-xr-x	root/root	usr/lib/libecore_input_evas.so.1.26.0
 lrwxrwxrwx	root/root	usr/lib/libecore_ipc.so -> libecore_ipc.so.1
-lrwxrwxrwx	root/root	usr/lib/libecore_ipc.so.1 -> libecore_ipc.so.1.25.1
--rwxr-xr-x	root/root	usr/lib/libecore_ipc.so.1.25.1
+lrwxrwxrwx	root/root	usr/lib/libecore_ipc.so.1 -> libecore_ipc.so.1.26.0
+-rwxr-xr-x	root/root	usr/lib/libecore_ipc.so.1.26.0
 lrwxrwxrwx	root/root	usr/lib/libecore_x.so -> libecore_x.so.1
-lrwxrwxrwx	root/root	usr/lib/libecore_x.so.1 -> libecore_x.so.1.25.1
--rwxr-xr-x	root/root	usr/lib/libecore_x.so.1.25.1
+lrwxrwxrwx	root/root	usr/lib/libecore_x.so.1 -> libecore_x.so.1.26.0
+-rwxr-xr-x	root/root	usr/lib/libecore_x.so.1.26.0
 lrwxrwxrwx	root/root	usr/lib/libector.so -> libector.so.1
-lrwxrwxrwx	root/root	usr/lib/libector.so.1 -> libector.so.1.25.1
--rwxr-xr-x	root/root	usr/lib/libector.so.1.25.1
+lrwxrwxrwx	root/root	usr/lib/libector.so.1 -> libector.so.1.26.0
+-rwxr-xr-x	root/root	usr/lib/libector.so.1.26.0
 lrwxrwxrwx	root/root	usr/lib/libedje.so -> libedje.so.1
-lrwxrwxrwx	root/root	usr/lib/libedje.so.1 -> libedje.so.1.25.1
--rwxr-xr-x	root/root	usr/lib/libedje.so.1.25.1
+lrwxrwxrwx	root/root	usr/lib/libedje.so.1 -> libedje.so.1.26.0
+-rwxr-xr-x	root/root	usr/lib/libedje.so.1.26.0
 lrwxrwxrwx	root/root	usr/lib/libeet.so -> libeet.so.1
-lrwxrwxrwx	root/root	usr/lib/libeet.so.1 -> libeet.so.1.25.1
--rwxr-xr-x	root/root	usr/lib/libeet.so.1.25.1
+lrwxrwxrwx	root/root	usr/lib/libeet.so.1 -> libeet.so.1.26.0
+-rwxr-xr-x	root/root	usr/lib/libeet.so.1.26.0
 lrwxrwxrwx	root/root	usr/lib/libeeze.so -> libeeze.so.1
-lrwxrwxrwx	root/root	usr/lib/libeeze.so.1 -> libeeze.so.1.25.1
--rwxr-xr-x	root/root	usr/lib/libeeze.so.1.25.1
+lrwxrwxrwx	root/root	usr/lib/libeeze.so.1 -> libeeze.so.1.26.0
+-rwxr-xr-x	root/root	usr/lib/libeeze.so.1.26.0
 lrwxrwxrwx	root/root	usr/lib/libefl.so -> libefl.so.1
-lrwxrwxrwx	root/root	usr/lib/libefl.so.1 -> libefl.so.1.25.1
--rwxr-xr-x	root/root	usr/lib/libefl.so.1.25.1
+lrwxrwxrwx	root/root	usr/lib/libefl.so.1 -> libefl.so.1.26.0
+-rwxr-xr-x	root/root	usr/lib/libefl.so.1.26.0
 lrwxrwxrwx	root/root	usr/lib/libefreet.so -> libefreet.so.1
-lrwxrwxrwx	root/root	usr/lib/libefreet.so.1 -> libefreet.so.1.25.1
--rwxr-xr-x	root/root	usr/lib/libefreet.so.1.25.1
+lrwxrwxrwx	root/root	usr/lib/libefreet.so.1 -> libefreet.so.1.26.0
+-rwxr-xr-x	root/root	usr/lib/libefreet.so.1.26.0
 lrwxrwxrwx	root/root	usr/lib/libefreet_mime.so -> libefreet_mime.so.1
-lrwxrwxrwx	root/root	usr/lib/libefreet_mime.so.1 -> libefreet_mime.so.1.25.1
--rwxr-xr-x	root/root	usr/lib/libefreet_mime.so.1.25.1
+lrwxrwxrwx	root/root	usr/lib/libefreet_mime.so.1 -> libefreet_mime.so.1.26.0
+-rwxr-xr-x	root/root	usr/lib/libefreet_mime.so.1.26.0
 lrwxrwxrwx	root/root	usr/lib/libefreet_trash.so -> libefreet_trash.so.1
-lrwxrwxrwx	root/root	usr/lib/libefreet_trash.so.1 -> libefreet_trash.so.1.25.1
--rwxr-xr-x	root/root	usr/lib/libefreet_trash.so.1.25.1
+lrwxrwxrwx	root/root	usr/lib/libefreet_trash.so.1 -> libefreet_trash.so.1.26.0
+-rwxr-xr-x	root/root	usr/lib/libefreet_trash.so.1.26.0
 lrwxrwxrwx	root/root	usr/lib/libeina.so -> libeina.so.1
-lrwxrwxrwx	root/root	usr/lib/libeina.so.1 -> libeina.so.1.25.1
--rwxr-xr-x	root/root	usr/lib/libeina.so.1.25.1
+lrwxrwxrwx	root/root	usr/lib/libeina.so.1 -> libeina.so.1.26.0
+-rwxr-xr-x	root/root	usr/lib/libeina.so.1.26.0
 lrwxrwxrwx	root/root	usr/lib/libeio.so -> libeio.so.1
-lrwxrwxrwx	root/root	usr/lib/libeio.so.1 -> libeio.so.1.25.1
--rwxr-xr-x	root/root	usr/lib/libeio.so.1.25.1
+lrwxrwxrwx	root/root	usr/lib/libeio.so.1 -> libeio.so.1.26.0
+-rwxr-xr-x	root/root	usr/lib/libeio.so.1.26.0
 lrwxrwxrwx	root/root	usr/lib/libeldbus.so -> libeldbus.so.1
-lrwxrwxrwx	root/root	usr/lib/libeldbus.so.1 -> libeldbus.so.1.25.1
--rwxr-xr-x	root/root	usr/lib/libeldbus.so.1.25.1
+lrwxrwxrwx	root/root	usr/lib/libeldbus.so.1 -> libeldbus.so.1.26.0
+-rwxr-xr-x	root/root	usr/lib/libeldbus.so.1.26.0
 lrwxrwxrwx	root/root	usr/lib/libelementary.so -> libelementary.so.1
-lrwxrwxrwx	root/root	usr/lib/libelementary.so.1 -> libelementary.so.1.25.1
--rwxr-xr-x	root/root	usr/lib/libelementary.so.1.25.1
+lrwxrwxrwx	root/root	usr/lib/libelementary.so.1 -> libelementary.so.1.26.0
+-rwxr-xr-x	root/root	usr/lib/libelementary.so.1.26.0
+lrwxrwxrwx	root/root	usr/lib/libelput.so -> libelput.so.1
+lrwxrwxrwx	root/root	usr/lib/libelput.so.1 -> libelput.so.1.26.0
+-rwxr-xr-x	root/root	usr/lib/libelput.so.1.26.0
 lrwxrwxrwx	root/root	usr/lib/libembryo.so -> libembryo.so.1
-lrwxrwxrwx	root/root	usr/lib/libembryo.so.1 -> libembryo.so.1.25.1
--rwxr-xr-x	root/root	usr/lib/libembryo.so.1.25.1
+lrwxrwxrwx	root/root	usr/lib/libembryo.so.1 -> libembryo.so.1.26.0
+-rwxr-xr-x	root/root	usr/lib/libembryo.so.1.26.0
 lrwxrwxrwx	root/root	usr/lib/libemile.so -> libemile.so.1
-lrwxrwxrwx	root/root	usr/lib/libemile.so.1 -> libemile.so.1.25.1
--rwxr-xr-x	root/root	usr/lib/libemile.so.1.25.1
+lrwxrwxrwx	root/root	usr/lib/libemile.so.1 -> libemile.so.1.26.0
+-rwxr-xr-x	root/root	usr/lib/libemile.so.1.26.0
 lrwxrwxrwx	root/root	usr/lib/libemotion.so -> libemotion.so.1
-lrwxrwxrwx	root/root	usr/lib/libemotion.so.1 -> libemotion.so.1.25.1
--rwxr-xr-x	root/root	usr/lib/libemotion.so.1.25.1
+lrwxrwxrwx	root/root	usr/lib/libemotion.so.1 -> libemotion.so.1.26.0
+-rwxr-xr-x	root/root	usr/lib/libemotion.so.1.26.0
 lrwxrwxrwx	root/root	usr/lib/libeo.so -> libeo.so.1
-lrwxrwxrwx	root/root	usr/lib/libeo.so.1 -> libeo.so.1.25.1
--rwxr-xr-x	root/root	usr/lib/libeo.so.1.25.1
+lrwxrwxrwx	root/root	usr/lib/libeo.so.1 -> libeo.so.1.26.0
+-rwxr-xr-x	root/root	usr/lib/libeo.so.1.26.0
 lrwxrwxrwx	root/root	usr/lib/libeo_dbg.so -> libeo_dbg.so.1
-lrwxrwxrwx	root/root	usr/lib/libeo_dbg.so.1 -> libeo_dbg.so.1.25.1
--rwxr-xr-x	root/root	usr/lib/libeo_dbg.so.1.25.1
+lrwxrwxrwx	root/root	usr/lib/libeo_dbg.so.1 -> libeo_dbg.so.1.26.0
+-rwxr-xr-x	root/root	usr/lib/libeo_dbg.so.1.26.0
 lrwxrwxrwx	root/root	usr/lib/libeolian.so -> libeolian.so.1
-lrwxrwxrwx	root/root	usr/lib/libeolian.so.1 -> libeolian.so.1.25.1
--rwxr-xr-x	root/root	usr/lib/libeolian.so.1.25.1
+lrwxrwxrwx	root/root	usr/lib/libeolian.so.1 -> libeolian.so.1.26.0
+-rwxr-xr-x	root/root	usr/lib/libeolian.so.1.26.0
 lrwxrwxrwx	root/root	usr/lib/libethumb.so -> libethumb.so.1
-lrwxrwxrwx	root/root	usr/lib/libethumb.so.1 -> libethumb.so.1.25.1
--rwxr-xr-x	root/root	usr/lib/libethumb.so.1.25.1
+lrwxrwxrwx	root/root	usr/lib/libethumb.so.1 -> libethumb.so.1.26.0
+-rwxr-xr-x	root/root	usr/lib/libethumb.so.1.26.0
 lrwxrwxrwx	root/root	usr/lib/libethumb_client.so -> libethumb_client.so.1
-lrwxrwxrwx	root/root	usr/lib/libethumb_client.so.1 -> libethumb_client.so.1.25.1
--rwxr-xr-x	root/root	usr/lib/libethumb_client.so.1.25.1
+lrwxrwxrwx	root/root	usr/lib/libethumb_client.so.1 -> libethumb_client.so.1.26.0
+-rwxr-xr-x	root/root	usr/lib/libethumb_client.so.1.26.0
 lrwxrwxrwx	root/root	usr/lib/libevas.so -> libevas.so.1
-lrwxrwxrwx	root/root	usr/lib/libevas.so.1 -> libevas.so.1.25.1
--rwxr-xr-x	root/root	usr/lib/libevas.so.1.25.1
+lrwxrwxrwx	root/root	usr/lib/libevas.so.1 -> libevas.so.1.26.0
+-rwxr-xr-x	root/root	usr/lib/libevas.so.1.26.0
 lrwxrwxrwx	root/root	usr/lib/libexactness_play.so -> libexactness_play.so.1
-lrwxrwxrwx	root/root	usr/lib/libexactness_play.so.1 -> libexactness_play.so.1.25.1
--rwxr-xr-x	root/root	usr/lib/libexactness_play.so.1.25.1
+lrwxrwxrwx	root/root	usr/lib/libexactness_play.so.1 -> libexactness_play.so.1.26.0
+-rwxr-xr-x	root/root	usr/lib/libexactness_play.so.1.26.0
 lrwxrwxrwx	root/root	usr/lib/libexactness_record.so -> libexactness_record.so.1
-lrwxrwxrwx	root/root	usr/lib/libexactness_record.so.1 -> libexactness_record.so.1.25.1
--rwxr-xr-x	root/root	usr/lib/libexactness_record.so.1.25.1
+lrwxrwxrwx	root/root	usr/lib/libexactness_record.so.1 -> libexactness_record.so.1.26.0
+-rwxr-xr-x	root/root	usr/lib/libexactness_record.so.1.26.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/ecore-audio.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/ecore-con.pc
@@ -2518,6 +2527,7 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/eldbus.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/elementary-cxx.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/elementary.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/elput.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/embryo.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/emile.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/emotion.pc
@@ -2552,6 +2562,13 @@ drwxr-xr-x	root/root	usr/share/eeze/
 drwxr-xr-x	root/root	usr/share/efreet/
 -rw-r--r--	root/root	usr/share/efreet/checkme
 drwxr-xr-x	root/root	usr/share/elementary/
+drwxr-xr-x	root/root	usr/share/elementary/colors/
+-rw-r--r--	root/root	usr/share/elementary/colors/candy-mint.pal
+-rw-r--r--	root/root	usr/share/elementary/colors/default.pal
+-rw-r--r--	root/root	usr/share/elementary/colors/ebony-brass.pal
+-rw-r--r--	root/root	usr/share/elementary/colors/light.pal
+-rw-r--r--	root/root	usr/share/elementary/colors/mauve-sunset.pal
+-rw-r--r--	root/root	usr/share/elementary/colors/white-pill.pal
 drwxr-xr-x	root/root	usr/share/elementary/config/
 drwxr-xr-x	root/root	usr/share/elementary/config/default/
 -rw-r--r--	root/root	usr/share/elementary/config/default/base.cfg
@@ -3113,7 +3130,6 @@ drwxr-xr-x	root/root	usr/share/ethumb/frames/
 drwxr-xr-x	root/root	usr/share/ethumb_client/
 -rw-r--r--	root/root	usr/share/ethumb_client/checkme
 drwxr-xr-x	root/root	usr/share/evas/
--rw-r--r--	root/root	usr/share/evas/checkme
 drwxr-xr-x	root/root	usr/share/evas/filters/
 drwxr-xr-x	root/root	usr/share/evas/filters/lua/
 -rw-r--r--	root/root	usr/share/evas/filters/lua/color.lua
@@ -3123,7 +3139,7 @@ drwxr-xr-x	root/root	usr/share/gdb/
 drwxr-xr-x	root/root	usr/share/gdb/auto-load/
 drwxr-xr-x	root/root	usr/share/gdb/auto-load/usr/
 drwxr-xr-x	root/root	usr/share/gdb/auto-load/usr/lib/
--rw-r--r--	root/root	usr/share/gdb/auto-load/usr/lib/libeo.so.1.25.1-gdb.py
+-rw-r--r--	root/root	usr/share/gdb/auto-load/usr/lib/libeo.so.1.26.0-gdb.py
 drwxr-xr-x	root/root	usr/share/icons/
 drwxr-xr-x	root/root	usr/share/icons/Enlightenment-X/
 -rw-r--r--	root/root	usr/share/icons/Enlightenment-X/README
@@ -3590,3 +3606,4 @@ drwxr-xr-x	root/root	usr/share/icons/hicolor/128x128/apps/
 drwxr-xr-x	root/root	usr/share/mime/
 drwxr-xr-x	root/root	usr/share/mime/packages/
 -rw-r--r--	root/root	usr/share/mime/packages/edje.xml
+-rw-r--r--	root/root	usr/share/mime/packages/evas.xml
