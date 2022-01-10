@@ -11,14 +11,14 @@ source=(http://download.enlightenment.org/rel/apps/$name/$name-$version.tar.xz)
 
 build()
 {
-    cd $name-$version
-    meson --prefix=/usr \
-		      --mandir=/usr/man \
-          -Dsystemd=false \
-					-Dnls=false \
-          -Dmount-udisks=false \
-					. build
-		ninja -C build
-    DESTDIR=$PKG ninja -C build install
-    rm -r $PKG/usr/share/$name/{AUTHORS,COPYING,doc/}
+	cd $name-$version
+	meson --prefix=/usr \
+		--mandir=/usr/man \
+		-Dsystemd=false \
+		-Dnls=false \
+		-Dmount-udisks=false \
+		. build
+	ninja -C build
+	DESTDIR=$PKG ninja -C build install
+	rm -r $PKG/usr/share/$name/{AUTHORS,COPYING,doc/}
 }
