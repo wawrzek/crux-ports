@@ -4,7 +4,7 @@
 # Depends on: efl
 
 name=rage
-version=0.3.1
+version=0.4.0
 release=1
 source=(http://download.enlightenment.org/rel/apps/$name/$name-$version.tar.xz)
 

@@ -4,23 +4,29 @@
 # Depends on: cups
 
 name=cnijfilter2
-version=5.70-1
+version=6.30-1
 release=1
-source=( http://wawrzek.name/crux/sources/$name-source-$version.tar.gz)
+source=(https://gdlp01.c-wss.com/gds/9/0100011319/01/$name-source-$version.tar.gz)
 dirs="cmdtocanonij2 cmdtocanonij3 cnijbe2 lgmon3 rastertocanonij tocanonij tocnpwg"
 build() {
 	cd $name-source-$version
-	export LDFLAGS="-L../../com/libs_bin64"
+	sed -i '/po\/Makefile.in/d' lgmon3/configure.in
+	sed -i /SUBDIRS/s/po// lgmon3/Makefile.am
+	sed -i '/GET_PROTOCOL/s/^int /static int/' lgmon3/src/cnij{lgmon3,ifnet2}.c
+	export LDFLAGS="-L../../com/libs_bin_x86_64"
 	for dir in $dirs
 	do
 		cd $dir
-		./autogen.sh --prefix=/usr
+		./autogen.sh \
+			--prefix=/usr \
+			--enable-progpath=/usr/bin \
+			--datadir=/usr/share
 		make
 		make DESTDIR=$PKG install
 		cd ../
 	done
 	rm -rf $PKG/usr/share/locale
-	cd com/libs_bin64/
+	cd com/libs_bin_x86_64/
 	rm lib*.so
 	install -c lib*.so* $PKG/usr/lib
 	declare -a libs
