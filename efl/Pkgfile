@@ -5,7 +5,7 @@
 # Depends on: dbus xorg-libxp xorg-libxscrnsaver gstreamer gst-plugins-base giflib libtiff libsndfile pulseaudio harfbuzz fribidi poppler librsvg libraw libspectre luajit check openjpeg2
 
 name=efl
-version=1.26.1
+version=1.26.2
 release=1
 source=(http://download.enlightenment.org/rel/libs/$name/$name-$version.tar.xz)
 
@@ -18,7 +18,6 @@ build()
 		-Dsystemd=false \
 		-Dnetwork-backend=connman \
 		-Decore-imf-loaders-disabler=ibus,scim \
-		-Dinclude-directories=/usr/include/luajit-2.0 \
 		. build
 	ninja -C build
 	DESTDIR=$PKG ninja -C build install
