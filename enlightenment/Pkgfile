@@ -5,7 +5,7 @@
 # Depends on: efl xorg-xcb-util-keysyms
 
 name=enlightenment
-version=0.25.3
+version=0.25.4
 release=1
 source=(http://download.enlightenment.org/rel/apps/$name/$name-$version.tar.xz)
 
