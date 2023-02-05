@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/wawrzek.pub
-RWQXc2agtIcYBY2pWO7bNazkIEe6qbvHqTl/0dyIfFur+aNIj32glwAvzh7XZzhouf7hus1rtmrw/OYNBR7KRlu+dTF+VDG9cA4=
-SHA256 (Pkgfile) = 21d66d65448a6d7020dafee2f0c16caa32975f22d25cc11ca8432db041a55312
-SHA256 (.footprint) = b4e635f3dcf254ef2313bc0c348eacc5baa64165c5cf2a9850f8a7488a63f4a8
-SHA256 (terminology-1.12.1.tar.xz) = f8ced9584c2e9ae87452ce7425fd25b2d3e122c7489785d2917890215c6b5aa9
+RWQXc2agtIcYBR+3u9SDk8rmaEZZp8g55HRBsrPU8bhqkH8KKOMdC3AdnO/zRPdmC+JHwkMwZZSnxN9MecGEAqmnbgLA4z6cSgA=
+SHA256 (Pkgfile) = f3cb0f92adb5dd68196c087b5dfc835bcd02975ae2366c359e0c175adbfc5331
+SHA256 (.footprint) = 7e3f2a0d6419c375b1eb3eaee6208e47b5ce92acdbc739610be363299621261f
+SHA256 (terminology-1.13.0.tar.xz) = 16a37fecd7bbd63ec9de3ec6c0af331cee77d6dfda838a1b1573d6f298474da5
