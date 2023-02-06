@@ -37,8 +37,8 @@ f:d3155876cc5c93b0ebe515d7ac735ef5:python-efl/Pkgfile
 f:5118b1b381dde75f5101c695011f900a:rage/.footprint
 f:00f339e96fcf3d40e196115897529bd6:rage/.signature
 f:a244623cb725db4e5a0838ff92a270ee:rage/Pkgfile
-f:7378d1ed8ed735bc59d27ac48bea7d7d:terminology/.footprint
-f:35e649cfcee0cc8a1fb924f241852be2:terminology/.signature
+f:14372f7cb36706bf78db293fb025e0ec:terminology/.footprint
+f:140b184773ee10f230545a64e03e1040:terminology/.signature
 f:748fee42ec9c70365a4652e9348205ba:terminology/Pkgfile
 f:07f564624fafb3fafb58ceaf614880d4:.httpup-repo.current
 f:52444604747f1d75603b05dbb0220ea8:libraw/Pkgfile
@@ -54,8 +54,8 @@ f:5ee70fae17370262867c335fa1c3cfb0:ephoto/.footprint
 f:19ec43336aaf129c6197fb9e56f249c9:ephoto/.signature
 f:865760b1454278686207816c18d9f562:ephoto/Pkgfile
 f:c59fcf51a3d23eac115bd717ed1cbacd:wawrzek.pub
-f:45684d11e9f5e4b1f4c1f76a31008b1c:cnijfilter2/.footprint
-f:3c06a701cfb060f32e5c06bd85f96bfa:cnijfilter2/.signature
+f:8fd7be1a52e17f491b5fbebd23b2e443:cnijfilter2/.footprint
+f:3cb0f8687a1f21bcb4d6303f8611e25d:cnijfilter2/.signature
 f:0394d1383a784ebf66072b981597669f:cnijfilter2/Pkgfile
 f:a65693c4f63e80fdb5c8c64329453bcb:evisum/.signature
 f:53b8002f5926792111d3d5a81881cc96:evisum/.footprint
