@@ -70,12 +70,12 @@ f:6d323ae1e2208252c6dbb00f26b51b67:cd-discid/.signature
 f:bcccc4f2210ff5002769c8b9c705e1f8:abcde/.footprint
 f:7504c173c021fef84ada86f909bdd83b:abcde/.signature
 f:a1e7711fc5b627a73d6c1f697996884b:abcde/Pkgfile
-f:0275d03554d1f7fa625e0056d9e2991f:p5-musicbrainz-webservice/.footprint
-f:147ce70f97a9a369fa67a4c8b4d85520:p5-musicbrainz-webservice/.signature
-f:d866affb273cb87da5e102163cea1e66:p5-musicbrainz-webservice/Pkgfile
+f:c6131c5dde215789609aa8f2d8aba1ac:p5-musicbrainz-webservice/.footprint
+f:b5909979718547d9ab82dabe28262f31:p5-musicbrainz-webservice/.signature
+f:a51b8dc5c235cd373107c0546d26ef1b:p5-musicbrainz-webservice/Pkgfile
 f:558a959d76b0b9df4c8471a7036ecc47:p5-musicbrainz-discid/.footprint
-f:da44c8163104362eda36b68994e4132c:p5-musicbrainz-discid/.signature
-f:d7672c0037a7d0baea3916aec55d67c4:p5-musicbrainz-discid/Pkgfile
+f:8fd33168488eb78001803474a49bc534:p5-musicbrainz-discid/.signature
+f:337f1fc7428ca9e5c82178f2a529d631:p5-musicbrainz-discid/Pkgfile
 f:d84a0e405ddaf46f145055fb9305721b:p5-mojolicious/.signature
 f:c513a876d98910fb23a064c75e2ccf91:p5-mojolicious/.footprint
 f:4e3dc9cbc4a4eec5e086b392d3bd3806:p5-mojolicious/Pkgfile
