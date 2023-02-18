@@ -76,6 +76,6 @@ f:a51b8dc5c235cd373107c0546d26ef1b:p5-musicbrainz-webservice/Pkgfile
 f:558a959d76b0b9df4c8471a7036ecc47:p5-musicbrainz-discid/.footprint
 f:8fd33168488eb78001803474a49bc534:p5-musicbrainz-discid/.signature
 f:337f1fc7428ca9e5c82178f2a529d631:p5-musicbrainz-discid/Pkgfile
-f:d84a0e405ddaf46f145055fb9305721b:p5-mojolicious/.signature
-f:c513a876d98910fb23a064c75e2ccf91:p5-mojolicious/.footprint
-f:4e3dc9cbc4a4eec5e086b392d3bd3806:p5-mojolicious/Pkgfile
+f:a68611ef19626498ba397e473c444436:p5-mojolicious/.signature
+f:3df89d378b39dc8b558eef3729286f07:p5-mojolicious/.footprint
+f:7537f611fd9ff78a9572443b25149290:p5-mojolicious/Pkgfile

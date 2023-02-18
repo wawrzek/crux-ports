@@ -15,5 +15,4 @@ build() {
 	make
 	make install INSTALLDIRS=vendor DESTDIR=$PKG
 	find $PKG \( -name '.packlist' -o -name '*.pod' \) -delete
-  rmdir $PKG/usr/lib/perl5/5.32/linux-thread-multi/
 }
