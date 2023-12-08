@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/wawrzek.pub
-RWQXc2agtIcYBe2NXcKlihdGHGUb2kK7fyAfuXwBz7tWwhNzB3fDtyJTywzxuUcl3EvH2EsXxvme3gKeQC+jywnwds8PUkitzgo=
-SHA256 (Pkgfile) = 4911a56f621c566f14080c83eb190ebfcaac98ae3cd06c72796f4d57dfe83f52
-SHA256 (.footprint) = 4e1f5c28585c2a05de02b221135d66d5914da78e716749aac9f767c60fb59cf4
-SHA256 (python-efl-1.26.0.tar.xz) = b0089cb9bc29c406f884c729dcd5dd486fd8efb794b5b980bf138e6189704636
+RWQXc2agtIcYBRbg3QblU77FaG/VD3yqM5ws88KNlQ2vehW0kjb8InBqa3Q4Yw9MRx7SKZLIZCiyfUIkSSVviIQdXEF1fDrTZAM=
+SHA256 (Pkgfile) = d4f4996e295711b79a6b5449155f508605f1cf6bf72c654dc0985a9a043bf6f1
+SHA256 (.footprint) = b37db834b8ced0fb6a3c7ca07d3e5bd774dfc5436657d0db6a98616771c44afe
+SHA256 (python-efl-1.26.1.tar.xz) = dcdb397e12078a19e90d80e7c6f3cfd3458864bfe8d5458bce0368b6de0628d7
