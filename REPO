@@ -31,8 +31,8 @@ f:4da8b3e973429c6697dff67e24324214:efl/.footprint
 f:8b423cb8d9b50221cbfd793539daa626:luajit/Pkgfile
 f:96bb0e6378625bc5badfc37b5b45127e:luajit/.signature
 f:54a19c2571205661bdee2fa552ce2fbe:luajit/.footprint
-f:09b454aced4d05545811eeb88fe5bb2d:python-efl/.signature
-f:e6b8bd2eb6602a94c596407042bc92db:python-efl/.footprint
+f:f405df0f5a09b66801881bca456eb2a7:python-efl/.signature
+f:3e0f6982d5d44fb8285139541e45d49e:python-efl/.footprint
 f:773b73897bfc7106829076b5e88aa7c3:python-efl/Pkgfile
 f:a244623cb725db4e5a0838ff92a270ee:rage/Pkgfile
 f:00f339e96fcf3d40e196115897529bd6:rage/.signature
