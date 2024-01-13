@@ -1,0 +1,19 @@
+# Description: Tool to manage Logitech keyboards
+# URL: https://github.com/pwr-Solaar/Solaar
+# Maintainer: Wawrzek Niewodniczanski, main at wawrzek dot name
+# Depends on: python3-setuptools python3-yaml python3-pyudev python3-psutil python3-xlib python3-evdev python3-gobject gtk3 libayatana-appindicator
+
+
+name=solaar
+version=1.1.10
+release=1
+source=(https://github.com/pwr-Solaar/Solaar/archive/refs/tags/$version.tar.gz)
+
+build() {
+  cd Solaar-$version
+  /usr/bin/python3 setup.py build --build-lib=build/python
+  /usr/bin/python3 setup.py build --build-lib=build/python \
+    install --root=$PKG --optimize=1 --skip-build
+  mkdir -p $PKG/etc/udev/rules.d
+  install  -c -m 644 rules.d/42-logitech-unify-permissions.rules $PKG/etc/udev/rules.d
+}
