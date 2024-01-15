@@ -6,7 +6,7 @@
 
 name=solaar
 version=1.1.10
-release=1
+release=2
 source=(https://github.com/pwr-Solaar/Solaar/archive/refs/tags/$version.tar.gz)
 
 build() {
@@ -16,4 +16,5 @@ build() {
     install --root=$PKG --optimize=1 --skip-build
   mkdir -p $PKG/etc/udev/rules.d
   install  -c -m 644 rules.d/42-logitech-unify-permissions.rules $PKG/etc/udev/rules.d
+  sed -i 's/^#MODE/MODE/' $PKG/etc/udev/rules.d/42-logitech-unify-permissions.rules
 }

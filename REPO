@@ -79,7 +79,8 @@ f:558a959d76b0b9df4c8471a7036ecc47:p5-musicbrainz-discid/.footprint
 f:7537f611fd9ff78a9572443b25149290:p5-mojolicious/Pkgfile
 f:a68611ef19626498ba397e473c444436:p5-mojolicious/.signature
 f:3df89d378b39dc8b558eef3729286f07:p5-mojolicious/.footprint
+f:fc9f29ce7756d25fd7678f8357bcdf5e:solaar/.signature
+f:21901f9362ff6957f2b3d26aceb0d24d:solaar/pre-install
 f:93ea482359b7d1cf9a7a452cd4aeedd8:solaar/.footprint
-f:e3285e97b02fc888dfc680ce3b2b3446:solaar/.signature
-f:924c2c4936467877f1aa9dddc0e8de2a:solaar/Pkgfile
+f:949243d8c0183f3a4d72a477cf6c421c:solaar/Pkgfile
 f:7c8401e8bdb1685f0e10768a3a1e5362:description.html

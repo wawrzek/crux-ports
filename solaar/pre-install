@@ -1,0 +1,5 @@
+#!/bin/sh -e
+
+_GROUP=plugdev
+
+/usr/bin/getent group $_GROUP > /dev/null 2>&1 || /usr/sbin/groupadd $_GROUP
