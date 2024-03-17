@@ -31,4 +31,3 @@ jobs:
       - name: Upload port page
         run: |
           PATH=$PATH:$PWD/utils ./port-sync.sh
-
