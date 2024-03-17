@@ -1,0 +1,34 @@
+---
+name: Upload port page
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  pre-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download code
+        uses: actions/checkout@v4
+      - name: Download Crux utils
+        uses: joutvhu/download-s3@v1
+        with:
+          aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws_region: eu-north-1
+          aws_bucket: cruxfiles
+          source: ''
+          target: 'utils'
+      - name: Download SSH key
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.SSH_KEY }}
+          name: id_rsa
+          know_hosts: ${{ secrets.SSH_KNOWN_HOSTS }}
+      - name: Upload port page
+        run: |
+          PATH=$PATH:$PWD/utils ./port-sync.sh
+
