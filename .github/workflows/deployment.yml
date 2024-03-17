@@ -22,6 +22,9 @@ jobs:
           aws_bucket: cruxfiles
           source: ''
           target: 'utils'
+      - name: Adjust permissions
+        run: |
+          chmod u+x $PWD/utils/*
       - name: Download SSH key
         uses: shimataro/ssh-key-action@v2
         with:
