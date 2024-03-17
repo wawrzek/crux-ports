@@ -27,7 +27,7 @@ jobs:
         with:
           key: ${{ secrets.SSH_KEY }}
           name: id_rsa
-          know_hosts: ${{ secrets.SSH_KNOWN_HOSTS }}
+          known_hosts: ${{ secrets.SSH_KNOWN_HOSTS }}
       - name: Upload port page
         run: |
           PATH=$PATH:$PWD/utils ./port-sync.sh
