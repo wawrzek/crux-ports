@@ -8,7 +8,7 @@ on:
     branches: [master]
 
 jobs:
-  pre-commit:
+  upload:
     runs-on: ubuntu-latest
     steps:
       - name: Download code
@@ -31,6 +31,6 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           name: id_rsa
           known_hosts: ${{ secrets.SSH_KNOWN_HOSTS }}
-      - name: Upload port page
+      - name: Refresh and upload ports repo
         run: |
           PATH=$PATH:$PWD/utils ./port-sync.sh
