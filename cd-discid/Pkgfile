@@ -15,4 +15,3 @@ build () {
 	make
 	make STRIP=/bin/true DESTDIR=$PKG PREFIX=/usr install
 }
-
