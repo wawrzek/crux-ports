@@ -34,8 +34,8 @@ jobs:
           name: id_rsa
           known_hosts: ${{ secrets.SSH_KNOWN_HOSTS }}
       - name: Adjust port-sync for stage run
-        run |
-        sed -i 's/\(crux\/\)wawrzek/\1stage/' port-sync.sh
+        run: |
+          sed -i 's/\(crux\/\)wawrzek/\1stage/' port-sync.sh
       - name: Refresh and upload ports repo
         run: |
           PATH=$PATH:$PWD/utils ./port-sync.sh
