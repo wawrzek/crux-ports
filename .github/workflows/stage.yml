@@ -1,0 +1,41 @@
+---
+name: Upload port page
+
+on:
+  create:
+    branches: [stage]
+  push:
+    branches: [stage]
+  pull_request:
+    branches: [stage]
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download code
+        uses: actions/checkout@v4
+      - name: Download Crux utils
+        uses: joutvhu/download-s3@v1
+        with:
+          aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws_region: eu-north-1
+          aws_bucket: cruxfiles
+          source: ''
+          target: 'utils'
+      - name: Adjust permissions
+        run: |
+          chmod u+x $PWD/utils/*
+      - name: Download SSH key
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.SSH_KEY }}
+          name: id_rsa
+          known_hosts: ${{ secrets.SSH_KNOWN_HOSTS }}
+      - name: Adjust port-sync for stage run
+        run |
+        sed -i 's/\(crux\/\)wawrzek/\1stage/' port-sync.sh
+      - name: Refresh and upload ports repo
+        run: |
+          PATH=$PATH:$PWD/utils ./port-sync.sh

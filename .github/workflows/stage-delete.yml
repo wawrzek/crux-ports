@@ -1,0 +1,20 @@
+---
+name: Upload port page
+
+on:
+  delete:
+    branches: [stage]
+
+jobs:
+  delete:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download SSH key
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.SSH_KEY }}
+          name: id_rsa
+          known_hosts: ${{ secrets.SSH_KNOWN_HOSTS }}
+      - name:
+        run: |
+          ssh wawrzek@wawrzek.name rm -rf "crux/stage/*"
