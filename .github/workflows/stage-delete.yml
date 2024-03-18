@@ -17,4 +17,4 @@ jobs:
           known_hosts: ${{ secrets.SSH_KNOWN_HOSTS }}
       - name:
         run: |
-          ssh wawrzek@wawrzek.name rm -rf "crux/stage/*"
+          ssh wawrzek@server.wawrzek.name rm -rf "crux/stage/*"
