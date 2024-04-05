@@ -1,0 +1,27 @@
+# Description: GNOME file manager
+# URL: https://tracker.gnome.org/
+# Maintainer: Wawrzek Niewodniczanski main at wawrzek dot name
+# Depends on: gnome-autoar tracker bubblewrap gexiv2 gnome-desktop libadwaita libnotify libportal libseccomp
+
+name=nautilus
+version=45.2.1
+release=1
+source=(https://download.gnome.org/sources/$name/${version::2}/$name-$version.tar.xz)
+
+build() {
+  prt-get isinst gobject-introspection || PKGMK_GCR+=' -D introspection=false'
+
+  meson setup $name-$version build \
+    --prefix=/usr \
+    --libexecdir=/usr/lib/$name \
+    --buildtype=plain \
+    --wrap-mode nodownload \
+    --auto-features disabled \
+    -D cloudproviders=false \
+    -D docs=false\
+    -D tests=none
+  meson compile -C build
+  DESTDIR=$PKG meson install -C build
+
+  rm -fr $PKG/usr/share/locale
+}
