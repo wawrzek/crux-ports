@@ -1,0 +1,21 @@
+# Description: GNOME library to use archives for internet transfer
+# URL: https://gitlab.gnome.org/GNOME/gnome-autoar
+# Maintainer: Wawrzek Niewodniczanski main at wawrzek dot name
+# Depends on: libarchive gtk3
+
+name=gnome-autoar
+version=0.4.4
+release=1
+source=(https://download.gnome.org/sources/gnome-autoar/${version::3}/$name-$version.tar.xz)
+
+build() {
+  meson setup $name-$version build \
+    --prefix=/usr \
+    --libexecdir=/usr/lib/$name \
+    --buildtype=plain \
+    --wrap-mode nodownload \
+    --auto-features disabled \
+    -D gtk_doc=false
+  ninja -C build
+  DESTDIR=$PKG ninja install -C build
+}
