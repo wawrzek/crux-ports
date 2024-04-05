@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/wawrzek.pub
+RWQXc2agtIcYBaVwmUWWuxB8Ct0HKmg7c8Se5yliMixdqLeAg37BWIJIjQKs9/F147wRTdiS/LLZzfXDW+PsiWLOFJ+LnmMOqgs=
+SHA256 (Pkgfile) = a10fb19559c524a0e714e00d0551fbce58382969dc73352c0ed968db4b7d2741
+SHA256 (.footprint) = 3a9e752b3bf22161782f96007879b02869265cf2e208e63f122ccdab300abee1
+SHA256 (v2024.01.22.tar.gz) = 0100f6213a304103099a3679f8b94e1ad95ba0f042dd5768643e3552b84a31b0
