@@ -33,6 +33,4 @@ rsync -avz --delete --delete-excluded \
       --exclude "*~" \
       --exclude "header.html"\
       --exclude "description.html"\
-      --exclude "python-utils/"\
-      --exclude "utils/"\
       . wawrzek@server.wawrzek.name:crux/wawrzek
