@@ -15,7 +15,6 @@ if [ -n "$d" ] || [ -n "$f" ]; then
 fi
 
 httpup-repgen .
-portspage --title="Wawrzek Niewodniczanski's Enligthenment CRUX Collections" --header="description.html" . > index.html
 
 export RSYNC_RSH=ssh
 rsync -avz --delete --delete-excluded \
@@ -27,7 +26,7 @@ rsync -avz --delete --delete-excluded \
       --exclude "*.zip"     \
       --exclude "sync.sh"   \
       --exclude "*CVS/"     \
-			--exclude "*git*" \
-			--exclude ".*~" \
-			--exclude "*~" \
-        . wawrzek@server.wawrzek.name:crux/wawrzek
+      --exclude "*git*" \
+      --exclude ".*~" \
+      --exclude "*~" \
+      . wawrzek@server.wawrzek.name:crux/wawrzek

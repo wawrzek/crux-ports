@@ -11,4 +11,5 @@
 sync.sh
 \.gif$
 \.gem$
-index.html
+.*.html
+.pre-commit-config.yaml
