@@ -26,8 +26,8 @@ jobs:
           path: 'python-utils/requirements.txt'
       - name: Update the page
         run: |
-          ls -Rl $HOME &&
-          python $HOME/work/python-utils/portspages.py/main.py
+          ls -Rl . &&
+          python ./python-utils/main.py
       - name: Download Crux utils
         uses: joutvhu/download-s3@v1
         with:
