@@ -24,9 +24,13 @@ rsync -avz --delete --delete-excluded \
       --exclude "*.gem"  \
       --exclude "*tgz"  \
       --exclude "*.zip"     \
-      --exclude "sync.sh"   \
+      --exclude "port-sync.sh"   \
       --exclude "*CVS/"     \
       --exclude "*git*" \
       --exclude ".*~" \
       --exclude "*~" \
+      --exclude "header.html"\
+      --exclude "description.html"\
+      --exclude "python-utils/"\
+      --exclude "utils/"\
       . wawrzek@server.wawrzek.name:crux/wawrzek
