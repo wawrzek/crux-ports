@@ -15,19 +15,12 @@ jobs:
     steps:
       - name: Download code
         uses: actions/checkout@v4
-      - name: Download portspage.py
-        uses: actions/checkout@v4
-        with:
-          repository: 'wawrzek/portspage.py'
-          path: '../python-utils'
-      - name: Install Python dependencies
-        uses: py-actions/py-dependency-install@v4
-        with:
-          path: '../python-utils/requirements.txt'
-      - name: Update the page
+      - name: Install cruxpy package
         run: |
-          ls -Rl . &&
-          python ../python-utils/main.py
+          pip install cruxpy
+      - name: Update the portspage
+        run: |
+          python portspage.py
       - name: Download Crux utils
         uses: joutvhu/download-s3@v1
         with:
