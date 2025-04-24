@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -x
+
 cd $(dirname $0)
 echo $(dirname $0)
 pwd
@@ -15,19 +17,19 @@ if [ -n "$d" ] || [ -n "$f" ]; then
 fi
 
 httpup-repgen .
-portspage --title="Wawrzek Niewodniczanski's Enligthenment CRUX Collections" --header="description.html" . > index.html
 
 export RSYNC_RSH=ssh
 rsync -avz --delete --delete-excluded \
-      --exclude "*tar.gz"   \
-      --exclude "*tar.xz"  \
-      --exclude "*tar.bz2"  \
-      --exclude "*.gem"  \
-      --exclude "*tgz"  \
-      --exclude "*.zip"     \
-      --exclude "sync.sh"   \
-      --exclude "*CVS/"     \
-			--exclude "*git*" \
-			--exclude ".*~" \
-			--exclude "*~" \
-        . wawrzek@server.wawrzek.name:crux/wawrzek
+      --exclude "*tar.gz" \
+      --exclude "*tar.xz" \
+      --exclude "*tar.bz2" \
+      --exclude "*.gem" \
+      --exclude "*tgz" \
+      --exclude "*.zip" \
+      --exclude "port-sync.sh" \
+      --exclude "portspage.py" \
+      --exclude "*CVS/" \
+      --exclude "*git*" \
+      --exclude ".*~" \
+      --exclude "*~" \
+      . wawrzek@server.wawrzek.name:crux/wawrzek
