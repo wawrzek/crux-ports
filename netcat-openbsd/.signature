@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/wawrzek.pub
+RWQXc2agtIcYBSzK/vSMwmNkLjTdDS0XCtiUrT0Sal48ftX2dk7Q2EFucnSUK6jNVO6a5SdoiqFmK1JlEvxqGQyHJ9JGowz9VQo=
+SHA256 (Pkgfile) = 6d3f95996e2f2feef44dda0b6b50b3de84a95ae7a5aed3e2af7d3079c361eb16
+SHA256 (.footprint) = d802289ee363dc6e1b5c512b0f4ebade108c075f11fb652145f88782e40aea93
+SHA256 (netcat-openbsd_1.226.orig.tar.gz) = 91c34c3b9ebc18b84e42514ea0328274229afd408853f7e22af897652ee6bfe5
+SHA256 (netcat-openbsd_1.226-1.1.debian.tar.xz) = 8fc57cf95e124ce33f41c045d8cf520a94f3a00d0c9f9424c8e81ae48bea9b01

@@ -1,0 +1,28 @@
+# Description: Search engine for desktop, mobile and embedded
+# URL: https://tracker.gnome.org/
+# Maintainer: Wawrzek Niewodniczanski main at wawrzek dot name
+# Depends on: libseccomp json-glib
+
+name=tracker
+version=3.7.1
+release=1
+source=(https://download.gnome.org/sources/$name/${version::3}/$name-$version.tar.xz)
+
+build() {
+  prt-get isinst gobject-introspection || PKGMK_GCR+=' -D introspection=false'
+  prt-get isinst vala || PKGMK_GCR+=' -D vapi=false'
+
+  meson setup $name-$version build \
+    --prefix=/usr \
+    --libexecdir=/usr/lib/$name \
+    --buildtype=plain \
+    --wrap-mode nodownload \
+    --auto-features disabled \
+    -D docs=false\
+    -D tests=false \
+    -D systemd_user_services=false
+  meson compile -C build
+  DESTDIR=$PKG meson install -C build
+
+  rm -fr $PKG/usr/share/locale
+}

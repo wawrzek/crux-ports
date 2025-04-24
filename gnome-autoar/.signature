@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/wawrzek.pub
+RWQXc2agtIcYBSL53nK+mrQQcY4FDJMXpuufABDxF3qHhaz82QVBR01ZY3knNKqRHg4ZZn35MGjP44E6DssA6/L7au1KkwwrJgs=
+SHA256 (Pkgfile) = 8af8727c2fadd28d987adebbdcb1d54f8e08f7d9a2785da42de36dbcf12bdc08
+SHA256 (.footprint) = b740c21e0738e576cfa5422db261a1a0c1dd61f967f64f71f41231d9f1e03139
+SHA256 (gnome-autoar-0.4.4.tar.xz) = c0afbe333bcf3cb1441a1f574cc8ec7b1b8197779145d4edeee2896fdacfc3c2
