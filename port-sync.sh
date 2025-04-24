@@ -26,10 +26,11 @@ rsync -avz --delete --delete-excluded \
       --exclude "*.gem" \
       --exclude "*tgz" \
       --exclude "*.zip" \
-      --exclude "port-sync.sh" \
-      --exclude "portspage.py" \
       --exclude "*CVS/" \
       --exclude "*git*" \
       --exclude ".*~" \
       --exclude "*~" \
+      --exclude "port-sync.sh" \
+      --exclude "portspage.py" \
+      --exclude "README.md" \
       . wawrzek@server.wawrzek.name:crux/wawrzek
