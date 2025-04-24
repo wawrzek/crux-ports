@@ -8,10 +8,9 @@
 \.zip$
 (^|/)CVS(/|$)
 .*~$
-port-sync.sh
-portspage.py
 \.gif$
 \.gem$
-.*.html
+port-sync.sh
+portspage.py
 .pre-commit-config.yaml
 README.md
