@@ -14,3 +14,4 @@ portspage.py
 \.gem$
 .*.html
 .pre-commit-config.yaml
+README.md
