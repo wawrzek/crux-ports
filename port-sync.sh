@@ -20,17 +20,16 @@ httpup-repgen .
 
 export RSYNC_RSH=ssh
 rsync -avz --delete --delete-excluded \
-      --exclude "*tar.gz"   \
-      --exclude "*tar.xz"  \
-      --exclude "*tar.bz2"  \
-      --exclude "*.gem"  \
-      --exclude "*tgz"  \
-      --exclude "*.zip"     \
-      --exclude "port-sync.sh"   \
-      --exclude "*CVS/"     \
+      --exclude "*tar.gz" \
+      --exclude "*tar.xz" \
+      --exclude "*tar.bz2" \
+      --exclude "*.gem" \
+      --exclude "*tgz" \
+      --exclude "*.zip" \
+      --exclude "port-sync.sh" \
+      --exclude "portspage.py" \
+      --exclude "*CVS/" \
       --exclude "*git*" \
       --exclude ".*~" \
       --exclude "*~" \
-      --exclude "header.html"\
-      --exclude "description.html"\
       . wawrzek@server.wawrzek.name:crux/wawrzek
