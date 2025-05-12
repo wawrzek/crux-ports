@@ -2,17 +2,18 @@
 # URL: http://luajit.org
 # Maintainer: Wawrzek Niewodniczanski main at wawrzek dot name
 # Packager: Wawrzek Niewodniczanski main at wawrzek dot name
-# Depends on: lua51
+# Depends on:
 
-name=luajit
 official=LuaJIT
-version=2.0.5
-release=2
-source=(http://luajit.org/download/$official-$version.tar.gz)
+commit=eec7a8016c3381b949b5d84583800d05897fa960
+name=luajit
+version=2.1
+release=1
+source=(https://github.com/${official}/${official}/archive/${commit}.tar.gz)
 
 build()
 {
-    cd $official-$version
+    cd $official-$commit
     make
     make install PREFIX=$PKG/usr
     sed -i "s|$PKG||g" $PKG/usr/lib/pkgconfig/luajit.pc
