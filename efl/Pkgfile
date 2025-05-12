@@ -6,7 +6,7 @@
 
 name=efl
 version=1.28.1
-release=1
+release=2
 source=(http://download.enlightenment.org/rel/libs/$name/$name-$version.tar.xz)
 
 build()
