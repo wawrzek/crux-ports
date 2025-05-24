@@ -6,7 +6,7 @@
 
 name=connman
 version=1.44
-release=1
+release=2
 source=(https://www.kernel.org/pub/linux/network/connman/$name-$version.tar.gz
     connmand
     wpa_supplicant
@@ -23,7 +23,6 @@ build()
     # update dbus roles
     mkdir -p $PKG/etc/dbus-1/system.d
     mv $PKG/usr/share/dbus-1/system.d/connman.conf $PKG/etc/dbus-1/system.d/
-    sed -i 's/user="root"/group="wheel"/' $PKG/etc/dbus-1/system.d/connman.conf
 
     mkdir -p $PKG/usr/var/run/$name
     # rc script
