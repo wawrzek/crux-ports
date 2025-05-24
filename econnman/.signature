@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/wawrzek.pub
-RWQXc2agtIcYBfKqroLkKZT9J9YV6TZNMWpd3Yfsw2OFgSGX4RgLcVjMUfQSGBvv0unxTXGPUaY1X/2TOjCnbCf80n3xHh00xgM=
-SHA256 (Pkgfile) = cd32f4766f56b900bcf17f6cba8a24df4f1a176171341d90a7d2a545ef726f1e
+RWQXc2agtIcYBdgqvAjavH6WnOzfEeGgs8GxNkMBNx9Fv/g0YbYhUF1dUi3gNt3neByCorRa+v6bUNItGKxw/Gj7yWJ8yhDV0ws=
+SHA256 (Pkgfile) = 4efd3430ff4852cd4f3d712c1df5b74b42672d01475ff7e1813c31b8d501bea9
 SHA256 (.footprint) = dfa4475cf010c9f1ba9382c6f59eb967ebd734f06f7ef6b5007c764e05a8990e
 SHA256 (econnman-1.1.tar.xz) = 0cce87681fae7ca70f1e63cfe0ae65fdf17bc334727054317e25e3897619ed85
