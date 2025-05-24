@@ -2,11 +2,11 @@
 # URL: http://www.enlightenment.org/
 # Maintainer: Wawrzek Niewodniczanski, main at wawrzek dot name
 # Packager: Victor Martinez, pitillo at ono dot com
-# Depends on: connman, efl
+# Depends on: connman python-efl
 
 name=econnman
 version=1.1
-release=1
+release=2
 source=(http://download.enlightenment.org/rel/apps/$name/$name-$version.tar.xz)
 
 build()

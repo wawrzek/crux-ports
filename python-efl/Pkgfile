@@ -2,11 +2,11 @@
 # URL: http://www.enlightenment.org/
 # Maintainer: Wawrzek Niewodniczanski, main at wawrzek dot name
 # Packager: Victor Martinez, pitillo at ono dot com
-# Depends on: dbus-python efl
+# Depends on: dbus-python3 efl
 
 name=python-efl
 version=1.26.1
-release=1
+release=2
 source=(http://download.enlightenment.org/rel/bindings/python/$name-$version.tar.xz)
 
 build()
