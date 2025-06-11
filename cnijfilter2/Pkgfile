@@ -4,12 +4,15 @@
 # Depends on: cups
 
 name=cnijfilter2
-version=6.40-1
+version=6.80-1
 release=1
-source=(https://gdlp01.c-wss.com/gds/1/0100011381/01/$name-source-$version.tar.gz)
+source=(https://gdlp01.c-wss.com/gds/2/0100012302/02/$name-source-$version.tar.gz
+	add-missing-import.patch
+	)
 
 dirs="cmdtocanonij2 cmdtocanonij3 cnijbe2 lgmon3 rastertocanonij tocanonij tocnpwg"
 build() {
+	patch -p0 -i add-missing-import.patch
 	cd $name-source-$version
 	sed -i '/po\/Makefile.in/d' lgmon3/configure.in
 	sed -i /SUBDIRS/s/po// lgmon3/Makefile.am
