@@ -4,8 +4,6 @@ drwxr-xr-x	root/root	etc/dbus-1/system.d/
 -rw-r--r--	root/root	etc/dbus-1/system.d/connman.conf
 drwxr-xr-x	root/root	etc/rc.d/
 -rwxr-xr-x	root/root	etc/rc.d/connmand
--rwxr-xr-x	root/root	etc/rc.d/wifi
--rwxr-xr-x	root/root	etc/rc.d/wpa_supplicant
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/connmanctl
