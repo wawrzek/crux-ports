@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/wawrzek.pub
+RWQXc2agtIcYBXm+Q+pBF2o2oNCmMg2dDZj/QqdQpVecWadk8BxECft1CH8Fbz874YIUwYkyDaZSAMZXMsKd44KzmHZkIwQxcQ4=
+SHA256 (Pkgfile) = b58a4da2c5652c24c12c5418eb105548f7cf54e61e20e83492011ae7699f0544
+SHA256 (.footprint) = b195ee155f07a4b9ed64481c60fc8496f01fa7e9a0fd1b1ac81463c20833b564
+SHA256 (tinysparql-3.9.2.tar.xz) = 14ce039024135e181022bcce4b1aad2e00377dd9c7d812b98391ccfc756dad8e

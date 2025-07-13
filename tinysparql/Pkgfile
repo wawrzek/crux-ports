@@ -1,10 +1,10 @@
 # Description: Search engine for desktop, mobile and embedded
 # URL: https://tracker.gnome.org/
 # Maintainer: Wawrzek Niewodniczanski main at wawrzek dot name
-# Depends on: libseccomp json-glib
+# Depends on: libseccomp json-glib libsoup3 asciidoc
 
-name=tracker
-version=3.7.1
+name=tinysparql
+version=3.9.2
 release=1
 source=(https://download.gnome.org/sources/$name/${version::3}/$name-$version.tar.xz)
 
