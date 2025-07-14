@@ -4,7 +4,7 @@
 # Depends on: nautilus python3-docutils gnome-common gtk4
 
 name=nautilus-dropbox
-version=2024.01.22
+version=2025.05.20
 release=1
 source=(https://github.com/dropbox/$name/archive/refs/tags/v$version.tar.gz)
 build()
