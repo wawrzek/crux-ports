@@ -1,10 +1,10 @@
 # Description: GNOME file manager
 # URL: https://tracker.gnome.org/
 # Maintainer: Wawrzek Niewodniczanski main at wawrzek dot name
-# Depends on: gnome-autoar tracker bubblewrap gexiv2 gnome-desktop libadwaita libnotify libportal libseccomp
+# Depends on: gnome-autoar tinysparql bubblewrap gexiv2 gnome-desktop libadwaita libnotify libportal libseccomp
 
 name=nautilus
-version=45.2.1
+version=48.3
 release=1
 source=(https://download.gnome.org/sources/$name/${version::2}/$name-$version.tar.xz)
 

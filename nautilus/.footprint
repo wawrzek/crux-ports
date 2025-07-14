@@ -34,8 +34,6 @@ drwxr-xr-x	root/root	usr/share/applications/
 drwxr-xr-x	root/root	usr/share/dbus-1/
 drwxr-xr-x	root/root	usr/share/dbus-1/services/
 -rw-r--r--	root/root	usr/share/dbus-1/services/org.freedesktop.FileManager1.service
--rw-r--r--	root/root	usr/share/dbus-1/services/org.gnome.Nautilus.Tracker3.Miner.Extract.service
--rw-r--r--	root/root	usr/share/dbus-1/services/org.gnome.Nautilus.Tracker3.Miner.Files.service
 -rw-r--r--	root/root	usr/share/dbus-1/services/org.gnome.Nautilus.service
 drwxr-xr-x	root/root	usr/share/gir-1.0/
 -rw-r--r--	root/root	usr/share/gir-1.0/Nautilus-4.0.gir
@@ -54,11 +52,8 @@ drwxr-xr-x	root/root	usr/share/icons/hicolor/symbolic/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/symbolic/apps/
 -rw-r--r--	root/root	usr/share/icons/hicolor/symbolic/apps/org.gnome.Nautilus-symbolic.svg
 drwxr-xr-x	root/root	usr/share/metainfo/
--rw-r--r--	root/root	usr/share/metainfo/org.gnome.Nautilus.appdata.xml
+-rw-r--r--	root/root	usr/share/metainfo/org.gnome.Nautilus.metainfo.xml
 drwxr-xr-x	root/root	usr/share/nautilus/
 drwxr-xr-x	root/root	usr/share/nautilus/ontology/
 -rw-r--r--	root/root	usr/share/nautilus/ontology/nautilus.description
 -rw-r--r--	root/root	usr/share/nautilus/ontology/nautilus.ontology
-drwxr-xr-x	root/root	usr/share/tracker3/
-drwxr-xr-x	root/root	usr/share/tracker3/domain-ontologies/
--rw-r--r--	root/root	usr/share/tracker3/domain-ontologies/org.gnome.Nautilus.domain.rule
