@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/wawrzek.pub
+RWQXc2agtIcYBVnH5WIxPpupWs1huyftkt/0q+5w6ypak5gbfVtTbBl9qbBNpScs771qI7cyoMTyt3Y/hbxGfgq2Gpi81zriEw4=
+SHA256 (Pkgfile) = b281de2aefe0a4ca21641bfa2518ca80720a40e6e939dd561410b2265f2a338f
+SHA256 (.footprint) = e5f641d9a1d3a3727714bee567bafcfb4816d56fea28e861dd4723e8010fc7a4
+SHA256 (cfgv-3.4.0.tar.gz) = e52591d4c5f5dead8e0f673fb16db7949d2cfb3f7da4582893288f0ded8fe560
