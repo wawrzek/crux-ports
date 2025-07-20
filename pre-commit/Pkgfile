@@ -1,0 +1,19 @@
+# Description: A framework for multi-language pre-commit hooks.
+# URL: https://pypi.python.org/pypi/pre-commit
+# Maintainer: Wawrzek Niewodniczanski, main at wawrzek dot name
+# Depends on: python3-setuptools
+
+name=pre-commit
+version=4.2.0
+release=1
+package=pre_commit
+source=(https://pypi.org/packages/source/p/$package/$package-$version.tar.gz)
+
+build() {
+  cd $package-$version
+
+  /usr/bin/python3 setup.py build
+  /usr/bin/python3 setup.py install --prefix=/usr \
+    --root=$PKG \
+    --skip-build
+}
