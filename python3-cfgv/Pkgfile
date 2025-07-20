@@ -1,9 +1,9 @@
-# Description: A framework for multi-language pre-commit hooks.
-# URL: https://pypi.python.org/pypi/pre-commit
+# Description: Validate configuration and produce human readable error messages
+# URL: https://pypi.python.org/pypi/cfgv
 # Maintainer: Wawrzek Niewodniczanski, main at wawrzek dot name
 # Depends on: python3-setuptools
 
-name=pre-commit
+name=python3-cfgv
 version=3.4.0
 release=1
 package=cfgv

@@ -1,7 +1,7 @@
 # Description: A framework for multi-language pre-commit hooks.
 # URL: https://pypi.python.org/pypi/pre-commit
 # Maintainer: Wawrzek Niewodniczanski, main at wawrzek dot name
-# Depends on: python3-setuptools
+# Depends on: python3-setuptools python3-cfgv
 
 name=pre-commit
 version=4.2.0
