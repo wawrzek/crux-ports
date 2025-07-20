@@ -1,0 +1,19 @@
+# Description: File identification library for Python
+# URL: https://pypi.python.org/pypi/identify
+# Maintainer: Wawrzek Niewodniczanski, main at wawrzek dot name
+# Depends on: python3-setuptools
+
+name=python3-identify
+version=2.6.12
+release=1
+package=identify
+source=(https://pypi.org/packages/source/i/$package/$package-$version.tar.gz)
+
+build() {
+  cd $package-$version
+
+  /usr/bin/python3 setup.py build
+  /usr/bin/python3 setup.py install --prefix=/usr \
+    --root=$PKG \
+    --skip-build
+}

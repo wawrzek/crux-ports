@@ -1,0 +1,32 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/identify-cli
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/python3.12/
+drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/
+drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/identify-2.6.12-py3.12.egg-info/
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/identify-2.6.12-py3.12.egg-info/PKG-INFO
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/identify-2.6.12-py3.12.egg-info/SOURCES.txt
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/identify-2.6.12-py3.12.egg-info/dependency_links.txt
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/identify-2.6.12-py3.12.egg-info/entry_points.txt
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/identify-2.6.12-py3.12.egg-info/requires.txt
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/identify-2.6.12-py3.12.egg-info/top_level.txt
+drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/identify/
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/identify/__init__.py (EMPTY)
+drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/identify/__pycache__/
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/identify/__pycache__/__init__.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/identify/__pycache__/cli.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/identify/__pycache__/extensions.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/identify/__pycache__/identify.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/identify/__pycache__/interpreters.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/identify/cli.py
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/identify/extensions.py
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/identify/identify.py
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/identify/interpreters.py
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/identify/py.typed (EMPTY)
+drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/identify/vendor/
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/identify/vendor/__init__.py (EMPTY)
+drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/identify/vendor/__pycache__/
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/identify/vendor/__pycache__/__init__.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/identify/vendor/__pycache__/licenses.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/identify/vendor/licenses.py
