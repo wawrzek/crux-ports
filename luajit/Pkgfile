@@ -5,7 +5,7 @@
 # Depends on:
 
 official=LuaJIT
-commit=eec7a8016c3381b949b5d84583800d05897fa960
+commit=871db2c84ecefd70a850e03a6c340214a81739f0
 name=luajit
 version=2.1
 release=1
