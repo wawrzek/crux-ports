@@ -33,4 +33,5 @@ rsync -avz --delete --delete-excluded \
       --exclude "port-sync.sh" \
       --exclude "portspage.py" \
       --exclude "README.md" \
+      --exclude "utils/" \
       . wawrzek@server.wawrzek.name:crux/wawrzek
