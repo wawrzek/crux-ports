@@ -1,0 +1,3 @@
+This package differ to the original kvantum (from KDE repo),
+by not depending on kwindowsystem. Because of that it misses
+some of KWin effects (e.g. blur).

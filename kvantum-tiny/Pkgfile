@@ -1,0 +1,26 @@
+# Description: theme engine for QT6 and KDE
+# URL: https://github.com/tsujan/Kvantum/
+# Maintainer: main at wawrzek dot name
+# Packager: CRUX KDE Ports, kde-ports at crux dot nu
+# Depends on: icu qt6-svg
+
+name=kvantum
+version=1.1.5
+release=1
+source=(https://github.com/tsujan/Kvantum/archive/V$version/Kvantum-v$version.tar.gz)
+
+build() {
+    cmake -S Kvantum-$version/Kvantum -B build -G Ninja \
+        -D CMAKE_INSTALL_PREFIX=/usr \
+        -D CMAKE_BUILD_TYPE=Release \
+        -D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS" \
+        -D CMAKE_C_FLAGS_RELEASE="$CFLAGS" \
+        -DWITHOUT_KF=ON \
+        -Wno-dev
+    cmake --build build
+    DESTDIR=$PKG cmake --install build
+
+    rm -fr $PKG/usr/share/{kvantumpreview/translations,kvantummanager/translations}
+}
+
+# vim: set ts=4 et:
