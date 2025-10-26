@@ -2,6 +2,7 @@
 # URL: https://help.dropbox.com/installs/linux-commands
 # Maintainer: Wawrzek Niewodniczanski main at wawrzek dot name
 # Depends on: nautilus python3-docutils gnome-common gtk4
+# Optional: libappindicator-gtk2
 
 name=nautilus-dropbox
 version=2025.05.20
