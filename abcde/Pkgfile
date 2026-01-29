@@ -1,7 +1,7 @@
 # Description: A Better CD Encoder
 # URL: https://abcde.einval.com/wiki/
 # Maintainer: Wawrzek Niewodniczański, main at wawrzek dot name
-# Depends on:  cd-discid cdparanoia vorbis-tools
+# Depends on:  cd-discid cdparanoia vorbis-tools p5-musicbrainz-discid p5-musicbrainz-webservice
 # Optional:    cdrkit faac fdk-aac ffmpeg flac id3lib imagemagick lame speex vorbisgain wavpack
 
 
