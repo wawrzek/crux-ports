@@ -5,7 +5,7 @@
 
 
 name=solaar
-version=1.1.14
+version=1.1.19
 release=3
 source=(https://github.com/pwr-Solaar/Solaar/archive/refs/tags/$version.tar.gz)
 
