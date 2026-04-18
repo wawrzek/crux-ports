@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/wawrzek.pub
-RWQXc2agtIcYBUZe+NfIcIFfzW+zD9YH51oA3HbN4RhYWfKCo9sKGm8rxG5/cLu1yUqOeIuCCyWv5ml+7isZcnT2lHht8s08CAQ=
-SHA256 (Pkgfile) = 58e65f2b4fdeabfbf61c168bc76298b64de2aee2add9192f41696dbf7a44b660
+RWQXc2agtIcYBdWPhf+mLoAfLRskar5LTjgu5a+/XdVRt26/d51A915NUe1qtAqf4K5JNyy2Bjd4apDJl9hcvARu3omckZCKZQw=
+SHA256 (Pkgfile) = 0fd772a47705f58ca53b5e58dc92b63ef9c59a704cafbe8f4b9ce05dbfdfb227
 SHA256 (.footprint) = d802289ee363dc6e1b5c512b0f4ebade108c075f11fb652145f88782e40aea93
-SHA256 (netcat-openbsd_1.229.orig.tar.gz) = 493e3973ffca7fedf0435e498bf18ebc934b1c3aa76db2b29cf80f98d9175a86
-SHA256 (netcat-openbsd_1.229-1.debian.tar.xz) = c3bff4330a2fe1fbe384861eacbf4f6ad2c59912aa772efad07462644ed9d936
+SHA256 (netcat-openbsd_1.234.orig.tar.gz) = 121c18d9441ec42b92a9b566468a596bbcf673894db8b12d892947552a8e3bbe
+SHA256 (netcat-openbsd_1.234-2.debian.tar.xz) = fd4c758001856b98b1cda2b4e9f9dcc07579fa11ad1e53c76abf72ba35b056d9
