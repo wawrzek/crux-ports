@@ -1,7 +1,7 @@
-# Description: A simple font management application for GTK Desktop Environments
+# Description: A simple font management application for GTK
 # URL: https://github.com/FontManager/font-manager
 # Maintainer: Wawrzek Niewodniczanski, main at wawrzek dot name
-# Depends on: glib, vala, freetype2, gtk3, json-glib, libxml, sqlite, gobject-introspection, webkitgtk
+# Depends on: glib vala freetype2 gtk3 json-glib libxml sqlite gobject-introspection webkitgtk
 
 name=font-manager
 version=0.8.6

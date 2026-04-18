@@ -1,11 +1,10 @@
 # Description: Netcat from OpenBSD rewritten by Debian
 # URL:         https://packages.debian.org/sid/netcat-openbsd
 # Maintainer:  Wawrzek Niewodniczanski, main at wawrzek dot name
-# Packager:    Alan Mizrahi, alan at mizrahi dot com dot ve
 # Depends on:  libbsd gnutls
 
 name=netcat-openbsd
-version=1.229
+version=1.234
 release=1
 source=(
 http://deb.debian.org/debian/pool/main/n/netcat-openbsd/netcat-openbsd_${version}.orig.tar.gz
