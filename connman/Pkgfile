@@ -1,12 +1,11 @@
-# Description: a daemon for managing Internet connections within embedded device.
+# Description: a daemon for managing Internet connections within embedded device
 # URL: https://01.org/connman
-# Maintainer: Wawrzek Niewodniczanski main at wawrzek dot name
-# Packager: Wawrzek Niewodniczanski main at wawrzek dot name
+# Maintainer: Wawrzek Niewodniczanski, main at wawrzek dot name
 # Depends on: dbus gnutls wpa_supplicant libmnl
 
 name=connman
-version=1.44
-release=3
+version=2.0
+release=1
 source=(https://www.kernel.org/pub/linux/network/connman/$name-$version.tar.gz
     connmand)
 
