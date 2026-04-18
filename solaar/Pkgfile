@@ -1,7 +1,7 @@
 # Description: Tool to manage Logitech keyboards
 # URL: https://github.com/pwr-Solaar/Solaar
 # Maintainer: Wawrzek Niewodniczanski, main at wawrzek dot name
-# Depends on: python3-setuptools python3-pyyaml python3-pyudev python3-psutil python3-xlib python3-evdev python3-gobject gtk3 libayatana-appindicator python3-typing_extension
+# Depends on: python3-setuptools python3-pyyaml python3-pyudev python3-psutil python3-xlib python3-evdev python3-gobject gtk3 libayatana-appindicator python3-typing_extensions
 
 
 name=solaar
