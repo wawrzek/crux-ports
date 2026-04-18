@@ -1,6 +1,0 @@
-untrusted comment: verify with /etc/ports/wawrzek.pub
-RWQXc2agtIcYBfiASGO3ATqYoUzbRXVuepFv2Q5UM2HZZE9XVRRdthTJD/nmUPQE8jc2p+uZ1H0qiCswIKodgCWe9MAfQkowHg8=
-SHA256 (Pkgfile) = e86a6b5795fb20ea1666072ff46051981674616f0f93910b73c37b82c2ce17b5
-SHA256 (.footprint) = 27bcb026658836848ade22c61bd4ec7ccc23da68716f21f7edcb2a85e7790ad5
-SHA256 (cnijfilter2-source-6.80-1.tar.gz) = 5d5b6ba67f0025616d9b1e9d55a613bd812bc343c9df002e570a832182cfc1d3
-SHA256 (add-missing-import.patch) = 9a0bbdfddcbed0d4d6937608052445847b1378139afd6f8499b84b3ad93da1ea
