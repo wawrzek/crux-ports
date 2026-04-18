@@ -1,11 +1,11 @@
 # Description: theme engine for QT6 and KDE
-# URL: https://github.com/tsujan/Kvantum/
-# Maintainer: main at wawrzek dot name
-# Packager: CRUX KDE Ports, kde-ports at crux dot nu
-# Depends on: icu qt6-svg
+# URL:         https://github.com/tsujan/Kvantum/
+# Maintainer:  Wawrzek Niewodniczanski, main at wawrzek dot name
+# Packager:    CRUX KDE Ports, kde-ports at crux dot nu
+# Depends on:  icu qt6-svg
 
 name=kvantum
-version=1.1.5
+version=1.1.6
 release=1
 source=(https://github.com/tsujan/Kvantum/archive/V$version/Kvantum-v$version.tar.gz)
 
