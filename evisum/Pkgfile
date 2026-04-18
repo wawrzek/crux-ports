@@ -5,8 +5,8 @@
 
 name=evisum
 version=0.6.4
-release=1
-source=(http://download.enlightenment.org/rel/apps/$name/$name-$version.tar.xz)
+release=2
+source=(https://download.enlightenment.org/rel/apps/$name/$name-$version.tar.xz)
 
 build()
 {
