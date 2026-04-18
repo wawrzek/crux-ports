@@ -1,11 +1,11 @@
 # Description: Comprehensive image/photo viewer using EFL
 # URL: http://www.enlightenment.org/
-# Maintainer: Wawrzek Niewodniczanski main at wawrzek dot name
+# Maintainer: Wawrzek Niewodniczanski, main at wawrzek dot name
 # Depends on: efl
 
 name=ephoto
 version=1.6.0
-release=1
+release=2
 source=(https://download.enlightenment.org/rel/apps/$name/$name-$version.tar.xz)
 
 build()
@@ -13,8 +13,8 @@ build()
 	cd $name-$version
 	meson --prefix=/usr \
 		--mandir=/usr/man \
-		-Dnls=false \
 		. build
 	ninja -C build
 	DESTDIR=$PKG ninja -C build install
+	rm -r $PKG/usr/share/locale
 }
