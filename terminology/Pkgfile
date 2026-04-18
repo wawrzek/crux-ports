@@ -1,7 +1,6 @@
 # Description: terminal emulator
 # URL: http://www.enlightenment.org/
-# Maintainer: Wawrzek Niewodniczanski main at wawrzek dot name
-# Packager: Victor Martinez, pitillo at ono dot com
+# Maintainer: Wawrzek Niewodniczanski, main at wawrzek dot name
 # Depends on: efl
 
 name=terminology

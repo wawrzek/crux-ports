@@ -1,7 +1,6 @@
 # Description: python binding for efl libraries
 # URL: http://www.enlightenment.org/
 # Maintainer: Wawrzek Niewodniczanski, main at wawrzek dot name
-# Packager: Victor Martinez, pitillo at ono dot com
 # Depends on: dbus-python3 efl
 
 name=python-efl
