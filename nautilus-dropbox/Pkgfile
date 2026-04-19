@@ -1,11 +1,11 @@
 # Description: Linux client for Dropbox
 # URL: https://help.dropbox.com/installs/linux-commands
-# Maintainer: Wawrzek Niewodniczanski main at wawrzek dot name
+# Maintainer: Wawrzek Niewodniczanski, main at wawrzek dot name
 # Depends on: nautilus python3-docutils gnome-common gtk4
 # Optional: libappindicator-gtk2
 
 name=nautilus-dropbox
-version=2025.05.20
+version=2026.03.20
 release=1
 source=(https://github.com/dropbox/$name/archive/refs/tags/v$version.tar.gz)
 build()
