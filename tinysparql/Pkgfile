@@ -1,12 +1,12 @@
 # Description: Search engine for desktop, mobile and embedded
 # URL: https://tracker.gnome.org/
-# Maintainer: Wawrzek Niewodniczanski main at wawrzek dot name
+# Maintainer: Wawrzek Niewodniczanski, main at wawrzek dot name
 # Depends on: libseccomp json-glib libsoup3 asciidoc
 
 name=tinysparql
-version=3.9.2
+version=3.11.1
 release=1
-source=(https://download.gnome.org/sources/$name/${version::3}/$name-$version.tar.xz)
+source=(https://download.gnome.org/sources/$name/${version::4}/$name-$version.tar.xz)
 
 build() {
   prt-get isinst gobject-introspection || PKGMK_GCR+=' -D introspection=false'
