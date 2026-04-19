@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/wawrzek.pub
-RWQXc2agtIcYBdziGt7aAyD3Bg02nXL7vCJGNYx7U0PcBV034a4dXpJC8ycW7jN/erfo0tkDHjdjh6uXgyY1WqIL+DvZcR9dKQ4=
-SHA256 (Pkgfile) = 7fe4a16ff419cc449ec88874759ae63944b6c64510c1cec24cfb381a98526101
+RWQXc2agtIcYBUFoU8g7x/duZP4i3Da7uSSdy5F5NUOMhNO0ieQ3GOjPAAjwaEvpmw2nNB0JyeN+Y9GS/LyjauRFeeE7sKSd2go=
+SHA256 (Pkgfile) = e4b7efa362e34402a747ebcaa6b3aeaeadf1e1599a58c8be5c237f5b9a3b79f1
 SHA256 (.footprint) = 9b77a34d6ce60262e65c9a8e194b4da06d46d9c977b70b65172b874292776fa0
 SHA256 (blueprint-compiler-0.20.4.tar.xz) = 1f1ecc84bcd698902d422f7de83d39229a209dd3016f6d2c3b0ed0ab123f6891
