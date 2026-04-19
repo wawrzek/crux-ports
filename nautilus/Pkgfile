@@ -4,7 +4,7 @@
 # Depends on: gnome-autoar blueprint-compiler bubblewrap gexiv2 gnome-desktop libadwaita libnotify libportal libseccomp tinysparql
 
 name=nautilus
-version=50.1
+version=49.6
 release=1
 source=(https://download.gnome.org/sources/$name/${version::2}/$name-$version.tar.xz)
 
