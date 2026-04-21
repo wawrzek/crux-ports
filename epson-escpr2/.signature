@@ -1,7 +1,0 @@
-untrusted comment: verify with /etc/ports/wawrzek.pub
-RWQXc2agtIcYBWjDmbnm6eKZuIPLv6n2yS70tqBfhjZiZpp38RmBUclkJ1HJdNr0CKFWry5YL/8MsZ8kX6KNlHYAtcj0vf+17AI=
-SHA256 (Pkgfile) = 462cb5c90f8c2670da0f47eefd0c9220a345061cc0d00579096e418791921796
-SHA256 (.footprint) = d54ab20df7f4c9b08e149eb0db88b0d362d11356caa519d62ee43f9f30608c99
-SHA256 (epson-inkjet-printer-escpr2-1.2.38-1.tar.gz) = 655b9afc5ca7dcba939d67fac67edd0209fe94decd168b78c0503868fd94f7a1
-SHA256 (bug_x86_64.patch) = 57c7a32b7deac873d7e31f043a047e5d65b8e0a47c0d0c07c76c3e3bbd60430a
-SHA256 (enable_velvet_fine_art_paper.patch) = 84692c469fb18832344b2c5a31b46f10dd7f87691d0c63a8f14adbc06ade114a
