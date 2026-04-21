@@ -1,0 +1,28 @@
+# Description: Epson Inkjet Printer Driver 2 (ESC/P-R) for Linux
+# URL: https://support.epson.net/linux/Printer/LSB_distribution_pages/en/escpr2.php
+# Maintainer: Wawrzek Niewodniczanski, main at wawrzek dot name
+# Depends on: cups ghostscript
+
+name=epson-inkjet-printer-escpr2
+version=1.2.38
+release=1
+source=(https://download-center.epson.com/f/module/42a6470c-53bf-4993-abad-ba5b4a1d5d84/epson-inkjet-printer-escpr2-$version-$release.tar.gz \
+        bug_x86_64.patch \
+        enable_velvet_fine_art_paper.patch)
+
+build() {
+  cd $name-$version
+
+  # Apply patches from the source array
+  patch -p1 -i $SRC/bug_x86_64.patch
+  patch -p1 -i $SRC/enable_velvet_fine_art_paper.patch
+
+  autoreconf -f -i
+
+  ./configure --prefix=/usr \
+              --with-cupsfilterdir=/usr/lib/cups/filter \
+              --with-cupsppddir=/usr/share/ppd
+
+  make
+  make DESTDIR=$PKG install
+}
