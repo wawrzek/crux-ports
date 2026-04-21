@@ -3,7 +3,7 @@
 # Maintainer: Wawrzek Niewodniczański, main at wawrzek dot name
 
 name=p5-mojolicious
-version=9.17
+version=9.42
 release=1
 source=(https://cpan.metacpan.org/authors/id/S/SR/SRI/Mojolicious-$version.tar.gz)
 
