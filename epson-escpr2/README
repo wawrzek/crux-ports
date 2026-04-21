@@ -1,0 +1,7 @@
+There is a problem in downloading source code with standard curl/pkgmk
+settings. The workaround is to modify PKGMK_CURL_OPTS:
+
+PKGMK_CURL_OPTS="--user-agent Firefox"
+
+I modified /etc/pkgmk.conf It affects all the ports, but haven't caused any
+issues yet.

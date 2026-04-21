@@ -3,15 +3,18 @@
 # Maintainer: Wawrzek Niewodniczanski, main at wawrzek dot name
 # Depends on: cups ghostscript
 
-name=epson-inkjet-printer-escpr2
+name=epson-escpr2
 version=1.2.38
-release=1
-source=(https://download-center.epson.com/f/module/42a6470c-53bf-4993-abad-ba5b4a1d5d84/epson-inkjet-printer-escpr2-$version-$release.tar.gz \
+release=2
+version_release=1
+package=epson-inkjet-printer-escpr2
+
+source=(https://download-center.epson.com/f/module/42a6470c-53bf-4993-abad-ba5b4a1d5d84/$package-$version-$version_release.tar.gz \
         bug_x86_64.patch \
         enable_velvet_fine_art_paper.patch)
 
 build() {
-  cd $name-$version
+  cd $package-$version
 
   # Apply patches from the source array
   patch -p1 -i $SRC/bug_x86_64.patch
