@@ -4,7 +4,7 @@
 # Depends on: p5-mojolicious
 
 name=p5-musicbrainz-webservice
-version=1.0.5
+version=1.0.10
 release=1
 source=(https://cpan.metacpan.org/authors/id/B/BF/BFAIST/WebService-MusicBrainz-$version.tar.gz)
 
