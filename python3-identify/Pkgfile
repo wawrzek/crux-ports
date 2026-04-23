@@ -4,7 +4,7 @@
 # Depends on: python3-setuptools
 
 name=python3-identify
-version=2.6.12
+version=2.6.19
 release=1
 package=identify
 source=(https://pypi.org/packages/source/i/$package/$package-$version.tar.gz)
