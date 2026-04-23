@@ -4,7 +4,7 @@
 # Depends on: python3-setuptools python3-cfgv python3-identify python3-nodeenv python3-pyyaml python3-virtualenv
 
 name=pre-commit
-version=4.2.0
+version=4.6.0
 release=1
 package=pre_commit
 source=(https://pypi.org/packages/source/p/$package/$package-$version.tar.gz)

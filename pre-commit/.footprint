@@ -4,13 +4,13 @@ drwxr-xr-x	root/root	usr/bin/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/python3.12/
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/
-drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pre_commit-4.2.0-py3.12.egg-info/
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/pre_commit-4.2.0-py3.12.egg-info/PKG-INFO
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/pre_commit-4.2.0-py3.12.egg-info/SOURCES.txt
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/pre_commit-4.2.0-py3.12.egg-info/dependency_links.txt
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/pre_commit-4.2.0-py3.12.egg-info/entry_points.txt
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/pre_commit-4.2.0-py3.12.egg-info/requires.txt
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/pre_commit-4.2.0-py3.12.egg-info/top_level.txt
+drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pre_commit-4.6.0-py3.12.egg-info/
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pre_commit-4.6.0-py3.12.egg-info/PKG-INFO
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pre_commit-4.6.0-py3.12.egg-info/SOURCES.txt
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pre_commit-4.6.0-py3.12.egg-info/dependency_links.txt
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pre_commit-4.6.0-py3.12.egg-info/entry_points.txt
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pre_commit-4.6.0-py3.12.egg-info/requires.txt
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pre_commit-4.6.0-py3.12.egg-info/top_level.txt
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pre_commit/
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pre_commit/__init__.py (EMPTY)
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pre_commit/__main__.py
@@ -50,6 +50,7 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pre_commit/commands/__pyca
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pre_commit/commands/__pycache__/autoupdate.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pre_commit/commands/__pycache__/clean.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pre_commit/commands/__pycache__/gc.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pre_commit/commands/__pycache__/hazmat.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pre_commit/commands/__pycache__/hook_impl.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pre_commit/commands/__pycache__/init_templatedir.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pre_commit/commands/__pycache__/install_uninstall.cpython-312.pyc
@@ -62,6 +63,7 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pre_commit/commands/__pyca
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pre_commit/commands/autoupdate.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pre_commit/commands/clean.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pre_commit/commands/gc.py
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pre_commit/commands/hazmat.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pre_commit/commands/hook_impl.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pre_commit/commands/init_templatedir.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pre_commit/commands/install_uninstall.py
@@ -101,9 +103,9 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pre_commit/languages/__pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pre_commit/languages/__pycache__/r.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pre_commit/languages/__pycache__/ruby.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pre_commit/languages/__pycache__/rust.cpython-312.pyc
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/pre_commit/languages/__pycache__/script.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pre_commit/languages/__pycache__/swift.cpython-312.pyc
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/pre_commit/languages/__pycache__/system.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pre_commit/languages/__pycache__/unsupported.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pre_commit/languages/__pycache__/unsupported_script.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pre_commit/languages/conda.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pre_commit/languages/coursier.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pre_commit/languages/dart.py
@@ -122,9 +124,9 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pre_commit/languages/__pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pre_commit/languages/r.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pre_commit/languages/ruby.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pre_commit/languages/rust.py
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/pre_commit/languages/script.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pre_commit/languages/swift.py
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/pre_commit/languages/system.py
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pre_commit/languages/unsupported.py
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pre_commit/languages/unsupported_script.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pre_commit/logging_handler.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pre_commit/main.py
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pre_commit/meta_hooks/
