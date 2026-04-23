@@ -4,7 +4,7 @@
 # Depends on: python3-setuptools
 
 name=python3-nodeenv
-version=1.9.1
+version=1.10.0
 release=1
 package=nodeenv
 source=(https://pypi.org/packages/source/n/$package/$package-$version.tar.gz)
