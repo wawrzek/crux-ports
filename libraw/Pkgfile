@@ -5,7 +5,7 @@
 ## Based on the port in kde-plasma-6
 
 name=libraw
-version=0.21.4
+version=0.22.1
 release=1
 source=(http://www.libraw.org/data/LibRaw-$version.tar.gz)
 
