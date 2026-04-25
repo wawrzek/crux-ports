@@ -8,4 +8,4 @@ style="black"
 
 page = page(style=style)
 page.write()
-shutil.copy(f"cruxpy/files/{style}.css", "./")
+page.write_style(style, "./")
