@@ -6,6 +6,7 @@ import shutil
 
 style="black"
 
-page = page(style=style)
-page.write()
-page.write_style(style, "./")
+p = page(style=style)
+p.read_repo()
+p.write()
+p.write_style()
