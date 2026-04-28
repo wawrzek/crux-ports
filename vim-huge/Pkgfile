@@ -1,0 +1,43 @@
+# Description: Highly configurable text editor with "huge" feature set
+# URL: https://www.vim.org/
+# Maintainer: Wawrzek Niewodniczański, main at wawrzek dot name
+# Depends on: acl ncurses xorg-libx11 xorg-libxt xorg-libxpm
+
+name=vim-huge
+version=9.2.0390
+release=1
+source=(https://github.com/vim/vim/archive/v${version}/vim-$version.tar.gz)
+
+build() {
+    cd vim-$version/src
+
+    sed -i '/^CFLAGS/d' Makefile
+
+    CFLAGS+=' -flto=auto' \
+    ./configure \
+        --prefix=/usr \
+        --with-vim-name=$name \
+        --with-compiledby="$(crux | awk '{ print $1, $3 }') in (https://wawrzek.name/crux/repo/vim-huge/)" \
+        --with-features=huge \
+        --enable-multibyte \
+        --enable-cscope \
+        --enable-perlinterp=dynamic \
+        --enable-python3interp=dynamic \
+        --with-x \
+        --disable-gui \
+        --disable-gpm \
+        --disable-canberra \
+        --disable-nls
+
+    make VIMRTDIR=vim-huge
+    make -j1 VIMRTDIR=vim-huge DESTDIR=$PKG install
+
+    # Clean up conflicting files to let the core vim package keep them
+    rm -rf $PKG/usr/share/vim/vimrc
+    rm -rf $PKG/usr/share/man
+
+    rm -fr $PKG/usr/bin/ex
+    rm -fr $PKG/usr/bin/rview
+    rm -fr $PKG/usr/bin/view
+    rm -fr $PKG/usr/bin/xxd
+}

@@ -1,0 +1,16 @@
+#!/bin/sh
+
+# The script ensures that the 'huge' version wins the symlink battle
+# for copy-paste power.
+
+VIM_HUGE="/usr/bin/vim-huge"
+
+if [ -x "$VIM_HUGE" ]; then
+    echo "Post-install: Pointing system links to vim-huge..."
+    ln -sf "$VIM_HUGE" /usr/bin/vim
+    ln -sf "$VIM_HUGE" /usr/bin/view
+    ln -sf "$VIM_HUGE" /usr/bin/vimdiff
+else
+    echo "Post-install Error: $VIM_HUGE not found!" >&2
+    exit 1
+fi

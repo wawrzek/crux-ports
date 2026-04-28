@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/wawrzek.pub
+RWQXc2agtIcYBTBLSGryb7ZD9DenKa5ZHEkBnaTKGpPtgxc5gHMwnzy2TSCic4ag0ISGuYvyu9nXJGIZ6ijIjMVTEQFkOIoByQQ=
+SHA256 (Pkgfile) = 93de8d186a4edb0d5ba6857f2dfa9718cf531f8033568d5470fb0270717d2fde
+SHA256 (.footprint) = 057b19a7715aff10ada33124416339fa2f729368a27fa9e68126fd4d9f368fb6
+SHA256 (vim-9.2.0390.tar.gz) = 18f5abda9cae11359cc9625370fc142bdfbefbbc4c07aad55d21dca5d5bdbdf2
