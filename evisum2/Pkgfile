@@ -1,0 +1,20 @@
+# Description: EFL system monitor - v2
+# URL: http://www.enlightenment.org/
+# Maintainer: Wawrzek Niewodniczanski, main at wawrzek dot name
+# Depends on: efl
+
+name=evisum
+version=2.0.4
+release=1
+source=(https://download.enlightenment.org/rel/apps/$name/$name-$version.tar.xz)
+
+build()
+{
+	cd $name-$version
+	meson --prefix=/usr \
+		--mandir=/usr/man \
+		. build
+	ninja -C build
+	DESTDIR=$PKG ninja -C build install
+	rm -r $PKG/usr/share/locale
+}
