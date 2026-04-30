@@ -4,7 +4,7 @@
 # Depends on: efl
 
 name=evisum
-version=1.2.3
+version=1.2.5
 release=1
 source=(https://download.enlightenment.org/rel/apps/$name/$name-$version.tar.xz)
 
