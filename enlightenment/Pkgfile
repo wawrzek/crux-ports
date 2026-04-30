@@ -2,20 +2,23 @@
 # URL: http://www.enlightenment.org/
 # Maintainer: Wawrzek Niewodniczanski, main at wawrzek dot name
 # Depends on: efl xorg-xcb-util-keysyms
+# Optional: polkit udisks2
 
 name=enlightenment
 version=0.27.1
-release=2
+release=3
 source=(http://download.enlightenment.org/rel/apps/$name/$name-$version.tar.xz)
 
 build()
 {
+	pkg-config --exists udisks2 && _udisks=true || _udisks=false
+
 	cd $name-$version
 	meson --prefix=/usr \
 		--mandir=/usr/man \
 		-Dsystemd=false \
 		-Dnls=false \
-		-Dmount-udisks=false \
+		-Dmount-udisks=$_udisks \
 		. build
 	ninja -C build
 	DESTDIR=$PKG ninja -C build install
