@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/wawrzek.pub
-RWQXc2agtIcYBYDgjvBWaY0XqXxikElNDsbZHNVOrRrk24a/IBJXmWdGTdgJm5ZPBIpiBhOmJa6mwK9p6sjfVOVM9q86N2gVdAo=
-SHA256 (Pkgfile) = 26b32e4bfc862fb2a0bdfd76dd68e1abda8b9fb2bf71450c62572e4e7d7dfe52
-SHA256 (.footprint) = 55e1953cc64abd0d402c45f5b9222ad28bad0b2e5cee21924f7a31e31604873e
-SHA256 (efl-1.28.1.tar.xz) = 84cf6145f9cc82bfff690005be24392c8f3c52f8e00ff04d8eea371429c09424
+RWQXc2agtIcYBTrNrt47Mc8hxClT+PNwhZcDFXboSnx6fwjCNuvs/NJshIuaeJHwTPKZqyMoQe/4XMF3c6oz4Kk0bmjd/+CV6wc=
+SHA256 (Pkgfile) = f9274432ccaf4d0085499e3696f995e81e689b27e1d07993f1fdd56dce5cf74c
+SHA256 (.footprint) = 8b5e2d8a8f6aed454a8b0012bb85a022ca3e33919263bce56fd78b09db888552
+SHA256 (efl-1.29.0.tar.xz) = 248bc76141f2b8b006ccba9e0bb2cb46cbcb1be4181a1cf2728187f778853654

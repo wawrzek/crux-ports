@@ -4,7 +4,7 @@
 # Depends on: dbus xorg-libxp xorg-libxscrnsaver gstreamer gst-plugins-base giflib libtiff libsndfile pulseaudio harfbuzz fribidi poppler librsvg libraw libspectre luajit check openjpeg2 libxkbcommon libwebp
 
 name=efl
-version=1.28.1
+version=1.29.0
 release=3
 source=(http://download.enlightenment.org/rel/libs/$name/$name-$version.tar.xz)
 
