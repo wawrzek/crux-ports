@@ -5,8 +5,8 @@
 # Optional: polkit udisks2
 
 name=enlightenment
-version=0.27.1
-release=3
+version=0.28.0
+release=1
 source=(http://download.enlightenment.org/rel/apps/$name/$name-$version.tar.xz)
 
 build()
